@@ -55,9 +55,11 @@ module.exports = {
     cb();
   },
   afterCreate:function (privacyProfile, cb) {
-   // sails.log.debug(privacyProfile);
     privacyProfile.href='http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/'+privacyProfile.id;
-    PartyPrivacyProfile.update({id:privacyProfile.id},{href:'http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/'+privacyProfile.id});
-    cb();
+    PartyPrivacyProfile.update({id:privacyProfile.id},{href:privacyProfile.href}).exec(function(err,profile){
+      if(err)
+      sails.log.debug(profile)
+      cb();
+    });
   }
 };
