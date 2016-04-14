@@ -1,0 +1,235 @@
+{
+  "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfileType/103",
+  "id": "103",
+  "version": "1.0",
+  "lastUpdate": "2013-04-19T16:42:23-04:00",
+  "name": "Customer Mass Market Privacy",
+  "description": "This is the customer mass market privacy",
+  "lifecycleStatus": "active",
+  "validFor": {
+    "startDateTime": "2013-04-19T16:42:23-04:00",
+    "endDateTime": "2013-06-19T00:00:00-04:00"
+  },
+  "relatedParty": [
+    {
+      "id": "1066",
+      "href": "http://serverlocation:port/partyManagement/individual/1066",
+      "role": "Profile Type Admin",
+      "name": "James Smith"
+    }
+  ],
+  "applicableRole": [
+    {
+      "role": "Customer"
+    }
+  ],
+  "partyPrivacyProfileTypeCharacteristic": [
+    {
+      "id": "42",
+      "name": "eMailAddress",
+      "privacyUsagePurpose": "ADMIN",
+      "description": "this is the email address privacy for internal ADMIN purpose",
+      "privacyType": "Internal Purpose",
+      "criticalityLevel": "low",
+      "validFor": {
+        "startDateTime": "2013-04-19T16:42:23-04:00",
+        "endDateTime": ""
+      },
+      "partyPrivacyProfileTypeCharValue": [
+        {
+          "valueType": "string",
+          "default": true,
+          "value": "Authorized",
+          "validityDuration": "Always"
+        }
+      ],
+      "relatedRole": [
+        {
+          "role": "Administrator"
+        }
+      ]
+    },
+    {
+      "id": "43",
+      "name": "eMailAddress",
+      "privacyUsagePurpose": "INFORMATION",
+      "description": "this is the email address privacy attributes for internal INFORMATION purpose",
+      "privacyType": "Internal Purpose",
+      "criticalityLevel": "low",
+      "validFor": {
+        "startDateTime": "2013-04-19T16:42:23-04:00",
+        "endDateTime": ""
+      },
+      "partyPrivacyProfileTypeCharValue": [
+        {
+          "valueType": "string",
+          "default": true,
+          "value": "Authorized",
+          "validityDuration": "Always"
+        },
+        {
+          "valueType": "string",
+          "default": false,
+          "value": "Unauthorized",
+          "validityDuration": "Always"
+        }
+      ],
+      "relatedRole": [
+        {
+          "role": "Vendor"
+        },
+        {
+          "role": "Employee"
+        }
+      ]
+    },
+    {
+      "id": "44",
+      "name": "eMailAddress",
+      "privacyUsagePurpose": "MARKETING",
+      "description": "this is the email address privacy attributes for internal MARKETING purpose",
+      "privacyType": "Internal Purpose",
+      "criticalityLevel": "high",
+      "validFor": {
+        "startDateTime": "2013-04-19T16:42:23-04:00",
+        "endDateTime": ""
+      },
+      "partyPrivacyProfileTypeCharValue": [
+        {
+          "valueType": "string",
+          "default": true,
+          "value": "Unauthorized",
+          "validityDuration": "Always"
+        },
+        {
+          "valueType": "string",
+          "default": false,
+          "value": "Authorized",
+          "validityDuration": "3 months"
+        }
+      ],
+      "relatedRole": [
+        {
+          "role": "Vendor"
+        }
+      ]
+    },
+    {
+      "id": "45",
+      "name": "eMailAddress",
+      "privacyUsagePurpose": "RESEARCH",
+      "description": "this is the email address privacy attributes for internal RESEARCH purpose",
+      "privacyType": "Internal Purpose",
+      "criticalityLevel": "low",
+      "validFor": {
+        "startDateTime": "2013-04-19T16:42:23-04:00",
+        "endDateTime": ""
+      },
+      "partyPrivacyProfileTypeCharValue": [
+        {
+          "valueType": "string",
+          "default": true,
+          "value": "Unauthorized",
+          "validityDuration": "Always"
+        }
+      ],
+      "relatedRole": [
+        {
+          "role": "Employee"
+        }
+      ]
+    },
+    {
+      "id": "46",
+      "name": "eMailAddress",
+      "privacyUsagePurpose": "ADMIN",
+      "description": "this is the email address privacy attributes for external ADMIN purposes",
+      "privacyType": "External Purpose",
+      "criticalityLevel": "low",
+      "validFor": {
+        "startDateTime": "2013-04-19T16:42:23-04:00",
+        "endDateTime": ""
+      },
+      "partyPrivacyProfileTypeCharValue": [
+        {
+          "valueType": "string",
+          "default": true,
+          "value": "UnAuthorized",
+          "validityDuration": "Always"
+        }
+      ],
+      "relatedRole": [
+        {
+          "role": "Administrator"
+        }
+      ]
+    },
+    {
+      "id": "47",
+      "name": "eMailAddress",
+      "description": "this is the internal retention privacy rule for email address",
+      "privacyType": "Internal Retention",
+      "criticalityLevel": "low",
+      "validFor": {
+        "startDateTime": "2013-04-19T16:42:23-04:00",
+        "endDateTime": ""
+      },
+      "partyPrivacyProfileTypeCharValue": [
+        {
+          "valueType": "string",
+          "default": true,
+          "value": "Indefinity",
+          "validityDuration": "Always"
+        }
+      ]
+    },
+    {
+      "id": "48",
+      "name": "eMailAddress",
+      "description": "this is the external retention privacy rule for email address",
+      "privacyType": "External Retention",
+      "criticalityLevel": "low",
+      "validFor": {
+        "startDateTime": "2013-04-19T16:42:23-04:00",
+        "endDateTime": ""
+      },
+      "partyPrivacyProfileTypeCharValue": [
+        {
+          "valueType": "string",
+          "default": true,
+          "value": "No-retention",
+          "validityDuration": "Always"
+        }
+      ]
+    },
+    {
+      "id": "49",
+      "name": "Invoice Amount",
+      "description": "this is the retention privacy rule for invoice amount",
+      "privacyType": "Internal Retention",
+      "criticalityLevel": "low",
+      "validFor": {
+        "startDateTime": "2013-04-19T16:42:23-04:00",
+        "endDateTime": ""
+      },
+      "partyPrivacyProfileTypeCharValue": [
+        {
+          "valueType": "numeric",
+          "default": true,
+          "unitOfMeasure": "Year",
+          "value": "15",
+          "validityDuration": "Always"
+        },
+        {
+          "valueType": "numeric",
+          "default": false,
+          "unitOfMeasure": "Year",
+          "fromValue": "10",
+          "toValue": "20",
+          "rangeInterval": "1",
+          "validityDuration": "Always"
+        }
+      ]
+    }
+  ]
+}

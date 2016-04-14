@@ -1,0 +1,110 @@
+{
+  "agreementPeriod": {
+    "startDateTime": "2016-03-16T15:15:51.209Z",
+    "endDateTime": "2016-09-16T15:15:51.209Z "
+  },
+  "completionDate": "2016-10-16",
+  "description": "This agreement …",
+  "documentNumber": "13",
+  "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/6810",
+  "id": "6810",
+  "initialDate": "2016-03-16T15:15:51.210Z",
+  "name": "Customer mass market privacy agreement",
+  "statementOfIntent": "Agreement on customer mass market privacy profile",
+  "status": "validated",
+  "type": "commercial",
+  "version": "1",
+  "agreementSpecification": {
+    "description": "This agreement specification defines the rules of privacy to be followed by each party",
+    "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreementSpecification/8139",
+    "id": "8139",
+    "name": "General Agreement Specification"
+  },
+  "agreementItem": [
+    {
+      "productOffering": [
+        {
+          "href": "https://host:port/productOffering/productOffering/9559",
+          "id": "9559",
+          "name": "Privacy Service",
+          "bundledProductOffering": [
+            {
+              "href": "https://host:port/productOffering/bundledProductOffering/7120",
+              "id": "7120",
+              "name": "Magic Offer",
+              "bundledProductOffering": []
+            }
+          ]
+        }
+      ],
+      "termOrCondition": [
+        {
+          "description": "This agreement term or condition ",
+          "id": "8905",
+          "validFor": {
+            "startDateTime": "2016-03-16T15:15:51.211Z",
+            "endDateTime": "2016-09-16T15:15:51.211Z"
+          }
+        }
+      ]
+    }
+  ],
+  "engagedPartyRole": [
+    {
+      "href": "http://serverLocation:port/partyManagement/partyRole/1",
+      "id": "1",
+      "name": "Customer",
+      "partyId": "2345",
+      "partyName": "John Doe"
+    }
+  ],
+  "agreementAuthorization": [
+    {
+      "date": "2016-03-16T15:15:51.211Z",
+      "signatureRepresentation": "Digital",
+      "state": "approved"
+    }
+  ],
+  "characteristic": [
+    {
+      "name": "country",
+      "value": "France"
+    }
+  ],
+  "associatedAgreement": [
+    {
+      "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/987654",
+      "id": "987654",
+      "name": "General Privacy Agreement"
+    }
+  ],
+  "partyPrivacyProfile": [
+    {
+     "id":"394",
+    "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/394"
+    },
+    {
+        "id":"1312",
+      "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/1312"
+    }
+  ],
+  "partyPrivacyProfileCharValue": [
+    {
+      "name": "eMailAddress",
+      "privacyUsagePurpose": "MARKETING",
+      "value": "Authorized",
+      "validFor": {
+        "startDateTime": "2016-03-16T15:15:51.211Z ",
+        "endDateTime": "2016-06-16T15:15:51.211Z "
+      },
+      "relatedParty": [
+        {
+          "id": "11",
+          "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+          "role": "Vendor",
+          "name": "Alice"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+
+  "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/394",
+
+  "id": "394",
+
+  "name": "John Doe's Privacy Profile",
+
+  "description": "This is John Does Privacy profile",
+
+  "dateCreated": "2016-03-16T15:15:51.209Z",
+
+  "status": "created",
+
+  "validFor": {
+
+    "startDateTime": "2016-03-16T15:15:51.209Z",
+
+    "endDateTime": ""
+
+  },
+
+  "agreedByParty": {
+
+    "id": "2345",
+
+    "href": "http ://serverLocation:port/partyManagement/individual/2345",
+
+    "role": "Customer",
+
+    "name": "John Doe"
+
+  },
+
+  "partyPrivacyProfileType": {
+
+    "id": "103",
+
+    "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfileType/103"
+
+  },
+
+  "partyPrivacyProfileCharValue": [
+
+    {
+
+      "name": "eMailAddress",
+
+      "privacyUsagePurpose": "ADMIN",
+
+      "value": "Authorized",
+
+      "validFor": {
+
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+
+        "endDateTime": ""
+
+      },
+
+      "relatedParty": [
+
+        {
+
+          "id": "10",
+
+          "href": "http ://serverLocation:port/partyManagement/organization/10",
+
+          "role": "Administrator",
+
+          "name": "Orange"
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "name": "eMailAddress",
+
+      "privacyUsagePurpose": "INFORMATION",
+
+      "value": "Authorized",
+
+      "validFor": {
+
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+
+        "endDateTime": ""
+
+      },
+
+      "relatedParty": [
+
+        {
+
+          "id": "11",
+
+          "href": "http ://serverLocation:port/partyManagement/individual/11",
+
+          "role": "Vendor",
+
+          "name": "Alice"
+
+        },
+
+        {
+
+          "id": "12",
+
+          "href": "http ://serverLocation:port/partyManagement/individual/12",
+
+          "role": "Employee",
+
+          "name": "Bob"
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "name": "eMailAddress",
+
+      "privacyUsagePurpose": "MARKETING",
+
+      "value": "Authorized",
+
+      "validFor": {
+
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+
+        "endDateTime": "2016-06-16T15:15:51.209Z"
+
+      },
+
+      "relatedParty": [
+
+        {
+
+          "id": "11",
+
+          "href": "http ://serverLocation:port/partyManagement/individual/11",
+
+          "role": "Vendor",
+
+          "name": "Alice"
+
+        }
+
+      ],
+
+      "characteristicAgreement": {
+
+        "id": "6810",
+
+        "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/6810"
+
+      }
+
+    },
+
+    {
+
+      "name": "eMailAddress",
+
+      "privacyUsagePurpose": "RESEARCH",
+
+      "value": "Unauthorized",
+
+      "validFor": {
+
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+
+        "endDateTime": ""
+
+      },
+
+      "relatedParty": [
+
+        {
+
+          "id": "12",
+
+          "href": "http ://serverLocation:port/partyManagement/individual/12",
+
+          "role": "Employee",
+
+          "name": "Bob"
+
+        }
+
+      ]
+
+    }
+
+  ],
+
+  "agreement": {
+
+    "id": "6810",
+
+    "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/6810",
+
+    "type": "commercial"
+
+  }
+
+}
