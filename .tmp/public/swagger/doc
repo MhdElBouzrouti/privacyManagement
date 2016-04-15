@@ -2205,7 +2205,7 @@
   "/partyprivacyprofile/{id}": {
     "get": {
       "summary": "Read Object(s)",
-        "operationId": "getPartyPrivacyProfileByID",
+        "operationId": "getPartyPrivacyProfileById",
         "consumes": [
         "application/json"
       ],
