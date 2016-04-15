@@ -35,8 +35,27 @@ module.exports.routes = {
     controller:'EnforcePrivacyController',
     action:'find'
   },
-  '/partyPrivacyProfile':{
-    cors:true
+  'GET /partyPrivacyProfile/:id':{
+    controller:'PartyPrivacyProfileController',
+    action:'find',
+    skipAssets:true,
+    swagger:{
+      methods:['GET'],
+      summary:'Get Party Privacy Profile',
+      operationId: "getPartyPrivacyProfileById",
+      produces:[
+        'application/json'
+      ],
+      tags:[
+        'PartyPrivacyProfile'
+      ],
+      responses:{
+        '200':{
+          description:'Party Privacy Profile',
+          schema:'PartyPrivacyProfile'
+        }
+      }
+    }
   }
   /***************************************************************************
   *                                                                          *
