@@ -1,0 +1,3886 @@
+{
+  "swagger": "2.0",
+  "info": {
+  "title": "Privacy-Management",
+    "description": "Privacy Management API REST",
+    "version": "1.2.0",
+    "contact": {
+    "name": "Orange Group",
+      "url": "http://partner.orange.com"
+  },
+  "license": {
+    "name": ""
+  }
+},
+  "host": "privacy-orangegroup.rhcloud.com",
+  "tags": [
+  {
+    "name": "Swagger"
+  },
+  {
+    "name": "EnforcePrivacy"
+  },
+  {
+    "name": "PartyPrivacyAgreement"
+  },
+  {
+    "name": "PartyPrivacyProfile"
+  },
+  {
+    "name": "PartyPrivacyProfileType"
+  },
+  {
+    "name": "StoreToken"
+  }
+],
+  "definitions": {
+  "contact": {
+    "properties": {
+      "group": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "group": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "accesstoken": {
+    "properties": {
+      "id": {
+        "type": "string",
+          "format": "string"
+      },
+      "role": {
+        "type": "string",
+          "format": "string"
+      },
+      "token": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  },
+  "agreementauthorization": {
+    "properties": {
+      "state": {
+        "type": "string",
+          "format": "string"
+      },
+      "signatureRepresentation": {
+        "type": "string",
+          "format": "string"
+      },
+      "date": {
+        "type": "string",
+          "format": "date-time"
+      },
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "agreementitem": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "associatedagreement": {
+    "properties": {
+      "id": {
+        "type": "string",
+          "format": "string"
+      },
+      "href": {
+        "type": "string",
+          "format": "string"
+      },
+      "name": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  },
+  "bundledproductoffering": {
+    "properties": {
+      "id": {
+        "type": "string",
+          "format": "string"
+      },
+      "name": {
+        "type": "string",
+          "format": "string"
+      },
+      "href": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  },
+  "characteristic": {
+    "properties": {
+      "name": {
+        "type": "string",
+          "format": "string"
+      },
+      "value": {
+        "type": "string",
+          "format": "string"
+      },
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "party": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "href": {
+        "type": "string",
+          "format": "string"
+      },
+      "name": {
+        "type": "string",
+          "format": "string"
+      },
+      "role": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  },
+  "partyprivacyagreement": {
+    "properties": {
+      "id": {
+        "type": "string",
+          "format": "string"
+      },
+      "name": {
+        "type": "string",
+          "format": "string"
+      },
+      "version": {
+        "type": "string",
+          "format": "string"
+      },
+      "documentNumber": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "status": {
+        "type": "string",
+          "format": "string"
+      },
+      "type": {
+        "type": "string",
+          "format": "string"
+      },
+      "statementOfIntent": {
+        "type": "string",
+          "format": "string"
+      },
+      "agreementPeriod": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "description": {
+        "type": "string",
+          "format": "string"
+      },
+      "href": {
+        "type": "string",
+          "format": "string"
+      },
+      "initialDate": {
+        "type": "string",
+          "format": "date-time"
+      },
+      "agreementSpecification": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  },
+  "partyprivacyagreementspecification": {
+    "properties": {
+      "id": {
+        "type": "string",
+          "format": "string"
+      },
+      "name": {
+        "type": "string",
+          "format": "string"
+      },
+      "href": {
+        "type": "string",
+          "format": "string"
+      },
+      "description": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  },
+  "partyprivacyprofile": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "href": {
+        "type": "string",
+          "format": "string"
+      },
+      "name": {
+        "type": "string",
+          "format": "string"
+      },
+      "description": {
+        "type": "string",
+          "format": "string"
+      },
+      "status": {
+        "type": "string",
+          "format": "string"
+      },
+      "validFor": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "agreedByParty": {
+        "type": "string",
+          "format": "string"
+      },
+      "dateCreated": {
+        "type": "string",
+          "format": "date-time"
+      },
+      "partyPrivacyProfileType": {
+        "type": "string",
+          "format": "string"
+      },
+      "agreement": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  },
+  "partyprivacyprofilecharvalue": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "name": {
+        "type": "string",
+          "format": "string"
+      },
+      "value": {
+        "type": "string",
+          "format": "string"
+      },
+      "relatedParty": {
+        "type": "string",
+          "format": "string"
+      },
+      "privacyUsagePurpose": {
+        "type": "string",
+          "format": "string"
+      },
+      "validFor": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  },
+  "partyprivacyprofiletype": {
+    "properties": {
+      "id": {
+        "type": "string",
+          "format": "string"
+      },
+      "name": {
+        "type": "string",
+          "format": "string"
+      },
+      "href": {
+        "type": "string",
+          "format": "string"
+      },
+      "description": {
+        "type": "string",
+          "format": "string"
+      },
+      "lastUpdate": {
+        "type": "string",
+          "format": "date-time"
+      },
+      "version": {
+        "type": "string",
+          "format": "string"
+      },
+      "lifecycleStatus": {
+        "type": "string",
+          "format": "string"
+      },
+      "validFor": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "partyprivacyprofiletypecharvalue": {
+    "properties": {
+      "value": {
+        "type": "string",
+          "format": "string"
+      },
+      "valueType": {
+        "type": "string",
+          "format": "string"
+      },
+      "default": {
+        "type": "boolean"
+      },
+      "validityDuration": {
+        "type": "string",
+          "format": "string"
+      },
+      "unitOfMeasure": {
+        "type": "string",
+          "format": "string"
+      },
+      "fromValue": {
+        "type": "string",
+          "format": "string"
+      },
+      "toValue": {
+        "type": "string",
+          "format": "string"
+      },
+      "rangeInterval": {
+        "type": "string",
+          "format": "string"
+      },
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "partyprivacyprofiletypecharacteristic": {
+    "properties": {
+      "id": {
+        "type": "string",
+          "format": "string"
+      },
+      "name": {
+        "type": "string",
+          "format": "string"
+      },
+      "description": {
+        "type": "string",
+          "format": "string"
+      },
+      "criticalityLevel": {
+        "type": "string",
+          "format": "string"
+      },
+      "privacyType": {
+        "type": "string",
+          "format": "string"
+      },
+      "privacyUsagePurpose": {
+        "type": "string",
+          "format": "string"
+      },
+      "validFor": {
+        "type": "string",
+          "format": "string"
+      },
+      "partyPrivacyProfileTypeCharValue": {
+        "type": "string",
+          "format": "string"
+      },
+      "relatedParty": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  },
+  "productoffering": {
+    "properties": {
+      "id": {
+        "type": "string",
+          "format": "string"
+      },
+      "name": {
+        "type": "string",
+          "format": "string"
+      },
+      "href": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  },
+  "role": {
+    "properties": {
+      "role": {
+        "type": "string",
+          "format": "string"
+      },
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "storetoken": {
+    "properties": {
+      "privacyProfileId": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "termorcondition": {
+    "properties": {
+      "id": {
+        "type": "string",
+          "format": "string"
+      },
+      "description": {
+        "type": "string",
+          "format": "string"
+      },
+      "validFor": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "timeperiod": {
+    "properties": {
+      "startDateTime": {
+        "type": "string",
+          "format": "string"
+      },
+      "endDateTime": {
+        "type": "string",
+          "format": "string"
+      },
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "contact_contacts_contact__group_contacts": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "group_contacts": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "contact_contacts_contact": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "agreementitem_productoffering__productoffering_productoffering_productoffering": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "agreementitem_productOffering": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "productoffering_productOffering_productoffering": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  },
+  "agreementitem_termorcondition__termorcondition_termorcondition_termorcondition": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "agreementitem_termOrCondition": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "termorcondition_termOrCondition_termorcondition": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  },
+  "agreementitem_agreementitem_agreementitem__partyprivacyagreement_agreementitem": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "partyprivacyagreement_agreementItem": {
+        "type": "string",
+          "format": "string"
+      },
+      "agreementitem_agreementItem_agreementitem": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "party_engagedpartyrole_party__partyprivacyagreement_engagedpartyrole": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "partyprivacyagreement_engagedPartyRole": {
+        "type": "string",
+          "format": "string"
+      },
+      "party_engagedPartyRole_party": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  },
+  "agreementauthorization_agreementauthorization_agreementauthorization__partyprivacyagreement_agreementauthorization": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "partyprivacyagreement_agreementAuthorization": {
+        "type": "string",
+          "format": "string"
+      },
+      "agreementauthorization_agreementAuthorization_agreementauthorization": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "characteristic_characteristic_characteristic__partyprivacyagreement_characteristic": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "partyprivacyagreement_characteristic": {
+        "type": "string",
+          "format": "string"
+      },
+      "characteristic_characteristic_characteristic": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "partyprivacyagreement_associatedagreement_partyprivacyagreement__partyprivacyagreement_associatedagreement": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "partyprivacyagreement_associatedAgreement": {
+        "type": "string",
+          "format": "string"
+      },
+      "partyprivacyagreement_associatedAgreement_partyprivacyagreement": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  },
+  "partyprivacyagreement_partyprivacyprofile__partyprivacyprofile_partyprivacyprofile_partyprivacyprofile": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "partyprivacyagreement_partyPrivacyProfile": {
+        "type": "string",
+          "format": "string"
+      },
+      "partyprivacyprofile_partyPrivacyProfile_partyprivacyprofile": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "partyprivacyagreement_partyprivacyprofilecharvalue__partyprivacyprofilecharvalue_partyprivacyprofilecharvalue_partyprivacyprofilecharvalue": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "partyprivacyagreement_partyPrivacyProfileCharValue": {
+        "type": "string",
+          "format": "string"
+      },
+      "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "partyprivacyprofile_partyprivacyprofilecharvalue__partyprivacyprofilecharvalue_partyprivacyprofilecharvalue_partyprivacyprofilecharvalue": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "partyprivacyprofile_partyPrivacyProfileCharValue": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "party_relatedparty_party__partyprivacyprofiletype_relatedparty": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "partyprivacyprofiletype_relatedParty": {
+        "type": "string",
+          "format": "string"
+      },
+      "party_relatedParty_party": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  },
+  "partyprivacyprofiletype_applicablerole__role_applicablerole_role": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "partyprivacyprofiletype_applicableRole": {
+        "type": "string",
+          "format": "string"
+      },
+      "role_applicableRole_role": {
+        "type": "integer",
+          "format": "int32"
+      }
+    }
+  },
+  "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__partyprivacyprofiletypecharacteristic_partyprivacyprofiletypecharacteristic_partyprivacyprofiletypecharacteristic": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": {
+        "type": "string",
+          "format": "string"
+      },
+      "partyprivacyprofiletypecharacteristic_partyPrivacyProfileTypeCharacteristic_partyprivacyprofiletypecharacteristic": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  },
+  "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "productoffering_bundledProductOffering": {
+        "type": "string",
+          "format": "string"
+      },
+      "bundledproductoffering_bundledProductOffering_bundledproductoffering": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  },
+  "accesstoken_accesstoken_accesstoken__storetoken_accesstoken": {
+    "properties": {
+      "id": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "storetoken_accessToken": {
+        "type": "integer",
+          "format": "int32"
+      },
+      "accesstoken_accessToken_accesstoken": {
+        "type": "string",
+          "format": "string"
+      }
+    }
+  }
+},
+  "paths": {
+  "/swagger/doc/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource"
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Swagger"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource"
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Swagger"
+      ]
+    },
+    "put": {
+      "summary": "Update Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource"
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Swagger"
+      ]
+    },
+    "patch": {
+      "summary": "Update Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource"
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Swagger"
+      ]
+    },
+    "delete": {
+      "summary": "Destroy Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource"
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Swagger"
+      ]
+    }
+  },
+  "/swagger/ui/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource"
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Swagger"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource"
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Swagger"
+      ]
+    },
+    "put": {
+      "summary": "Update Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource"
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Swagger"
+      ]
+    },
+    "patch": {
+      "summary": "Update Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource"
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Swagger"
+      ]
+    },
+    "delete": {
+      "summary": "Destroy Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource"
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Swagger"
+      ]
+    }
+  },
+  "/enforceprivacy/find/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource"
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "EnforcePrivacy"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource"
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "EnforcePrivacy"
+      ]
+    },
+    "put": {
+      "summary": "Update Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource"
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "EnforcePrivacy"
+      ]
+    },
+    "patch": {
+      "summary": "Update Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource"
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "EnforcePrivacy"
+      ]
+    },
+    "delete": {
+      "summary": "Destroy Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource"
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "EnforcePrivacy"
+      ]
+    }
+  },
+  "/partyprivacyagreement/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyagreement"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyAgreement"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyagreement"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyAgreement"
+      ]
+    },
+    "put": {
+      "summary": "Update Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyagreement"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyAgreement"
+      ]
+    }
+  },
+  "/partyprivacyagreement/{parentid}/agreementItem/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/agreementitem"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "AgreementItem",
+        "PartyPrivacyAgreement"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/agreementitem"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "AgreementItem",
+        "PartyPrivacyAgreement"
+      ]
+    },
+    "delete": {
+      "summary": "Destroy Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/agreementitem"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "AgreementItem",
+        "PartyPrivacyAgreement"
+      ]
+    }
+  },
+  "/partyprivacyagreement/{parentid}/engagedPartyRole/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/party"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Party",
+        "PartyPrivacyAgreement"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/party"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Party",
+        "PartyPrivacyAgreement"
+      ]
+    },
+    "delete": {
+      "summary": "Destroy Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/party"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Party",
+        "PartyPrivacyAgreement"
+      ]
+    }
+  },
+  "/partyprivacyagreement/{parentid}/agreementAuthorization/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/agreementauthorization"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "AgreementAuthorization",
+        "PartyPrivacyAgreement"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/agreementauthorization"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "AgreementAuthorization",
+        "PartyPrivacyAgreement"
+      ]
+    },
+    "delete": {
+      "summary": "Destroy Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/agreementauthorization"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "AgreementAuthorization",
+        "PartyPrivacyAgreement"
+      ]
+    }
+  },
+  "/partyprivacyagreement/{parentid}/characteristic/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/characteristic"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Characteristic",
+        "PartyPrivacyAgreement"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/characteristic"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Characteristic",
+        "PartyPrivacyAgreement"
+      ]
+    },
+    "delete": {
+      "summary": "Destroy Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/characteristic"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Characteristic",
+        "PartyPrivacyAgreement"
+      ]
+    }
+  },
+  "/partyprivacyagreement/{parentid}/associatedAgreement/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyagreement"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyAgreement"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyagreement"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyAgreement"
+      ]
+    },
+    "delete": {
+      "summary": "Destroy Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyagreement"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyAgreement"
+      ]
+    }
+  },
+  "/partyprivacyagreement/{parentid}/partyPrivacyProfile/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofile"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfile",
+        "PartyPrivacyAgreement"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofile"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfile",
+        "PartyPrivacyAgreement"
+      ]
+    },
+    "delete": {
+      "summary": "Destroy Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofile"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfile",
+        "PartyPrivacyAgreement"
+      ]
+    }
+  },
+  "/partyprivacyagreement/{parentid}/partyPrivacyProfileCharValue/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofilecharvalue"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfileCharValue",
+        "PartyPrivacyAgreement"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofilecharvalue"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfileCharValue",
+        "PartyPrivacyAgreement"
+      ]
+    },
+    "delete": {
+      "summary": "Destroy Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofilecharvalue"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfileCharValue",
+        "PartyPrivacyAgreement"
+      ]
+    }
+  },
+  "/partyprivacyprofile/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "operationId": "getPartyPrivacyProfileByIt",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofile"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfile"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "operationId": "createPartyPrivacyProfile",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofile"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfile"
+      ]
+    },
+    "put": {
+      "summary": "Update Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofile"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfile"
+      ]
+    }
+  },
+  "/partyprivacyprofile/{parentid}/partyPrivacyProfileCharValue/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofilecharvalue"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfileCharValue",
+        "PartyPrivacyProfile"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofilecharvalue"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfileCharValue",
+        "PartyPrivacyProfile"
+      ]
+    },
+    "delete": {
+      "summary": "Destroy Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofilecharvalue"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfileCharValue",
+        "PartyPrivacyProfile"
+      ]
+    }
+  },
+  "/partyprivacyprofiletype/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofiletype"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfileType"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofiletype"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfileType"
+      ]
+    },
+    "put": {
+      "summary": "Update Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofiletype"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfileType"
+      ]
+    }
+  },
+  "/partyprivacyprofiletype/{parentid}/relatedParty/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/party"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Party",
+        "PartyPrivacyProfileType"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/party"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Party",
+        "PartyPrivacyProfileType"
+      ]
+    },
+    "delete": {
+      "summary": "Destroy Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/party"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Party",
+        "PartyPrivacyProfileType"
+      ]
+    }
+  },
+  "/partyprivacyprofiletype/{parentid}/applicableRole/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/role"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Role",
+        "PartyPrivacyProfileType"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/role"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Role",
+        "PartyPrivacyProfileType"
+      ]
+    },
+    "delete": {
+      "summary": "Destroy Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/role"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Role",
+        "PartyPrivacyProfileType"
+      ]
+    }
+  },
+  "/partyprivacyprofiletype/{parentid}/partyPrivacyProfileTypeCharacteristic/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofiletypecharacteristic"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfileTypeCharacteristic",
+        "PartyPrivacyProfileType"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofiletypecharacteristic"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfileTypeCharacteristic",
+        "PartyPrivacyProfileType"
+      ]
+    },
+    "delete": {
+      "summary": "Destroy Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofiletypecharacteristic"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfileTypeCharacteristic",
+        "PartyPrivacyProfileType"
+      ]
+    }
+  },
+  "/storetoken/creater/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/storetoken"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "StoreToken"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/storetoken"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "StoreToken"
+      ]
+    },
+    "put": {
+      "summary": "Update Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/storetoken"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "StoreToken"
+      ]
+    },
+    "patch": {
+      "summary": "Update Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/storetoken"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "StoreToken"
+      ]
+    },
+    "delete": {
+      "summary": "Destroy Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/storetoken"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "StoreToken"
+      ]
+    }
+  },
+  "/storetoken/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/storetoken"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "StoreToken"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/storetoken"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "StoreToken"
+      ]
+    },
+    "put": {
+      "summary": "Update Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/storetoken"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "StoreToken"
+      ]
+    }
+  },
+  "/storetoken/{parentid}/accessToken/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/accesstoken"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "AccessToken",
+        "StoreToken"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/accesstoken"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "AccessToken",
+        "StoreToken"
+      ]
+    },
+    "delete": {
+      "summary": "Destroy Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/accesstoken"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "AccessToken",
+        "StoreToken"
+      ]
+    }
+  },
+  "/enforcePrivacy": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource"
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "EnforcePrivacy"
+      ]
+    }
+  },
+  "/partyprivacyagreement": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyagreement"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyAgreement"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyagreement"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyAgreement"
+      ]
+    }
+  },
+  "/partyprivacyagreement/{parentid}/agreementPeriod/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/timeperiod"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "TimePeriod",
+        "PartyPrivacyAgreement"
+      ]
+    }
+  },
+  "/partyprivacyagreement/{parentid}/agreementSpecification/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyagreementspecification"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyAgreementSpecification",
+        "PartyPrivacyAgreement"
+      ]
+    }
+  },
+  "/partyprivacyprofile": {
+    "get": {
+      "summary": "Read Object(s)",
+        "operationId": "getPartyPrivacyProfiles",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofile"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfile"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofile"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfile"
+      ]
+    },
+    "options": {
+      "summary": "Get Resource Options",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofile"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfile"
+      ]
+    }
+  },
+  "/partyprivacyprofile/{parentid}/validFor/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/timeperiod"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "TimePeriod",
+        "PartyPrivacyProfile"
+      ]
+    }
+  },
+  "/partyprivacyprofile/{parentid}/agreedByParty/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/party"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "Party",
+        "PartyPrivacyProfile"
+      ]
+    }
+  },
+  "/partyprivacyprofile/{parentid}/partyPrivacyProfileType/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofiletype"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfileType",
+        "PartyPrivacyProfile"
+      ]
+    }
+  },
+  "/partyprivacyprofile/{parentid}/agreement/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyagreement"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyAgreement",
+        "PartyPrivacyProfile"
+      ]
+    }
+  },
+  "/partyprivacyprofiletype": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofiletype"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfileType"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/partyprivacyprofiletype"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "PartyPrivacyProfileType"
+      ]
+    }
+  },
+  "/partyprivacyprofiletype/{parentid}/validFor/{id}": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "parameters": [
+        {
+          "name": "parentid",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/timeperiod"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "TimePeriod",
+        "PartyPrivacyProfileType"
+      ]
+    }
+  },
+  "/storetoken": {
+    "get": {
+      "summary": "Read Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/storetoken"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "StoreToken"
+      ]
+    },
+    "post": {
+      "summary": "Create Object(s)",
+        "consumes": [
+        "application/json"
+      ],
+        "produces": [
+        "application/json"
+      ],
+        "responses": {
+        "200": {
+          "description": "The requested resource",
+            "schema": {
+            "$ref": "#/definitions/storetoken"
+          }
+        },
+        "404": {
+          "description": "Resource not found"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      },
+      "tags": [
+        "StoreToken"
+      ]
+    }
+  }
+}
+}
