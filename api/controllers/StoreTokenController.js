@@ -10,10 +10,10 @@ module.exports = {
     var params=req.allParams();
     PartyPrivacyProfile.findOne({id:params.privacyProfileId}).exec(function(err,partyPrivacy){
       if(err){
-        return res.json({message:'not excepted Error'});
+        return res.serverError('not excepted Error');
       }
       if(!partyPrivacy){
-        return res.json({message:'This Profile is unavailable'});
+        return res.notFound('This Profile is unavailable');
       }
     });
   }

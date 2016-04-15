@@ -34,6 +34,9 @@ module.exports.routes = {
   'get /enforcePrivacy':{
     controller:'EnforcePrivacyController',
     action:'find'
+  },
+  '/partyPrivacyProfile':{
+    cors:true
   }
   /***************************************************************************
   *                                                                          *

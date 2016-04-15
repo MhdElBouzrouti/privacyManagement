@@ -22,7 +22,7 @@ module.exports = {
       if(err)
         return cb(err);
       if (!partyPrivacyProfile)
-        return cb('This Profile not exist');
+        return cb('This Profile is unavailable');
       _.each(partyPrivacyProfile.accessToken,function (values) {
         console.log(values);
       });
