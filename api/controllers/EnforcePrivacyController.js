@@ -40,7 +40,7 @@ module.exports = {
         return res.json(400, {error: 'This Profile is unavailable'});
 
       // Filter
-      var filter = _.find(privacyProfile.partyPrivacyProfileCharValue, {name: name, value: privacyUsagePurpose});
+      var filter = _.find(privacyProfile.partyPrivacyProfileCharValue, {name: name, privacyUsagePurpose: privacyUsagePurpose});
       if(!filter)
         return res.json(403,{message:'Party Privacy Characteristic (Name or Usage Purpose) is unavailable'})
       var party = _.find(filter.relatedParty, {id: requestingPartyId});
