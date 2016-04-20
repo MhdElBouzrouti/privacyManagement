@@ -28,7 +28,7 @@ module.exports.policies = {
 
   // '*': true,
   StoreTokenController:{
-    find:'BlockAccess',
+    //find:'BlockAccess',
     destroy:'BlockAccess',
     update:'BlockAccess'
   },

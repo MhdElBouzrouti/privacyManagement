@@ -31,7 +31,7 @@ module.exports.routes = {
   * `assets` directory)                                                      *
   *                                                                          *
   ***************************************************************************/
-  'get /enforcePrivacy':{
+  'get /enforcePrivacy/:privacyProfileId':{
     controller:'EnforcePrivacyController',
     action:'find'
   }

@@ -2,7 +2,6 @@
   "data": {
     "contact": [],
     "group": [],
-    "contact_contacts_contact__group_contacts": [],
     "accesstoken": [
       {
         "id": "nurse#111",
@@ -186,6 +185,7 @@
         "id": 1
       }
     ],
+    "contact_contacts_contact__group_contacts": [],
     "agreementitem_productoffering__productoffering_productoffering_productoffering": [],
     "agreementitem_termorcondition__termorcondition_termorcondition_termorcondition": [],
     "agreementitem_agreementitem_agreementitem__partyprivacyagreement_agreementitem": [],
@@ -260,28 +260,6 @@
         "autoIncrement": true,
         "primaryKey": true,
         "unique": true
-      }
-    },
-    "contact_contacts_contact__group_contacts": {
-      "id": {
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "type": "integer"
-      },
-      "group_contacts": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "group",
-        "on": "id",
-        "via": "contact_contacts_contact"
-      },
-      "contact_contacts_contact": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "contact",
-        "on": "id",
-        "via": "group_contacts"
       }
     },
     "accesstoken": {
@@ -672,6 +650,28 @@
         "autoIncrement": true,
         "primaryKey": true,
         "unique": true
+      }
+    },
+    "contact_contacts_contact__group_contacts": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "group_contacts": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "group",
+        "on": "id",
+        "via": "contact_contacts_contact"
+      },
+      "contact_contacts_contact": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "contact",
+        "on": "id",
+        "via": "group_contacts"
       }
     },
     "agreementitem_productoffering__productoffering_productoffering_productoffering": {

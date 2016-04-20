@@ -37,28 +37,31 @@ module.exports = {
       type:'datetime'
     },
     partyPrivacyProfileType:{
-      model:'partyPrivacyProfileType'
+      model:'partyPrivacyProfileType',
+      required:true
     },
     partyPrivacyProfileCharValue:{
       collection:'partyPrivacyProfileCharValue',
       required:true
     },
     agreement:{
-      model:'partyPrivacyAgreement'
+      model:'partyPrivacyAgreement',
+      required:true,
     }
   },
   beforeCreate:function (privacyProfile,cb) {
     //sails.log.debug(privacyProfile);
     privacyProfile.dateCreated=new Date();
     privacyProfile.href='http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/'+privacyProfile.id;
-    privacyProfile.status='created'
+    privacyProfile.status='created';
     cb();
   },
-  afterCreate:function (privacyProfile, cb) {
+  afterCreate:function (privacyProfile,cb) {
     privacyProfile.href='http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/'+privacyProfile.id;
     PartyPrivacyProfile.update({id:privacyProfile.id},{href:privacyProfile.href}).exec(function(err,profile){
       if(err)
-      sails.log.debug(profile)
+        cb(err);
+      sails.log.debug(profile);
       cb();
     });
   }
