@@ -20,7 +20,8 @@
   },
   "scripts": {
     "debug": "node debug app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "mocha test/bootstrap.test.js test/integration/**/*.test.js"
   },
   "main": "app.js",
   "repository": {
@@ -28,5 +29,10 @@
     "url": "git://github.com/tmnm1169/privacyManagement.git"
   },
   "author": "Orange Group",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0"
+  }
 }
