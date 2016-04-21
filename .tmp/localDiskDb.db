@@ -167,8 +167,8 @@
         "lastUpdate": "2016-04-14T14:59:51.872Z"
       }
     ],
-    "partyprivacyprofiletypecharacteristic": [],
     "partyprivacyprofiletypecharvalue": [],
+    "partyprivacyprofiletypecharacteristic": [],
     "productoffering": [],
     "role": [],
     "storetoken": [
@@ -520,6 +520,38 @@
         "alias": "validFor"
       }
     },
+    "partyprivacyprofiletypecharvalue": {
+      "value": {
+        "type": "string"
+      },
+      "valueType": {
+        "type": "string"
+      },
+      "default": {
+        "type": "boolean"
+      },
+      "validityDuration": {
+        "type": "string"
+      },
+      "unitOfMeasure": {
+        "type": "string"
+      },
+      "fromValue": {
+        "type": "string"
+      },
+      "toValue": {
+        "type": "string"
+      },
+      "rangeInterval": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      }
+    },
     "partyprivacyprofiletypecharacteristic": {
       "id": {
         "type": "string",
@@ -553,38 +585,6 @@
       },
       "relatedParty": {
         "type": "json"
-      }
-    },
-    "partyprivacyprofiletypecharvalue": {
-      "value": {
-        "type": "string"
-      },
-      "valueType": {
-        "type": "string"
-      },
-      "default": {
-        "type": "boolean"
-      },
-      "validityDuration": {
-        "type": "string"
-      },
-      "unitOfMeasure": {
-        "type": "string"
-      },
-      "fromValue": {
-        "type": "string"
-      },
-      "toValue": {
-        "type": "string"
-      },
-      "rangeInterval": {
-        "type": "string"
-      },
-      "id": {
-        "type": "integer",
-        "autoIncrement": true,
-        "primaryKey": true,
-        "unique": true
       }
     },
     "productoffering": {

@@ -9,7 +9,17 @@
  * For more information on the Sails logger, check out:
  * http://sailsjs.org/#!/documentation/concepts/Logging
  */
+var winston=require('winston');
+require('winston-loggly');
+var customLogger = new winston.Logger();
 
+customLogger.add(winston.transports.Loggly,{
+  token: "20dd6918-dc96-4f2c-801d-fbc3332d5e99",
+  subdomain: "Mdelbouzrouti",
+  tags: ["Winston-NodeJS"],
+  json:true
+});
+winston.log('info',"Hello World from Node.js!");
 module.exports.log = {
 
   /***************************************************************************
@@ -23,7 +33,8 @@ module.exports.log = {
   * You may also set the level to "silent" to suppress all logs.             *
   *                                                                          *
   ***************************************************************************/
-
-   level: 'info'
+  custom: customLogger,
+  level:'silly',
+  inspect:false
 
 };
