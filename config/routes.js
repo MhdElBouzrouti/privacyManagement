@@ -34,6 +34,10 @@ module.exports.routes = {
   'get /enforcePrivacy/:privacyProfileId':{
     controller:'EnforcePrivacyController',
     action:'find'
+  },
+  'get /loaderio-f243d9ecea59641d05a9d040a1943447/':{
+    controller:'LoaderController',
+    action:'verification'
   }
   /***************************************************************************
   *                                                                          *
