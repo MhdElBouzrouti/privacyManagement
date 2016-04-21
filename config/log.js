@@ -16,7 +16,7 @@ var customLogger = new winston.Logger();
 customLogger.add(winston.transports.Loggly,{
   token: "20dd6918-dc96-4f2c-801d-fbc3332d5e99",
   subdomain: "Mdelbouzrouti",
-  tags: ["Winston-NodeJS"],
+  tags: ["PRIVACY-API"],
   json:true
 });
 winston.log('info',"Hello World from Node.js!");
