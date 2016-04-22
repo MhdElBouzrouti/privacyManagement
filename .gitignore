@@ -97,6 +97,9 @@ lib-cov
 *.out
 *.pid
 npm-debug.log
+config/test.json
+config/test2.json
+config/test3.json
 
 
 

@@ -19,6 +19,10 @@ customLogger.add(winston.transports.Loggly,{
   tags: ["PRIVACY-API"],
   json:true
 });
+customLogger.add(winston.transports.Console,{
+  level:'silly',
+  colorize:true
+});
 winston.log('info',"Hello World from Node.js!");
 module.exports.log = {
 
@@ -36,5 +40,4 @@ module.exports.log = {
   custom: customLogger,
   level:'silly',
   inspect:false
-
 };
