@@ -18,6 +18,7 @@ customLogger.add(winston.transports.Loggly, {
   level:'verbose',
   subdomain: "Mdelbouzrouti",
   tags: ["PRIVACY-API"],
+  proxy: process.env.http_proxy,
   json: true
 });
 customLogger.add(winston.transports.Console, {

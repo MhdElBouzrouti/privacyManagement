@@ -468,6 +468,11 @@
         "startDateTime": "2016-03-16T15:15:51.209Z",
         "endDateTime": "",
         "id": 4
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "",
+        "id": 5
       }
     ],
     "contact_contacts_contact__group_contacts": [],
@@ -825,6 +830,9 @@
         "type": "string"
       },
       "relatedParty": {
+        "type": "json"
+      },
+      "characteristicAgreement": {
         "type": "json"
       },
       "privacyUsagePurpose": {
@@ -1378,7 +1386,7 @@
     },
     "termorcondition": {},
     "timeperiod": {
-      "id": 4
+      "id": 5
     },
     "contact_contacts_contact__group_contacts": {},
     "agreementitem_productoffering__productoffering_productoffering_productoffering": {},
