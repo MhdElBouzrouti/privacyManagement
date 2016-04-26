@@ -83,8 +83,8 @@ module.exports.connections = {
   // }
     privacyMongodb: {
     adapter: 'sails-mongo',
-    host:  'ds011158.mlab.com',
-    port:  11158,
+    host:  'ds013221.mlab.com',
+    port:  13221,
     user: 'orange',
     password: 'Azlaf0000',
     database: 'privacy'
