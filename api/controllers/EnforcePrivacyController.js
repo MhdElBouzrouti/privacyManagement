@@ -8,10 +8,7 @@
 module.exports = {
   'find': function (req, res) {
     // Debug information
-
-    sails.log.info('Variables');
-    sails.log.debug(req.allParams());
-
+    
     // get all variables from url
 
     var privacyProfileId = req.allParams().privacyProfileId;

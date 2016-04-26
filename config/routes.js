@@ -37,7 +37,7 @@ module.exports.routes = {
   },
   'post /storetoken':{
     controller:'StoreTokenController',
-    action:'creater'
+    action:'store'
 
   },
   'get /loaderio-f243d9ecea59641d05a9d040a1943447/':{

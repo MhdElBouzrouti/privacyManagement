@@ -6,21 +6,20 @@
  */
 
 module.exports = {
-  'creater':function (req,res) {
-    sails.log.debug(req.body);
+  'store':function (req,res) {
     var jsonBody=req.body;
     sails.log.debug(jsonBody.privacyProfileId);
     PartyPrivacyProfile.findOne({id:jsonBody.privacyProfileId}).populateAll().exec(function(err,partyPrivacy){
       if(err){
-        sails.log.err('[StoreToken | Controller ] - Error in privacy Profile Id')
+        sails.log.err('[Controller|StoreToken] - Error in privacy Profile Id')
         return res.serverError('not excepted Error');
       }
       if(!partyPrivacy) {
-        sails.log.warn('[StoreToken | Controller ] - the privacy Profile id is not exist');
+        sails.log.warn('[Controller|StoreToken] - the privacy Profile id is not exist');
         return res.notFound('This Profile is unavailable');
       }
       // partyPrivacy Profile
-      sails.log.info('[StoreToken | Controller ] - the privacy Profile id ' + partyPrivacy.id);
+      sails.log.info('[Controller|StoreToken] - the privacy Profile id ' + partyPrivacy.id);
       _.each(jsonBody.accesstoken,function (values) {
         sails.log.debug(values);
       });

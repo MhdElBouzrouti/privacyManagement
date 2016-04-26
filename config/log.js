@@ -15,7 +15,6 @@ var customLogger = new winston.Logger();
 
 customLogger.add(winston.transports.Loggly, {
   token: "20dd6918-dc96-4f2c-801d-fbc3332d5e99",
-  level:'verbose',
   subdomain: "Mdelbouzrouti",
   tags: ["PRIVACY-API"],
   proxy: process.env.http_proxy,
