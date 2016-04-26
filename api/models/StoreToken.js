@@ -19,13 +19,13 @@ module.exports = {
   },
   beforeCreate:function (storeToken, cb) {
     PartyPrivacyProfile.findOne({id:storeToken.privacyProfileId}).exec(function(err,partyPrivacyProfile){
-      if(err)
+      if(err){
+        sails.log.warn('[StoreToken] - This profile Type is unavailable');
         return cb(err);
+      }
+
       if (!partyPrivacyProfile)
         return cb('This Profile is unavailable');
-      _.each(partyPrivacyProfile.accessToken,function (values) {
-        console.log(values);
-      });
       cb();
     });
 

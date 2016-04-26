@@ -45,6 +45,42 @@
         "dateCreated": "2016-04-14T14:59:51.919Z",
         "partyPrivacyProfileType": "103",
         "agreement": "6810"
+      },
+      {
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/394",
+        "id": 394,
+        "name": "John Doe's Privacy Profile",
+        "description": "This is John Does Privacy profile",
+        "dateCreated": "2016-04-26T09:16:44.181Z",
+        "status": "created",
+        "validFor": 4,
+        "agreedByParty": "2345",
+        "partyPrivacyProfileType": "103",
+        "agreement": "6810"
+      },
+      {
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/394",
+        "id": 394,
+        "name": "John Doe's Privacy Profile",
+        "description": "This is John Does Privacy profile",
+        "dateCreated": "2016-04-26T09:16:44.181Z",
+        "status": "created",
+        "validFor": 4,
+        "agreedByParty": "2345",
+        "partyPrivacyProfileType": "103",
+        "agreement": "6810"
+      },
+      {
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/394",
+        "id": 394,
+        "name": "John Doe's Privacy Profile",
+        "description": "This is John Does Privacy profile",
+        "dateCreated": "2016-04-26T09:16:44.181Z",
+        "status": "created",
+        "validFor": 4,
+        "agreedByParty": "2345",
+        "partyPrivacyProfileType": "103",
+        "agreement": "6810"
       }
     ],
     "partyprivacyprofilecharvalue": [
@@ -158,6 +194,240 @@
           "startDateTime": "2016-03-16T15:15:51.209Z",
           "endDateTime": ""
         }
+      },
+      {
+        "name": "eMailAddress",
+        "privacyUsagePurpose": "ADMIN",
+        "value": "Authorized",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": ""
+        },
+        "relatedParty": [
+          {
+            "id": "10",
+            "href": "http ://serverLocation:port/partyManagement/organization/10",
+            "role": "Administrator",
+            "name": "Orange"
+          }
+        ],
+        "id": 5
+      },
+      {
+        "name": "eMailAddress",
+        "privacyUsagePurpose": "INFORMATION",
+        "value": "Authorized",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": ""
+        },
+        "relatedParty": [
+          {
+            "id": "11",
+            "href": "http ://serverLocation:port/partyManagement/individual/11",
+            "role": "Vendor",
+            "name": "Alice"
+          },
+          {
+            "id": "12",
+            "href": "http ://serverLocation:port/partyManagement/individual/12",
+            "role": "Employee",
+            "name": "Bob"
+          }
+        ],
+        "id": 6
+      },
+      {
+        "name": "eMailAddress",
+        "privacyUsagePurpose": "MARKETING",
+        "value": "Authorized",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": "2016-06-16T15:15:51.209Z"
+        },
+        "relatedParty": [
+          {
+            "id": "11",
+            "href": "http ://serverLocation:port/partyManagement/individual/11",
+            "role": "Vendor",
+            "name": "Alice"
+          }
+        ],
+        "id": 7
+      },
+      {
+        "name": "eMailAddress",
+        "privacyUsagePurpose": "RESEARCH",
+        "value": "Unauthorized",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": ""
+        },
+        "relatedParty": [
+          {
+            "id": "12",
+            "href": "http ://serverLocation:port/partyManagement/individual/12",
+            "role": "Employee",
+            "name": "Bob"
+          }
+        ],
+        "id": 8
+      },
+      {
+        "name": "eMailAddress",
+        "privacyUsagePurpose": "ADMIN",
+        "value": "Authorized",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": ""
+        },
+        "relatedParty": [
+          {
+            "id": "10",
+            "href": "http ://serverLocation:port/partyManagement/organization/10",
+            "role": "Administrator",
+            "name": "Orange"
+          }
+        ],
+        "id": 9
+      },
+      {
+        "name": "eMailAddress",
+        "privacyUsagePurpose": "INFORMATION",
+        "value": "Authorized",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": ""
+        },
+        "relatedParty": [
+          {
+            "id": "11",
+            "href": "http ://serverLocation:port/partyManagement/individual/11",
+            "role": "Vendor",
+            "name": "Alice"
+          },
+          {
+            "id": "12",
+            "href": "http ://serverLocation:port/partyManagement/individual/12",
+            "role": "Employee",
+            "name": "Bob"
+          }
+        ],
+        "id": 10
+      },
+      {
+        "name": "eMailAddress",
+        "privacyUsagePurpose": "MARKETING",
+        "value": "Authorized",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": "2016-06-16T15:15:51.209Z"
+        },
+        "relatedParty": [
+          {
+            "id": "11",
+            "href": "http ://serverLocation:port/partyManagement/individual/11",
+            "role": "Vendor",
+            "name": "Alice"
+          }
+        ],
+        "id": 11
+      },
+      {
+        "name": "eMailAddress",
+        "privacyUsagePurpose": "RESEARCH",
+        "value": "Unauthorized",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": ""
+        },
+        "relatedParty": [
+          {
+            "id": "12",
+            "href": "http ://serverLocation:port/partyManagement/individual/12",
+            "role": "Employee",
+            "name": "Bob"
+          }
+        ],
+        "id": 12
+      },
+      {
+        "name": "eMailAddress",
+        "privacyUsagePurpose": "ADMIN",
+        "value": "Authorized",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": ""
+        },
+        "relatedParty": [
+          {
+            "id": "10",
+            "href": "http ://serverLocation:port/partyManagement/organization/10",
+            "role": "Administrator",
+            "name": "Orange"
+          }
+        ],
+        "id": 13
+      },
+      {
+        "name": "eMailAddress",
+        "privacyUsagePurpose": "INFORMATION",
+        "value": "Authorized",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": ""
+        },
+        "relatedParty": [
+          {
+            "id": "11",
+            "href": "http ://serverLocation:port/partyManagement/individual/11",
+            "role": "Vendor",
+            "name": "Alice"
+          },
+          {
+            "id": "12",
+            "href": "http ://serverLocation:port/partyManagement/individual/12",
+            "role": "Employee",
+            "name": "Bob"
+          }
+        ],
+        "id": 14
+      },
+      {
+        "name": "eMailAddress",
+        "privacyUsagePurpose": "MARKETING",
+        "value": "Authorized",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": "2016-06-16T15:15:51.209Z"
+        },
+        "relatedParty": [
+          {
+            "id": "11",
+            "href": "http ://serverLocation:port/partyManagement/individual/11",
+            "role": "Vendor",
+            "name": "Alice"
+          }
+        ],
+        "id": 15
+      },
+      {
+        "name": "eMailAddress",
+        "privacyUsagePurpose": "RESEARCH",
+        "value": "Unauthorized",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": ""
+        },
+        "relatedParty": [
+          {
+            "id": "12",
+            "href": "http ://serverLocation:port/partyManagement/individual/12",
+            "role": "Employee",
+            "name": "Bob"
+          }
+        ],
+        "id": 16
       }
     ],
     "partyprivacyprofiletype": [
@@ -183,6 +453,21 @@
         "startDateTime": "2016-03-16T15:15:51.209Z",
         "endDateTime": "",
         "id": 1
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "",
+        "id": 2
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "",
+        "id": 3
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "",
+        "id": 4
       }
     ],
     "contact_contacts_contact__group_contacts": [],
@@ -215,6 +500,66 @@
         "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 4,
         "partyprivacyprofile_partyPrivacyProfileCharValue": 1,
         "id": 4
+      },
+      {
+        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 5,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "id": 5
+      },
+      {
+        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 6,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "id": 6
+      },
+      {
+        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 7,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "id": 7
+      },
+      {
+        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 8,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "id": 8
+      },
+      {
+        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 9,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "id": 9
+      },
+      {
+        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 10,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "id": 10
+      },
+      {
+        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 11,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "id": 11
+      },
+      {
+        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 12,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "id": 12
+      },
+      {
+        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 13,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "id": 13
+      },
+      {
+        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 14,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "id": 14
+      },
+      {
+        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 15,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "id": 15
+      },
+      {
+        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 16,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "id": 16
       }
     ],
     "party_relatedparty_party__partyprivacyprofiletype_relatedparty": [],
@@ -1018,10 +1363,10 @@
     "partyprivacyagreement": {},
     "partyprivacyagreementspecification": {},
     "partyprivacyprofile": {
-      "id": 1
+      "id": 394
     },
     "partyprivacyprofilecharvalue": {
-      "id": 4
+      "id": 16
     },
     "partyprivacyprofiletype": {},
     "partyprivacyprofiletypecharacteristic": {},
@@ -1033,7 +1378,7 @@
     },
     "termorcondition": {},
     "timeperiod": {
-      "id": 1
+      "id": 4
     },
     "contact_contacts_contact__group_contacts": {},
     "agreementitem_productoffering__productoffering_productoffering_productoffering": {},
@@ -1046,7 +1391,7 @@
     "partyprivacyagreement_partyprivacyprofile__partyprivacyprofile_partyprivacyprofile_partyprivacyprofile": {},
     "partyprivacyagreement_partyprivacyprofilecharvalue__partyprivacyprofilecharvalue_partyprivacyprofilecharvalue_partyprivacyprofilecharvalue": {},
     "partyprivacyprofile_partyprivacyprofilecharvalue__partyprivacyprofilecharvalue_partyprivacyprofilecharvalue_partyprivacyprofilecharvalue": {
-      "id": 4
+      "id": 16
     },
     "party_relatedparty_party__partyprivacyprofiletype_relatedparty": {},
     "partyprivacyprofiletype_applicablerole__role_applicablerole_role": {},

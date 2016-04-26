@@ -35,6 +35,11 @@ module.exports.routes = {
     controller:'EnforcePrivacyController',
     action:'find'
   },
+  'post /storetoken':{
+    controller:'StoreTokenController',
+    action:'creater'
+
+  },
   'get /loaderio-f243d9ecea59641d05a9d040a1943447/':{
     controller:'LoaderController',
     action:'verification'

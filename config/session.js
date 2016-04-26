@@ -44,7 +44,7 @@ module.exports.session = {
     *                                                                          *
     ***************************************************************************/
 
-    // adapter: 'redis',
+    adapter: 'redis',
 
     /***************************************************************************
     *                                                                          *
@@ -61,12 +61,12 @@ module.exports.session = {
     // db: 0,
     // pass: <redis auth password>,
     // prefix: 'sess:',
-   // host: 'pub-redis-12764.us-east-1-4.4.ec2.garantiadata.com',
-   // port: 12764,
-    // ttl: <redis session TTL in seconds>,
-    // db: 0,
-   // pass: 'Azlaf@1989',
-   // prefix: 'sess:',
+    host: 'pub-redis-12764.us-east-1-4.4.ec2.garantiadata.com',
+    port: 12764,
+     //ttl: <redis session TTL in seconds>,
+     //db: 0,
+    pass: 'Azlaf@1989',
+    prefix: 'sess:',
 
 
     /***************************************************************************

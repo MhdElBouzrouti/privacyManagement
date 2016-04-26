@@ -23,6 +23,9 @@ module.exports = {
     relatedParty: {
       type:'json'
     },
+    characteristicAgreement:{
+      type:'json'
+    },
     privacyUsagePurpose: {
       type: 'string'
     },

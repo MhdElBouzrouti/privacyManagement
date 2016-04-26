@@ -9,35 +9,35 @@
  * For more information on the Sails logger, check out:
  * http://sailsjs.org/#!/documentation/concepts/Logging
  */
-var winston=require('winston');
+var winston = require('winston');
 require('winston-loggly');
 var customLogger = new winston.Logger();
 
-customLogger.add(winston.transports.Loggly,{
+customLogger.add(winston.transports.Loggly, {
   token: "20dd6918-dc96-4f2c-801d-fbc3332d5e99",
+  level:'verbose',
   subdomain: "Mdelbouzrouti",
   tags: ["PRIVACY-API"],
-  json:true
+  json: true
 });
-customLogger.add(winston.transports.Console,{
-  level:'silly',
-  colorize:true
+customLogger.add(winston.transports.Console, {
+  level: 'silly',
+  colorize: true
 });
-winston.log('info',"Hello World from Node.js!");
 module.exports.log = {
 
   /***************************************************************************
-  *                                                                          *
-  * Valid `level` configs: i.e. the minimum log level to capture with        *
-  * sails.log.*()                                                            *
-  *                                                                          *
-  * The order of precedence for log levels from lowest to highest is:        *
-  * silly, verbose, info, debug, warn, error                                 *
-  *                                                                          *
-  * You may also set the level to "silent" to suppress all logs.             *
-  *                                                                          *
-  ***************************************************************************/
+   *                                                                          *
+   * Valid `level` configs: i.e. the minimum log level to capture with        *
+   * sails.log.*()                                                            *
+   *                                                                          *
+   * The order of precedence for log levels from lowest to highest is:        *
+   * silly, verbose, info, debug, warn, error                                 *
+   *                                                                          *
+   * You may also set the level to "silent" to suppress all logs.             *
+   *                                                                          *
+   ***************************************************************************/
   custom: customLogger,
-  level:'silly',
-  inspect:false
+  level: 'silly',
+  inspect: false
 };

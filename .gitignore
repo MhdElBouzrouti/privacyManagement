@@ -98,7 +98,7 @@ lib-cov
 *.pid
 npm-debug.log
 config/test.json
-config/test2.json
+test/integration/models/PartyPrivacyModel.js
 config/test3.json
 
 

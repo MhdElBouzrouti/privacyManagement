@@ -47,11 +47,14 @@ module.exports = {
 
       // Find by privacyUsagePurpose and name
 
-      var filter = _.find(privacyProfile.partyPrivacyProfileCharValue, {name: name, privacyUsagePurpose: privacyUsagePurpose});
+      var filter = _.find(privacyProfile.partyPrivacyProfileCharValue, {
+        name: name,
+        privacyUsagePurpose: privacyUsagePurpose
+      });
 
       // verification of result od search
-      if(!filter)
-        return res.json(403,{message:'Party Privacy Characteristic (Name or Usage Purpose) does not march'});
+      if (!filter)
+        return res.json(403, {message: 'Party Privacy Characteristic (Name or Usage Purpose) does not march'});
 
       // find related party
 
@@ -59,8 +62,8 @@ module.exports = {
 
       // verification of result Party
 
-      if(!party)
-        return res.json(400,{message:'Related Party does not march'});
+      if (!party)
+        return res.json(400, {message: 'Related Party does not march'});
 
       // find the token
       StoreToken.findOne({privacyProfileId: privacyProfileId}).populateAll().exec(function (err, token) {
@@ -68,12 +71,12 @@ module.exports = {
 
         var result = _.find(token.accessToken, {id: requestingPartyId});
 
-        if(result.length)
-          return res.json(403,{message:''});
+        if (result.length)
+          return res.json(403, {message: ''});
 
         sails.log.debug(result);
         return res.json(200, {token: result.token});
-      })
+      });
 
     });
   }

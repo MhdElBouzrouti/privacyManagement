@@ -7,61 +7,62 @@
 
 module.exports = {
   attributes: {
-    id:{
-      type:'integer',
-      primaryKey:true,
-      unique:true,
-      autoIncrement:true
+    id: {
+      type: 'integer',
+      primaryKey: true,
+      unique: true,
+      autoIncrement: true
     },
-    href:{
-      type:'string'
+    href: {
+      type: 'string'
     },
-    name:{
-      type:'string'
+    name: {
+      type: 'string'
     },
-    description:{
-      type:'string'
+    description: {
+      type: 'string'
     },
-    status:{
-      type:'string'
+    status: {
+      type: 'string'
     },
-    validFor:{
-      model:'timePeriod',
-      required:true
+    validFor: {
+      model: 'timePeriod',
+      required: true
     },
-    agreedByParty:{
-      model:'Party',
-      required:true
+    agreedByParty: {
+      model: 'Party',
+      required: true
     },
-    dateCreated:{
-      type:'datetime'
+    dateCreated: {
+      type: 'datetime'
     },
-    partyPrivacyProfileType:{
-      model:'partyPrivacyProfileType',
-      required:true
+    partyPrivacyProfileType: {
+      model: 'partyPrivacyProfileType',
+      required: true
     },
-    partyPrivacyProfileCharValue:{
-      collection:'partyPrivacyProfileCharValue',
-      required:true
+    partyPrivacyProfileCharValue: {
+      collection: 'partyPrivacyProfileCharValue',
+      required: true
     },
-    agreement:{
-      model:'partyPrivacyAgreement',
-      required:true,
+    agreement: {
+      model: 'partyPrivacyAgreement',
+      required: true,
     }
   },
-  beforeCreate:function (privacyProfile,cb) {
-    //sails.log.debug(privacyProfile);
-    privacyProfile.dateCreated=new Date();
-    privacyProfile.href='http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/'+privacyProfile.id;
-    privacyProfile.status='created';
+  beforeCreate: function (privacyProfile, cb) {
+
+    privacyProfile.dateCreated = new Date();
+    privacyProfile.href = 'http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/' + privacyProfile.id;
+    privacyProfile.status = 'created';
     cb();
   },
-  afterCreate:function (privacyProfile,cb) {
-    privacyProfile.href='http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/'+privacyProfile.id;
-    PartyPrivacyProfile.update({id:privacyProfile.id},{href:privacyProfile.href}).exec(function(err,profile){
-      if(err)
+  afterCreate: function (privacyProfile, cb) {
+    privacyProfile.href = 'http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/' + privacyProfile.id;
+    PartyPrivacyProfile.update({id: privacyProfile.id}, {href: privacyProfile.href}).exec(function (err, profile) {
+      if (err)
         cb(err);
-      sails.log.debug(profile);
+      sails.log.info('[PartPrivacyProfile] :New Privacy Profile Created - ID: ' + privacyProfile.id );
+      sails.log.debug(privacyProfile.id);
       cb();
     });
   }
