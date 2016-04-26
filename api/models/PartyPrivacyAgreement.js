@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-
+  tableName:'ppAgreement',
   attributes: {
     id:{
       type:'string',
@@ -44,7 +44,7 @@ module.exports = {
       type:'datetime'
     },
     agreementSpecification:{
-      model:'partyPrivacyAgreementSpecification'
+      model:'pPAgreeSpec'
     },
     agreementItem:{
       collection:'agreementItem'
@@ -53,7 +53,7 @@ module.exports = {
       collection:'party'
     },
     agreementAuthorization:{
-      collection:'agreementAuthorization'
+      collection:'agreeAuth'
     },
     characteristic:{
       collection:'characteristic'
@@ -65,7 +65,7 @@ module.exports = {
       collection:'partyPrivacyProfile'
     },
     partyPrivacyProfileCharValue:{
-      collection:'partyPrivacyProfileCharValue'
+      collection:'pPProfCharVal'
     }
 
   }

@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-
+  tableName:'ppProfCharVal',
   attributes: {
     id:{
       type:'integer',

@@ -1,26 +1,23 @@
 /**
- * AgreementSpecification.js
+ * AgreementAuthorization.js
  *
  * @description :: TODO: You might write a short summary of how this model works and what it represents here.
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
  */
 
 module.exports = {
-
+  tableName:'AgreeAuthoriz',
   attributes: {
-    id:{
-      type:'string',
-      primaryKey:true
-    },
-    name:{
+    state:{
       type:'string'
     },
-    href:{
+    signatureRepresentation:{
       type:'string'
     },
-    description:{
-      type:'string'
+    date:{
+      type:'datetime'
     }
+
   }
 };
 

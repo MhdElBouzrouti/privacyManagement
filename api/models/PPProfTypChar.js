@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-
+  tableName:'pppTypeCharac',
   attributes: {
     id: {
       type: 'string',

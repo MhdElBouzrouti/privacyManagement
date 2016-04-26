@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-
+  tableName:'AssoAgreem',
   attributes: {
     id:{
       type:'string',

@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-
+  tableName:'ppProfType',
   attributes: {
     id:{
       type:'string',
@@ -39,8 +39,8 @@ module.exports = {
     applicableRole:{
       collection:'role'
     },
-    partyPrivacyProfileTypeCharacteristic:{
-      collection:'partyPrivacyProfileTypeCharacteristic'
+    partyPrProfTypChara:{
+      collection:'pPProfTypChar'
     }
   },
   beforeCreate:function (privacyProfileType, cb) {

@@ -41,7 +41,7 @@ module.exports = {
       required: true
     },
     partyPrivacyProfileCharValue: {
-      collection: 'partyPrivacyProfileCharValue',
+      collection: 'pPProfCharVal',
       required: true
     },
     agreement: {

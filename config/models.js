@@ -18,7 +18,7 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
   //connection: 'privacyMongodb',
-  connection:'localDiskDb',
+  connection:'privacyMongodb',
   autoCreatedAt:false,
   autoUpdatedAt:false,
   schema:true,
@@ -32,6 +32,6 @@ module.exports.models = {
   * See http://sailsjs.org/#!/documentation/concepts/ORM/model-settings.html  *
   *                                                                          *
   ***************************************************************************/
-  migrate: 'safe'
+  migrate: 'alter'
 
 };

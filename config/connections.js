@@ -28,9 +28,9 @@ module.exports.connections = {
   * Installed by default.                                                    *
   *                                                                          *
   ***************************************************************************/
-  localDiskDb: {
-    adapter: 'sails-disk',
-  },
+  //localDiskDb: {
+  //  adapter: 'sails-disk',
+  //},
 
   /***************************************************************************
   *                                                                          *
@@ -83,10 +83,10 @@ module.exports.connections = {
   // }
     privacyMongodb: {
     adapter: 'sails-mongo',
-    host:  process.env.OPENSHIFT_MONGODB_DB_HOST,
-    port:  process.env.OPENSHIFT_MONGODB_DB_PORT,
-    user: 'admin',
-    password: 'pAgVschtAKds',
+    host:  'ds011158.mlab.com',
+    port:  11158,
+    user: 'orange',
+    password: 'Azlaf0000',
     database: 'privacy'
   }
 
