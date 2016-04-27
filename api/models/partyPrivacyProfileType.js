@@ -9,8 +9,10 @@ module.exports = {
   tableName:'ppProfType',
   attributes: {
     id:{
-      type:'string',
-      primaryKey:true
+      type:'integer',
+      primaryKey:true,
+      autoIncrement: true,
+      index: true
     },
     name:{
       type:'string'

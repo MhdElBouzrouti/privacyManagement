@@ -11,7 +11,8 @@ module.exports = {
       type: 'integer',
       primaryKey: true,
       unique: true,
-      autoIncrement: true
+      autoIncrement: true,
+      index: true
     },
     href: {
       type: 'string'

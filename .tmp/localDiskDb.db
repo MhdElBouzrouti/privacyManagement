@@ -1,30 +1,8 @@
 {
   "data": {
-    "contact": [],
-    "group": [],
-    "accesstoken": [
-      {
-        "id": "nurse#111",
-        "role": "nurse",
-        "token": "ABCDEFGH"
-      },
-      {
-        "id": "doctor#111",
-        "role": "doctor",
-        "token": "ABCDEFGH"
-      },
-      {
-        "id": "user#111",
-        "role": "user",
-        "token": "ABCDEFGH"
-      }
-    ],
     "agreementauthorization": [],
-    "agreementitem": [],
     "associatedagreement": [],
     "bundledproductoffering": [],
-    "characteristic": [],
-    "party": [],
     "partyprivacyagreement": [
       {
         "id": "6810",
@@ -33,56 +11,6 @@
       }
     ],
     "partyprivacyagreementspecification": [],
-    "partyprivacyprofile": [
-      {
-        "id": 1,
-        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/1",
-        "name": "John Doe's Privacy Profile",
-        "description": "This is John Does Privacy profile",
-        "status": "created",
-        "validFor": 1,
-        "agreedByParty": "userid#1234",
-        "dateCreated": "2016-04-14T14:59:51.919Z",
-        "partyPrivacyProfileType": "103",
-        "agreement": "6810"
-      },
-      {
-        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/394",
-        "id": 394,
-        "name": "John Doe's Privacy Profile",
-        "description": "This is John Does Privacy profile",
-        "dateCreated": "2016-04-26T09:16:44.181Z",
-        "status": "created",
-        "validFor": 4,
-        "agreedByParty": "2345",
-        "partyPrivacyProfileType": "103",
-        "agreement": "6810"
-      },
-      {
-        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/394",
-        "id": 394,
-        "name": "John Doe's Privacy Profile",
-        "description": "This is John Does Privacy profile",
-        "dateCreated": "2016-04-26T09:16:44.181Z",
-        "status": "created",
-        "validFor": 4,
-        "agreedByParty": "2345",
-        "partyPrivacyProfileType": "103",
-        "agreement": "6810"
-      },
-      {
-        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/394",
-        "id": 394,
-        "name": "John Doe's Privacy Profile",
-        "description": "This is John Does Privacy profile",
-        "dateCreated": "2016-04-26T09:16:44.181Z",
-        "status": "created",
-        "validFor": 4,
-        "agreedByParty": "2345",
-        "partyPrivacyProfileType": "103",
-        "agreement": "6810"
-      }
-    ],
     "partyprivacyprofilecharvalue": [
       {
         "id": 1,
@@ -439,51 +367,7 @@
     ],
     "partyprivacyprofiletypecharvalue": [],
     "partyprivacyprofiletypecharacteristic": [],
-    "productoffering": [],
-    "role": [],
-    "storetoken": [
-      {
-        "privacyProfileId": 1,
-        "id": 1
-      }
-    ],
-    "termorcondition": [],
-    "timeperiod": [
-      {
-        "startDateTime": "2016-03-16T15:15:51.209Z",
-        "endDateTime": "",
-        "id": 1
-      },
-      {
-        "startDateTime": "2016-03-16T15:15:51.209Z",
-        "endDateTime": "",
-        "id": 2
-      },
-      {
-        "startDateTime": "2016-03-16T15:15:51.209Z",
-        "endDateTime": "",
-        "id": 3
-      },
-      {
-        "startDateTime": "2016-03-16T15:15:51.209Z",
-        "endDateTime": "",
-        "id": 4
-      },
-      {
-        "startDateTime": "2016-03-16T15:15:51.209Z",
-        "endDateTime": "",
-        "id": 5
-      }
-    ],
-    "contact_contacts_contact__group_contacts": [],
-    "agreementitem_productoffering__productoffering_productoffering_productoffering": [],
-    "agreementitem_termorcondition__termorcondition_termorcondition_termorcondition": [],
-    "agreementitem_agreementitem_agreementitem__partyprivacyagreement_agreementitem": [],
-    "party_engagedpartyrole_party__partyprivacyagreement_engagedpartyrole": [],
     "agreementauthorization_agreementauthorization_agreementauthorization__partyprivacyagreement_agreementauthorization": [],
-    "characteristic_characteristic_characteristic__partyprivacyagreement_characteristic": [],
-    "partyprivacyagreement_associatedagreement_partyprivacyagreement__partyprivacyagreement_associatedagreement": [],
-    "partyprivacyagreement_partyprivacyprofile__partyprivacyprofile_partyprivacyprofile_partyprivacyprofile": [],
     "partyprivacyagreement_partyprivacyprofilecharvalue__partyprivacyprofilecharvalue_partyprivacyprofilecharvalue_partyprivacyprofilecharvalue": [],
     "partyprivacyprofile_partyprivacyprofilecharvalue__partyprivacyprofilecharvalue_partyprivacyprofilecharvalue_partyprivacyprofilecharvalue": [
       {
@@ -567,9 +451,102 @@
         "id": 16
       }
     ],
+    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__partyprivacyprofiletypecharacteristic_partyprivacyprofiletypecharacteristic_partyprivacyprofiletypecharacteristic": [],
+    "contact": [],
+    "group": [],
+    "accesstoken": [
+      {
+        "id": "nurse#111",
+        "role": "nurse",
+        "token": "ABCDEFGH"
+      },
+      {
+        "id": "doctor#111",
+        "role": "doctor",
+        "token": "ABCDEFGH"
+      },
+      {
+        "id": "user#111",
+        "role": "user",
+        "token": "ABCDEFGH"
+      }
+    ],
+    "AgreeAuthoriz": [],
+    "agreementitem": [],
+    "AssoAgreem": [],
+    "BundProdOffer": [],
+    "characteristic": [],
+    "party": [],
+    "ppAgreement": [],
+    "partyprivacyprofile": [
+      {
+        "id": 1,
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/1",
+        "name": "John Doe's Privacy Profile",
+        "description": "This is John Does Privacy profile",
+        "status": "created",
+        "validFor": 1,
+        "agreedByParty": "userid#1234",
+        "dateCreated": "2016-04-14T14:59:51.919Z",
+        "partyPrivacyProfileType": 103,
+        "agreement": "6810"
+      }
+    ],
+    "ppProfType": [],
+    "ppAgreSpec": [],
+    "ppProfCharVal": [],
+    "pppTypeCharac": [],
+    "pppTypeCharVal": [],
+    "productoffering": [],
+    "role": [],
+    "storetoken": [
+      {
+        "privacyProfileId": 1,
+        "id": 1
+      }
+    ],
+    "termorcondition": [],
+    "timeperiod": [
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "",
+        "id": 1
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "",
+        "id": 2
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "",
+        "id": 3
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "",
+        "id": 4
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "",
+        "id": 5
+      }
+    ],
+    "contact_contacts_contact__group_contacts": [],
+    "agreementitem_productoffering__productoffering_productoffering_productoffering": [],
+    "agreementitem_termorcondition__termorcondition_termorcondition_termorcondition": [],
+    "agreementitem_agreementitem_agreementitem__partyprivacyagreement_agreementitem": [],
+    "party_engagedpartyrole_party__partyprivacyagreement_engagedpartyrole": [],
+    "agreeauth_agreementauthorization_agreeauth__partyprivacyagreement_agreementauthorization": [],
+    "characteristic_characteristic_characteristic__partyprivacyagreement_characteristic": [],
+    "partyprivacyagreement_associatedagreement_partyprivacyagreement__partyprivacyagreement_associatedagreement": [],
+    "partyprivacyagreement_partyprivacyprofile__partyprivacyprofile_partyprivacyprofile_partyprivacyprofile": [],
+    "partyprivacyagreement_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": [],
+    "partyprivacyprofile_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": [],
     "party_relatedparty_party__partyprivacyprofiletype_relatedparty": [],
     "partyprivacyprofiletype_applicablerole__role_applicablerole_role": [],
-    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__partyprivacyprofiletypecharacteristic_partyprivacyprofiletypecharacteristic_partyprivacyprofiletypecharacteristic": [],
+    "partyprivacyprofiletype_partyprproftypchara__ppproftypchar_partyprproftypchara_ppproftypchar": [],
     "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": [],
     "accesstoken_accesstoken_accesstoken__storetoken_accesstoken": [
       {
@@ -590,41 +567,6 @@
     ]
   },
   "schema": {
-    "contact": {
-      "group": {
-        "type": "integer",
-        "model": "group",
-        "foreignKey": true,
-        "alias": "group"
-      },
-      "id": {
-        "type": "integer",
-        "autoIncrement": true,
-        "primaryKey": true,
-        "unique": true
-      }
-    },
-    "group": {
-      "id": {
-        "type": "integer",
-        "autoIncrement": true,
-        "primaryKey": true,
-        "unique": true
-      }
-    },
-    "accesstoken": {
-      "id": {
-        "type": "string",
-        "primaryKey": true,
-        "unique": true
-      },
-      "role": {
-        "type": "string"
-      },
-      "token": {
-        "type": "string"
-      }
-    },
     "agreementauthorization": {
       "state": {
         "type": "string"
@@ -635,14 +577,6 @@
       "date": {
         "type": "datetime"
       },
-      "id": {
-        "type": "integer",
-        "autoIncrement": true,
-        "primaryKey": true,
-        "unique": true
-      }
-    },
-    "agreementitem": {
       "id": {
         "type": "integer",
         "autoIncrement": true,
@@ -673,37 +607,6 @@
         "type": "string"
       },
       "href": {
-        "type": "string"
-      }
-    },
-    "characteristic": {
-      "name": {
-        "type": "string"
-      },
-      "value": {
-        "type": "string"
-      },
-      "id": {
-        "type": "integer",
-        "autoIncrement": true,
-        "primaryKey": true,
-        "unique": true
-      }
-    },
-    "party": {
-      "id": {
-        "type": "integer",
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true
-      },
-      "href": {
-        "type": "string"
-      },
-      "name": {
-        "type": "string"
-      },
-      "role": {
         "type": "string"
       }
     },
@@ -767,53 +670,6 @@
       },
       "description": {
         "type": "string"
-      }
-    },
-    "partyprivacyprofile": {
-      "id": {
-        "type": "integer",
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true
-      },
-      "href": {
-        "type": "string"
-      },
-      "name": {
-        "type": "string"
-      },
-      "description": {
-        "type": "string"
-      },
-      "status": {
-        "type": "string"
-      },
-      "validFor": {
-        "type": "integer",
-        "model": "timeperiod",
-        "foreignKey": true,
-        "alias": "validFor"
-      },
-      "agreedByParty": {
-        "type": "string",
-        "model": "party",
-        "foreignKey": true,
-        "alias": "agreedByParty"
-      },
-      "dateCreated": {
-        "type": "datetime"
-      },
-      "partyPrivacyProfileType": {
-        "type": "string",
-        "model": "partyprivacyprofiletype",
-        "foreignKey": true,
-        "alias": "partyPrivacyProfileType"
-      },
-      "agreement": {
-        "type": "string",
-        "model": "partyprivacyagreement",
-        "foreignKey": true,
-        "alias": "agreement"
       }
     },
     "partyprivacyprofilecharvalue": {
@@ -938,6 +794,447 @@
       },
       "relatedParty": {
         "type": "json"
+      }
+    },
+    "agreementauthorization_agreementauthorization_agreementauthorization__partyprivacyagreement_agreementauthorization": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "partyprivacyagreement_agreementAuthorization": {
+        "type": "string",
+        "foreignKey": true,
+        "references": "partyprivacyagreement",
+        "on": "id",
+        "via": "agreementauthorization_agreementAuthorization_agreementauthorization"
+      },
+      "agreementauthorization_agreementAuthorization_agreementauthorization": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "agreementauthorization",
+        "on": "id",
+        "via": "partyprivacyagreement_agreementAuthorization"
+      }
+    },
+    "partyprivacyagreement_partyprivacyprofilecharvalue__partyprivacyprofilecharvalue_partyprivacyprofilecharvalue_partyprivacyprofilecharvalue": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "partyprivacyagreement_partyPrivacyProfileCharValue": {
+        "type": "string",
+        "foreignKey": true,
+        "references": "partyprivacyagreement",
+        "on": "id",
+        "via": "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue"
+      },
+      "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "partyprivacyprofilecharvalue",
+        "on": "id",
+        "via": "partyprivacyagreement_partyPrivacyProfileCharValue"
+      }
+    },
+    "partyprivacyprofile_partyprivacyprofilecharvalue__partyprivacyprofilecharvalue_partyprivacyprofilecharvalue_partyprivacyprofilecharvalue": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "partyprivacyprofile_partyPrivacyProfileCharValue": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "partyprivacyprofile",
+        "on": "id",
+        "via": "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue"
+      },
+      "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "partyprivacyprofilecharvalue",
+        "on": "id",
+        "via": "partyprivacyprofile_partyPrivacyProfileCharValue"
+      }
+    },
+    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__partyprivacyprofiletypecharacteristic_partyprivacyprofiletypecharacteristic_partyprivacyprofiletypecharacteristic": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": {
+        "type": "string",
+        "foreignKey": true,
+        "references": "partyprivacyprofiletype",
+        "on": "id",
+        "via": "partyprivacyprofiletypecharacteristic_partyPrivacyProfileTypeCharacteristic_partyprivacyprofiletypecharacteristic"
+      },
+      "partyprivacyprofiletypecharacteristic_partyPrivacyProfileTypeCharacteristic_partyprivacyprofiletypecharacteristic": {
+        "type": "string",
+        "foreignKey": true,
+        "references": "partyprivacyprofiletypecharacteristic",
+        "on": "id",
+        "via": "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic"
+      }
+    },
+    "contact": {
+      "group": {
+        "type": "integer",
+        "model": "group",
+        "foreignKey": true,
+        "alias": "group"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      }
+    },
+    "group": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      }
+    },
+    "accesstoken": {
+      "id": {
+        "type": "string",
+        "primaryKey": true,
+        "unique": true
+      },
+      "role": {
+        "type": "string"
+      },
+      "token": {
+        "type": "string"
+      }
+    },
+    "AgreeAuthoriz": {
+      "state": {
+        "type": "string"
+      },
+      "signatureRepresentation": {
+        "type": "string"
+      },
+      "date": {
+        "type": "datetime"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      }
+    },
+    "agreementitem": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      }
+    },
+    "AssoAgreem": {
+      "id": {
+        "type": "string",
+        "primaryKey": true,
+        "unique": true
+      },
+      "href": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      }
+    },
+    "BundProdOffer": {
+      "id": {
+        "type": "string",
+        "primaryKey": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "href": {
+        "type": "string"
+      }
+    },
+    "characteristic": {
+      "name": {
+        "type": "string"
+      },
+      "value": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      }
+    },
+    "party": {
+      "id": {
+        "type": "integer",
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true
+      },
+      "href": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "role": {
+        "type": "string"
+      }
+    },
+    "ppAgreement": {
+      "id": {
+        "type": "string",
+        "primaryKey": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "version": {
+        "type": "string"
+      },
+      "documentNumber": {
+        "type": "integer"
+      },
+      "status": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      },
+      "statementOfIntent": {
+        "type": "string"
+      },
+      "agreementPeriod": {
+        "type": "integer",
+        "model": "timeperiod",
+        "foreignKey": true,
+        "alias": "agreementPeriod"
+      },
+      "description": {
+        "type": "string"
+      },
+      "href": {
+        "type": "string"
+      },
+      "initialDate": {
+        "type": "datetime"
+      },
+      "agreementSpecification": {
+        "type": "string",
+        "model": "ppagreespec",
+        "foreignKey": true,
+        "alias": "agreementSpecification"
+      }
+    },
+    "partyprivacyprofile": {
+      "id": {
+        "type": "integer",
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "index": true
+      },
+      "href": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string"
+      },
+      "validFor": {
+        "type": "integer",
+        "model": "timeperiod",
+        "foreignKey": true,
+        "alias": "validFor"
+      },
+      "agreedByParty": {
+        "type": "string",
+        "model": "party",
+        "foreignKey": true,
+        "alias": "agreedByParty"
+      },
+      "dateCreated": {
+        "type": "datetime"
+      },
+      "partyPrivacyProfileType": {
+        "type": "integer",
+        "model": "partyprivacyprofiletype",
+        "foreignKey": true,
+        "alias": "partyPrivacyProfileType"
+      },
+      "agreement": {
+        "type": "string",
+        "model": "partyprivacyagreement",
+        "foreignKey": true,
+        "alias": "agreement"
+      }
+    },
+    "ppProfType": {
+      "id": {
+        "type": "integer",
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "index": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "href": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "lastUpdate": {
+        "type": "datetime"
+      },
+      "version": {
+        "type": "string"
+      },
+      "lifecycleStatus": {
+        "type": "string"
+      },
+      "validFor": {
+        "type": "integer",
+        "model": "timeperiod",
+        "foreignKey": true,
+        "alias": "validFor"
+      }
+    },
+    "ppAgreSpec": {
+      "id": {
+        "type": "string",
+        "primaryKey": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "href": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      }
+    },
+    "ppProfCharVal": {
+      "id": {
+        "type": "integer",
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "value": {
+        "type": "string"
+      },
+      "relatedParty": {
+        "type": "json"
+      },
+      "characteristicAgreement": {
+        "type": "json"
+      },
+      "privacyUsagePurpose": {
+        "type": "string"
+      },
+      "validFor": {
+        "type": "json"
+      }
+    },
+    "pppTypeCharac": {
+      "id": {
+        "type": "string",
+        "primaryKey": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "criticalityLevel": {
+        "type": "string",
+        "enum": [
+          "low",
+          "high"
+        ]
+      },
+      "privacyType": {
+        "type": "string"
+      },
+      "privacyUsagePurpose": {
+        "type": "string"
+      },
+      "validFor": {
+        "type": "json"
+      },
+      "partyPrivacyProfileTypeCharValue": {
+        "type": "json"
+      },
+      "relatedParty": {
+        "type": "json"
+      }
+    },
+    "pppTypeCharVal": {
+      "value": {
+        "type": "string"
+      },
+      "valueType": {
+        "type": "string"
+      },
+      "default": {
+        "type": "boolean"
+      },
+      "validityDuration": {
+        "type": "string"
+      },
+      "unitOfMeasure": {
+        "type": "string"
+      },
+      "fromValue": {
+        "type": "string"
+      },
+      "toValue": {
+        "type": "string"
+      },
+      "rangeInterval": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
       }
     },
     "productoffering": {
@@ -1115,7 +1412,7 @@
         "via": "partyprivacyagreement_engagedPartyRole"
       }
     },
-    "agreementauthorization_agreementauthorization_agreementauthorization__partyprivacyagreement_agreementauthorization": {
+    "agreeauth_agreementauthorization_agreeauth__partyprivacyagreement_agreementauthorization": {
       "id": {
         "primaryKey": true,
         "unique": true,
@@ -1127,12 +1424,12 @@
         "foreignKey": true,
         "references": "partyprivacyagreement",
         "on": "id",
-        "via": "agreementauthorization_agreementAuthorization_agreementauthorization"
+        "via": "agreeauth_agreementAuthorization_agreeauth"
       },
-      "agreementauthorization_agreementAuthorization_agreementauthorization": {
+      "agreeauth_agreementAuthorization_agreeauth": {
         "type": "integer",
         "foreignKey": true,
-        "references": "agreementauthorization",
+        "references": "agreeauth",
         "on": "id",
         "via": "partyprivacyagreement_agreementAuthorization"
       }
@@ -1203,7 +1500,7 @@
         "via": "partyprivacyagreement_partyPrivacyProfile"
       }
     },
-    "partyprivacyagreement_partyprivacyprofilecharvalue__partyprivacyprofilecharvalue_partyprivacyprofilecharvalue_partyprivacyprofilecharvalue": {
+    "partyprivacyagreement_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": {
       "id": {
         "primaryKey": true,
         "unique": true,
@@ -1215,17 +1512,17 @@
         "foreignKey": true,
         "references": "partyprivacyagreement",
         "on": "id",
-        "via": "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue"
+        "via": "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval"
       },
-      "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": {
+      "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval": {
         "type": "integer",
         "foreignKey": true,
-        "references": "partyprivacyprofilecharvalue",
+        "references": "ppprofcharval",
         "on": "id",
         "via": "partyprivacyagreement_partyPrivacyProfileCharValue"
       }
     },
-    "partyprivacyprofile_partyprivacyprofilecharvalue__partyprivacyprofilecharvalue_partyprivacyprofilecharvalue_partyprivacyprofilecharvalue": {
+    "partyprivacyprofile_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": {
       "id": {
         "primaryKey": true,
         "unique": true,
@@ -1237,12 +1534,12 @@
         "foreignKey": true,
         "references": "partyprivacyprofile",
         "on": "id",
-        "via": "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue"
+        "via": "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval"
       },
-      "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": {
+      "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval": {
         "type": "integer",
         "foreignKey": true,
-        "references": "partyprivacyprofilecharvalue",
+        "references": "ppprofcharval",
         "on": "id",
         "via": "partyprivacyprofile_partyPrivacyProfileCharValue"
       }
@@ -1255,7 +1552,7 @@
         "type": "integer"
       },
       "partyprivacyprofiletype_relatedParty": {
-        "type": "string",
+        "type": "integer",
         "foreignKey": true,
         "references": "partyprivacyprofiletype",
         "on": "id",
@@ -1277,7 +1574,7 @@
         "type": "integer"
       },
       "partyprivacyprofiletype_applicableRole": {
-        "type": "string",
+        "type": "integer",
         "foreignKey": true,
         "references": "partyprivacyprofiletype",
         "on": "id",
@@ -1291,26 +1588,26 @@
         "via": "partyprivacyprofiletype_applicableRole"
       }
     },
-    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__partyprivacyprofiletypecharacteristic_partyprivacyprofiletypecharacteristic_partyprivacyprofiletypecharacteristic": {
+    "partyprivacyprofiletype_partyprproftypchara__ppproftypchar_partyprproftypchara_ppproftypchar": {
       "id": {
         "primaryKey": true,
         "unique": true,
         "autoIncrement": true,
         "type": "integer"
       },
-      "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": {
-        "type": "string",
+      "partyprivacyprofiletype_partyPrProfTypChara": {
+        "type": "integer",
         "foreignKey": true,
         "references": "partyprivacyprofiletype",
         "on": "id",
-        "via": "partyprivacyprofiletypecharacteristic_partyPrivacyProfileTypeCharacteristic_partyprivacyprofiletypecharacteristic"
+        "via": "ppproftypchar_partyPrProfTypChara_ppproftypchar"
       },
-      "partyprivacyprofiletypecharacteristic_partyPrivacyProfileTypeCharacteristic_partyprivacyprofiletypecharacteristic": {
+      "ppproftypchar_partyPrProfTypChara_ppproftypchar": {
         "type": "string",
         "foreignKey": true,
-        "references": "partyprivacyprofiletypecharacteristic",
+        "references": "ppproftypchar",
         "on": "id",
-        "via": "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic"
+        "via": "partyprivacyprofiletype_partyPrProfTypChara"
       }
     },
     "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": {
@@ -1407,6 +1704,19 @@
     "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": {},
     "accesstoken_accesstoken_accesstoken__storetoken_accesstoken": {
       "id": 3
-    }
+    },
+    "AgreeAuthoriz": {},
+    "AssoAgreem": {},
+    "BundProdOffer": {},
+    "ppAgreement": {},
+    "ppProfType": {},
+    "ppAgreSpec": {},
+    "ppProfCharVal": {},
+    "pppTypeCharac": {},
+    "pppTypeCharVal": {},
+    "agreeauth_agreementauthorization_agreeauth__partyprivacyagreement_agreementauthorization": {},
+    "partyprivacyagreement_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": {},
+    "partyprivacyprofile_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": {},
+    "partyprivacyprofiletype_partyprproftypchara__ppproftypchar_partyprproftypchara_ppproftypchar": {}
   }
 }
