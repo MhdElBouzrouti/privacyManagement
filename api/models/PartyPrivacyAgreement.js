@@ -73,7 +73,7 @@ module.exports = {
 
   }
   ,
-  beforeCreate:function (agreement,cb) {
+  afterCreate:function (agreement,cb) {
     agreement.href='http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/'+agreement.id;
     cb();
   }
