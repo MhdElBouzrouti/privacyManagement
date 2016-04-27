@@ -6,53 +6,55 @@
  */
 
 module.exports = {
-  tableName:'ppProfType',
+  tableName: 'ppProfType',
   attributes: {
-    id:{
-      type:'integer',
-      primaryKey:true,
+    id: {
+      type: 'integer',
+      primaryKey: true,
       autoIncrement: true,
       index: true
     },
-    name:{
-      type:'string'
+    name: {
+      type: 'string'
     },
-    href:{
-      type:'string'
+    href: {
+      type: 'string'
     },
-    description:{
-      type:'string'
+    description: {
+      type: 'string'
     },
-    lastUpdate:{
-      type:'datetime'
+    lastUpdate: {
+      type: 'datetime'
     },
-    version:{
-      type:'string'
+    version: {
+      type: 'string'
     },
-    lifecycleStatus:{
-      type:'string'
+    lifecycleStatus: {
+      type: 'string'
     },
-    validFor:{
-      model:'timePeriod'
+    validFor: {
+      model: 'timePeriod'
     },
-    relatedParty:{
-      type:'json'
+    relatedParty: {
+      type: 'json'
     },
-    applicableRole:{
-      type:'json'
+    applicableRole: {
+      type: 'json'
     },
-    partyPrivacyProfileTypeCharacteristic:{
-      collection:'pPProfTypChar'
+    partyPrivacyProfileTypeCharacteristic: {
+      collection: 'pPProfTypChar'
     }
   },
-  afterCreate:function (privacyProfileType, cb) {
-    privacyProfileType.lastUpdate=new Date();
-    privacyProfileType.href='http://privacy-orangegroup.rhcloud.com/partyPrivacyProfileType/'+privacyProfileType.id;
+  afterCreate: function (privacyProfileType, cb) {
+    privacyProfileType.lastUpdate = new Date();
+    privacyProfileType.href = 'http://privacy-orangegroup.rhcloud.com/partyPrivacyProfileType/' + privacyProfileType.id;
+
     PartyPrivacyProfileType.update({id: privacyProfileType.id}, {href: privacyProfileType.href}).exec(function (err, profile) {
       if (err)
         cb(err);
-      sails.log.info('[PartPrivacyProfileType] :New Privacy Profile Created - ID: ' + privacyProfileType.id );
-      sails.log.debug(privacyProfileType.id);
+      if (!profile)
+        return cb('Error');
+      sails.log.info('[PartPrivacyProfileType] :New Privacy Profile Created - ID: ' + profile.id);
       cb();
     });
   }
