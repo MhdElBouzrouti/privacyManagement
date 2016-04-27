@@ -48,7 +48,13 @@ module.exports = {
   afterCreate:function (privacyProfileType, cb) {
     privacyProfileType.lastUpdate=new Date();
     privacyProfileType.href='http://privacy-orangegroup.rhcloud.com/partyPrivacyProfileType/'+privacyProfileType.id;
-    cb();
+    privacyProfileType.update({id: privacyProfileType.id}, {href: privacyProfileType.href}).exec(function (err, profile) {
+      if (err)
+        cb(err);
+      sails.log.info('[PartPrivacyProfileType] :New Privacy Profile Created - ID: ' + privacyProfileType.id );
+      sails.log.debug(privacyProfileType.id);
+      cb();
+    });
   }
 };
 

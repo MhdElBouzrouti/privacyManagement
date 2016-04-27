@@ -75,7 +75,13 @@ module.exports = {
   ,
   afterCreate:function (agreement,cb) {
     agreement.href='http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/'+agreement.id;
-    cb();
+    agreement.update({id: agreement.id}, {href: agreement.href}).exec(function (err, agreement) {
+      if (err)
+        cb(err);
+      sails.log.info('[PartPrivacyProfileType] :New Privacy Profile Created - ID: ' + agreement.id );
+      sails.log.debug(agreement.id);
+      cb();
+    });
   }
 };
 
