@@ -14,4 +14,4 @@ deploy:
   user: "mohammed.elbouzrouti@orange.com"
   password: "Azlaf@1989"
   domain: "orangegroup"
-  app: privacy
+  app: test
