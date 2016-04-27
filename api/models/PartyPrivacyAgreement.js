@@ -8,9 +8,12 @@
 module.exports = {
   tableName:'ppAgreement',
   attributes: {
-    id:{
-      type:'string',
-      primaryKey:true
+    id: {
+      type: 'integer',
+      primaryKey: true,
+      unique: true,
+      autoIncrement: true,
+      index: true
     },
     name:{
       type:'string'
@@ -47,25 +50,25 @@ module.exports = {
       model:'pPAgreeSpec'
     },
     agreementItem:{
-      collection:'agreementItem'
+      type:'json'
     },
     engagedPartyRole:{
-      collection:'party'
+      type:'json'
     },
     agreementAuthorization:{
-      collection:'agreeAuth'
+      type:'json'
     },
     characteristic:{
-      collection:'characteristic'
+      type:'json'
     },
     associatedAgreement:{
-      collection:'partyPrivacyAgreement'
+      type:'json'
     },
     partyPrivacyProfile:{
-      collection:'partyPrivacyProfile'
+      type:'json'
     },
     partyPrivacyProfileCharValue:{
-      collection:'pPProfCharVal'
+      type:'json'
     }
 
   }

@@ -1,802 +1,2900 @@
 {
   "data": {
-    "agreementauthorization": [],
-    "associatedagreement": [],
-    "bundledproductoffering": [],
-    "partyprivacyagreement": [
+    "party_engagedpartyrole_party__partyprivacyagreement_engagedpartyrole": [],
+    "agreementitem_agreementitem_agreementitem__partyprivacyagreement_agreementitem": [
       {
-        "id": "6810",
-        "type": "commercial",
-        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/6810"
+        "agreementitem_agreementItem_agreementitem": 1,
+        "partyprivacyagreement_agreementItem": 2,
+        "id": 1
       }
     ],
-    "partyprivacyagreementspecification": [],
-    "partyprivacyprofilecharvalue": [
+    "agreeauth_agreementauthorization_agreeauth__partyprivacyagreement_agreementauthorization": [
+      {
+        "agreeauth_agreementAuthorization_agreeauth": 1,
+        "partyprivacyagreement_agreementAuthorization": 2,
+        "id": 1
+      },
+      {
+        "agreeauth_agreementAuthorization_agreeauth": 2,
+        "partyprivacyagreement_agreementAuthorization": 3,
+        "id": 2
+      }
+    ],
+    "characteristic_characteristic_characteristic__partyprivacyagreement_characteristic": [
+      {
+        "characteristic_characteristic_characteristic": 1,
+        "partyprivacyagreement_characteristic": 2,
+        "id": 1
+      },
+      {
+        "characteristic_characteristic_characteristic": 2,
+        "partyprivacyagreement_characteristic": 3,
+        "id": 2
+      },
+      {
+        "characteristic_characteristic_characteristic": 3,
+        "partyprivacyagreement_characteristic": 4,
+        "id": 3
+      }
+    ],
+    "partyprivacyagreement_associatedagreement_partyprivacyagreement__partyprivacyagreement_associatedagreement": [],
+    "partyprivacyagreement_partyprivacyprofile__partyprivacyprofile_partyprivacyprofile_partyprivacyprofile": [],
+    "partyprivacyagreement_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": [
+      {
+        "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval": 1,
+        "partyprivacyagreement_partyPrivacyProfileCharValue": 2,
+        "id": 1
+      },
+      {
+        "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval": 2,
+        "partyprivacyagreement_partyPrivacyProfileCharValue": 3,
+        "id": 2
+      },
+      {
+        "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval": 3,
+        "partyprivacyagreement_partyPrivacyProfileCharValue": 4,
+        "id": 3
+      }
+    ],
+    "accesstoken": [],
+    "AgreeAuthoriz": [
+      {
+        "state": "approved",
+        "signatureRepresentation": "Digital",
+        "date": "2016-03-16T15:15:51.211Z",
+        "id": 1
+      },
+      {
+        "state": "approved",
+        "signatureRepresentation": "Digital",
+        "date": "2016-03-16T15:15:51.211Z",
+        "id": 2
+      }
+    ],
+    "agreementitem": [
+      {
+        "id": 1
+      },
+      {
+        "id": 2
+      }
+    ],
+    "AssoAgreem": [],
+    "BundProdOffer": [
+      {
+        "id": "7120",
+        "name": "Magic Offer",
+        "href": "https://host:port/productOffering/bundledProductOffering/7120"
+      },
+      {
+        "id": "7120",
+        "name": "Magic Offer",
+        "href": "https://host:port/productOffering/bundledProductOffering/7120"
+      }
+    ],
+    "characteristic": [
+      {
+        "name": "country",
+        "value": "France",
+        "id": 1
+      },
+      {
+        "name": "country",
+        "value": "France",
+        "id": 2
+      },
+      {
+        "name": "country",
+        "value": "France",
+        "id": 3
+      }
+    ],
+    "ppAgreSpec": [
+      {
+        "id": "8139",
+        "name": "General Agreement Specification",
+        "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreementSpecification/8139",
+        "description": "This agreement specification defines the rules of privacy to be followed by each party"
+      }
+    ],
+    "ppProfCharVal": [
       {
         "id": 1,
-        "name": "RegistrationData",
+        "name": "eMailAddress",
         "value": "Authorized",
         "relatedParty": [
           {
-            "id": "10",
-            "href": "http ://ericssonserver:port/partyManagement/individual/10",
-            "role": "Administrator"
-          },
-          {
-            "id": "userid#1234",
-            "href": "http ://serverLocation:port/partyManagement/individual/userid#1234",
-            "role": "Customer"
+            "id": "11",
+            "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+            "role": "Vendor",
+            "name": "Alice"
           }
         ],
-        "privacyUsagePurpose": "READ",
+        "privacyUsagePurpose": "MARKETING",
         "validFor": {
-          "startDateTime": "2016-03-16T15:15:51.209Z",
-          "endDateTime": ""
+          "startDateTime": "2016-03-16T15:15:51.211Z ",
+          "endDateTime": "2016-06-16T15:15:51.211Z "
         }
       },
       {
         "id": 2,
-        "name": "ContactInformation",
+        "name": "eMailAddress",
         "value": "Authorized",
         "relatedParty": [
           {
-            "id": "userid#1234",
-            "href": "http ://serverLocation:port/partyManagement/individual/userid#1234",
-            "role": "Customer"
-          },
-          {
-            "id": "doctor#999",
-            "href": "http ://serverLocation:port/partyManagement/individual/doctors/doctor#999",
-            "role": "Doctor"
-          },
-          {
-            "id": "nurse#111",
-            "href": "http ://serverLocation:port/partyManagement/organisation/nurses/nurses_of_texas",
-            "role": "Nurse organization of Texas State"
-          },
-          {
-            "id": 99991111,
-            "href": "http ://serverLocation:port/partyManagement/organization/family/99991111",
-            "name": "familyDoe",
-            "role": "Family"
+            "id": "11",
+            "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+            "role": "Vendor",
+            "name": "Alice"
           }
         ],
-        "privacyUsagePurpose": "READ",
+        "privacyUsagePurpose": "MARKETING",
         "validFor": {
-          "startDateTime": "2016-03-16T15:15:51.209Z",
-          "endDateTime": ""
+          "startDateTime": "2016-03-16T15:15:51.211Z ",
+          "endDateTime": "2016-06-16T15:15:51.211Z "
         }
       },
       {
         "id": 3,
-        "name": "healthReports",
+        "name": "eMailAddress",
         "value": "Authorized",
         "relatedParty": [
           {
-            "id": "userid#1234",
-            "href": "http ://serverLocation:port/partyManagement/individual/userid#1234",
-            "role": "Customer"
-          },
-          {
-            "id": "doctor#999",
-            "href": "http ://serverLocation:port/partyManagement/individual/doctors/doctor#999",
-            "role": "Doctor"
-          },
-          {
-            "id": "nurse#111",
-            "href": "http ://serverLocation:port/partyManagement/organisation/nurses/nurses_of_texas",
-            "role": "Nurse organization of Texas State"
-          },
-          {
-            "id": 99991111,
-            "href": "http ://serverLocation:port/partyManagement/organization/family/99991111",
-            "name": "familyDoe",
-            "role": "Family"
+            "id": "11",
+            "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+            "role": "Vendor",
+            "name": "Alice"
           }
         ],
-        "privacyUsagePurpose": "READ",
+        "privacyUsagePurpose": "MARKETING",
         "validFor": {
-          "startDateTime": "2016-03-16T15:15:51.209Z",
-          "endDateTime": ""
+          "startDateTime": "2016-03-16T15:15:51.211Z ",
+          "endDateTime": "2016-06-16T15:15:51.211Z "
         }
+      }
+    ],
+    "pppTypeCharac": [
+      {
+        "id": "42",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy for internal ADMIN purpose",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "ADMIN",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Authorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "43",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for internal INFORMATION purpose",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "INFORMATION",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Authorized",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "string",
+            "default": false,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "44",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for internal MARKETING purpose",
+        "criticalityLevel": "high",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "MARKETING",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "string",
+            "default": false,
+            "value": "Authorized",
+            "validityDuration": "3 months"
+          }
+        ]
+      },
+      {
+        "id": "45",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for internal RESEARCH purpose",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "RESEARCH",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "46",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for external ADMIN purposes",
+        "criticalityLevel": "low",
+        "privacyType": "External Purpose",
+        "privacyUsagePurpose": "ADMIN",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "UnAuthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "47",
+        "name": "eMailAddress",
+        "description": "this is the internal retention privacy rule for email address",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Retention",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Indefinity",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "48",
+        "name": "eMailAddress",
+        "description": "this is the external retention privacy rule for email address",
+        "criticalityLevel": "low",
+        "privacyType": "External Retention",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "No-retention",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "49",
+        "name": "Invoice Amount",
+        "description": "this is the retention privacy rule for invoice amount",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Retention",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "numeric",
+            "default": true,
+            "unitOfMeasure": "Year",
+            "value": "15",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "numeric",
+            "default": false,
+            "unitOfMeasure": "Year",
+            "fromValue": "10",
+            "toValue": "20",
+            "rangeInterval": "1",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "42",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy for internal ADMIN purpose",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "ADMIN",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Authorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "43",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for internal INFORMATION purpose",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "INFORMATION",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Authorized",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "string",
+            "default": false,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "44",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for internal MARKETING purpose",
+        "criticalityLevel": "high",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "MARKETING",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "string",
+            "default": false,
+            "value": "Authorized",
+            "validityDuration": "3 months"
+          }
+        ]
+      },
+      {
+        "id": "45",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for internal RESEARCH purpose",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "RESEARCH",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "46",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for external ADMIN purposes",
+        "criticalityLevel": "low",
+        "privacyType": "External Purpose",
+        "privacyUsagePurpose": "ADMIN",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "UnAuthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "47",
+        "name": "eMailAddress",
+        "description": "this is the internal retention privacy rule for email address",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Retention",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Indefinity",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "48",
+        "name": "eMailAddress",
+        "description": "this is the external retention privacy rule for email address",
+        "criticalityLevel": "low",
+        "privacyType": "External Retention",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "No-retention",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "49",
+        "name": "Invoice Amount",
+        "description": "this is the retention privacy rule for invoice amount",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Retention",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "numeric",
+            "default": true,
+            "unitOfMeasure": "Year",
+            "value": "15",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "numeric",
+            "default": false,
+            "unitOfMeasure": "Year",
+            "fromValue": "10",
+            "toValue": "20",
+            "rangeInterval": "1",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "42",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy for internal ADMIN purpose",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "ADMIN",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Authorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "43",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for internal INFORMATION purpose",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "INFORMATION",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Authorized",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "string",
+            "default": false,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "44",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for internal MARKETING purpose",
+        "criticalityLevel": "high",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "MARKETING",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "string",
+            "default": false,
+            "value": "Authorized",
+            "validityDuration": "3 months"
+          }
+        ]
+      },
+      {
+        "id": "45",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for internal RESEARCH purpose",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "RESEARCH",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "46",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for external ADMIN purposes",
+        "criticalityLevel": "low",
+        "privacyType": "External Purpose",
+        "privacyUsagePurpose": "ADMIN",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "UnAuthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "47",
+        "name": "eMailAddress",
+        "description": "this is the internal retention privacy rule for email address",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Retention",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Indefinity",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "48",
+        "name": "eMailAddress",
+        "description": "this is the external retention privacy rule for email address",
+        "criticalityLevel": "low",
+        "privacyType": "External Retention",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "No-retention",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "49",
+        "name": "Invoice Amount",
+        "description": "this is the retention privacy rule for invoice amount",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Retention",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "numeric",
+            "default": true,
+            "unitOfMeasure": "Year",
+            "value": "15",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "numeric",
+            "default": false,
+            "unitOfMeasure": "Year",
+            "fromValue": "10",
+            "toValue": "20",
+            "rangeInterval": "1",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "42",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy for internal ADMIN purpose",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "ADMIN",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Authorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "43",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for internal INFORMATION purpose",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "INFORMATION",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Authorized",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "string",
+            "default": false,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "44",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for internal MARKETING purpose",
+        "criticalityLevel": "high",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "MARKETING",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "string",
+            "default": false,
+            "value": "Authorized",
+            "validityDuration": "3 months"
+          }
+        ]
+      },
+      {
+        "id": "45",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for internal RESEARCH purpose",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "RESEARCH",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "46",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for external ADMIN purposes",
+        "criticalityLevel": "low",
+        "privacyType": "External Purpose",
+        "privacyUsagePurpose": "ADMIN",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "UnAuthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "47",
+        "name": "eMailAddress",
+        "description": "this is the internal retention privacy rule for email address",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Retention",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Indefinity",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "48",
+        "name": "eMailAddress",
+        "description": "this is the external retention privacy rule for email address",
+        "criticalityLevel": "low",
+        "privacyType": "External Retention",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "No-retention",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "49",
+        "name": "Invoice Amount",
+        "description": "this is the retention privacy rule for invoice amount",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Retention",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "numeric",
+            "default": true,
+            "unitOfMeasure": "Year",
+            "value": "15",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "numeric",
+            "default": false,
+            "unitOfMeasure": "Year",
+            "fromValue": "10",
+            "toValue": "20",
+            "rangeInterval": "1",
+            "validityDuration": "Always"
+          }
+        ]
+      }
+    ],
+    "pppTypeCharVal": [],
+    "party": [],
+    "ppAgreement": [
+      {
+        "id": 1,
+        "name": "Customer mass market privacy agreement",
+        "version": "1",
+        "documentNumber": 13,
+        "status": "validated",
+        "type": "commercial",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "agreementPeriod": 5,
+        "description": "This agreement …",
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "agreementSpecification": "8139"
+      },
+      {
+        "id": 2,
+        "name": "Customer mass market privacy agreement",
+        "version": "1",
+        "documentNumber": 13,
+        "status": "validated",
+        "type": "commercial",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "agreementPeriod": 6,
+        "description": "This agreement …",
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "agreementSpecification": "8139"
+      },
+      {
+        "id": 3,
+        "name": "Customer mass market privacy agreement",
+        "version": "1",
+        "documentNumber": 13,
+        "status": "validated",
+        "type": "commercial",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "agreementPeriod": 8,
+        "description": "This agreement …",
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "agreementSpecification": "8139",
+        "engagedPartyRole": [
+          {
+            "href": "http://serverLocation:port/partyManagement/partyRole/1",
+            "id": "1",
+            "name": "Customer",
+            "partyId": "2345",
+            "partyName": "John Doe"
+          }
+        ]
       },
       {
         "id": 4,
-        "name": "location",
-        "value": "Authorized",
-        "relatedParty": [
+        "name": "Customer mass market privacy agreement",
+        "version": "1",
+        "documentNumber": 13,
+        "status": "validated",
+        "type": "commercial",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "agreementPeriod": 10,
+        "description": "This agreement …",
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "agreementSpecification": "8139",
+        "agreementItem": [
           {
-            "id": "userid#1234",
-            "href": "http ://serverLocation:port/partyManagement/individual/userid#1234",
-            "role": "Customer"
-          },
-          {
-            "id": 99991111,
-            "href": "http ://serverLocation:port/partyManagement/organization/family/99991111",
-            "name": "familyDoe",
-            "role": "Family"
+            "productOffering": [
+              {
+                "href": "https://host:port/productOffering/productOffering/9559",
+                "id": "9559",
+                "name": "Privacy Service",
+                "bundledProductOffering": [
+                  {
+                    "href": "https://host:port/productOffering/bundledProductOffering/7120",
+                    "id": "7120",
+                    "name": "Magic Offer",
+                    "bundledProductOffering": []
+                  }
+                ]
+              }
+            ],
+            "termOrCondition": [
+              {
+                "description": "This agreement term or condition ",
+                "id": "8905",
+                "validFor": {
+                  "startDateTime": "2016-03-16T15:15:51.211Z",
+                  "endDateTime": "2016-09-16T15:15:51.211Z"
+                }
+              }
+            ]
           }
         ],
-        "privacyUsagePurpose": "READ",
-        "validFor": {
-          "startDateTime": "2016-03-16T15:15:51.209Z",
-          "endDateTime": ""
-        }
+        "engagedPartyRole": [
+          {
+            "href": "http://serverLocation:port/partyManagement/partyRole/1",
+            "id": "1",
+            "name": "Customer",
+            "partyId": "2345",
+            "partyName": "John Doe"
+          }
+        ],
+        "agreementAuthorization": [
+          {
+            "date": "2016-03-16T15:15:51.211Z",
+            "signatureRepresentation": "Digital",
+            "state": "approved"
+          }
+        ]
       },
       {
-        "name": "eMailAddress",
-        "privacyUsagePurpose": "ADMIN",
-        "value": "Authorized",
-        "validFor": {
-          "startDateTime": "2016-03-16T15:15:51.209Z",
-          "endDateTime": ""
-        },
-        "relatedParty": [
+        "agreementPeriod": 11,
+        "description": "This agreement …",
+        "documentNumber": 13,
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "name": "Customer mass market privacy agreement",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "status": "validated",
+        "type": "commercial",
+        "version": "1",
+        "agreementSpecification": "8139",
+        "agreementItem": [
           {
-            "id": "10",
-            "href": "http ://serverLocation:port/partyManagement/organization/10",
-            "role": "Administrator",
-            "name": "Orange"
+            "productOffering": [
+              {
+                "href": "https://host:port/productOffering/productOffering/9559",
+                "id": "9559",
+                "name": "Privacy Service",
+                "bundledProductOffering": [
+                  {
+                    "href": "https://host:port/productOffering/bundledProductOffering/7120",
+                    "id": "7120",
+                    "name": "Magic Offer",
+                    "bundledProductOffering": []
+                  }
+                ]
+              }
+            ],
+            "termOrCondition": [
+              {
+                "description": "This agreement term or condition ",
+                "id": "8905",
+                "validFor": {
+                  "startDateTime": "2016-03-16T15:15:51.211Z",
+                  "endDateTime": "2016-09-16T15:15:51.211Z"
+                }
+              }
+            ]
           }
         ],
+        "engagedPartyRole": [
+          {
+            "href": "http://serverLocation:port/partyManagement/partyRole/1",
+            "id": "1",
+            "name": "Customer",
+            "partyId": "2345",
+            "partyName": "John Doe"
+          }
+        ],
+        "agreementAuthorization": [
+          {
+            "date": "2016-03-16T15:15:51.211Z",
+            "signatureRepresentation": "Digital",
+            "state": "approved"
+          }
+        ],
+        "characteristic": [
+          {
+            "name": "country",
+            "value": "France"
+          }
+        ],
+        "associatedAgreement": [
+          {
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/987654",
+            "id": "987654",
+            "name": "General Privacy Agreement"
+          }
+        ],
+        "partyPrivacyProfile": [
+          {
+            "id": "394",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/394"
+          },
+          {
+            "id": "1312",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/1312"
+          }
+        ],
+        "partyPrivacyProfileCharValue": [
+          {
+            "name": "eMailAddress",
+            "privacyUsagePurpose": "MARKETING",
+            "value": "Authorized",
+            "validFor": {
+              "startDateTime": "2016-03-16T15:15:51.211Z ",
+              "endDateTime": "2016-06-16T15:15:51.211Z "
+            },
+            "relatedParty": [
+              {
+                "id": "11",
+                "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+                "role": "Vendor",
+                "name": "Alice"
+              }
+            ]
+          }
+        ],
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
         "id": 5
       },
       {
-        "name": "eMailAddress",
-        "privacyUsagePurpose": "INFORMATION",
-        "value": "Authorized",
-        "validFor": {
-          "startDateTime": "2016-03-16T15:15:51.209Z",
-          "endDateTime": ""
-        },
-        "relatedParty": [
+        "agreementPeriod": 12,
+        "description": "This agreement …",
+        "documentNumber": 13,
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "name": "Customer mass market privacy agreement",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "status": "validated",
+        "type": "commercial",
+        "version": "1",
+        "agreementSpecification": "8139",
+        "agreementItem": [
           {
-            "id": "11",
-            "href": "http ://serverLocation:port/partyManagement/individual/11",
-            "role": "Vendor",
-            "name": "Alice"
-          },
-          {
-            "id": "12",
-            "href": "http ://serverLocation:port/partyManagement/individual/12",
-            "role": "Employee",
-            "name": "Bob"
+            "productOffering": [
+              {
+                "href": "https://host:port/productOffering/productOffering/9559",
+                "id": "9559",
+                "name": "Privacy Service",
+                "bundledProductOffering": [
+                  {
+                    "href": "https://host:port/productOffering/bundledProductOffering/7120",
+                    "id": "7120",
+                    "name": "Magic Offer",
+                    "bundledProductOffering": []
+                  }
+                ]
+              }
+            ],
+            "termOrCondition": [
+              {
+                "description": "This agreement term or condition ",
+                "id": "8905",
+                "validFor": {
+                  "startDateTime": "2016-03-16T15:15:51.211Z",
+                  "endDateTime": "2016-09-16T15:15:51.211Z"
+                }
+              }
+            ]
           }
         ],
+        "engagedPartyRole": [
+          {
+            "href": "http://serverLocation:port/partyManagement/partyRole/1",
+            "id": "1",
+            "name": "Customer",
+            "partyId": "2345",
+            "partyName": "John Doe"
+          }
+        ],
+        "agreementAuthorization": [
+          {
+            "date": "2016-03-16T15:15:51.211Z",
+            "signatureRepresentation": "Digital",
+            "state": "approved"
+          }
+        ],
+        "characteristic": [
+          {
+            "name": "country",
+            "value": "France"
+          }
+        ],
+        "associatedAgreement": [
+          {
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/987654",
+            "id": "987654",
+            "name": "General Privacy Agreement"
+          }
+        ],
+        "partyPrivacyProfile": [
+          {
+            "id": "394",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/394"
+          },
+          {
+            "id": "1312",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/1312"
+          }
+        ],
+        "partyPrivacyProfileCharValue": [
+          {
+            "name": "eMailAddress",
+            "privacyUsagePurpose": "MARKETING",
+            "value": "Authorized",
+            "validFor": {
+              "startDateTime": "2016-03-16T15:15:51.211Z ",
+              "endDateTime": "2016-06-16T15:15:51.211Z "
+            },
+            "relatedParty": [
+              {
+                "id": "11",
+                "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+                "role": "Vendor",
+                "name": "Alice"
+              }
+            ]
+          }
+        ],
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
         "id": 6
       },
       {
-        "name": "eMailAddress",
-        "privacyUsagePurpose": "MARKETING",
-        "value": "Authorized",
-        "validFor": {
-          "startDateTime": "2016-03-16T15:15:51.209Z",
-          "endDateTime": "2016-06-16T15:15:51.209Z"
-        },
-        "relatedParty": [
+        "agreementPeriod": 13,
+        "description": "This agreement …",
+        "documentNumber": 13,
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "name": "Customer mass market privacy agreement",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "status": "validated",
+        "type": "commercial",
+        "version": "1",
+        "agreementSpecification": "8139",
+        "agreementItem": [
           {
-            "id": "11",
-            "href": "http ://serverLocation:port/partyManagement/individual/11",
-            "role": "Vendor",
-            "name": "Alice"
+            "productOffering": [
+              {
+                "href": "https://host:port/productOffering/productOffering/9559",
+                "id": "9559",
+                "name": "Privacy Service",
+                "bundledProductOffering": [
+                  {
+                    "href": "https://host:port/productOffering/bundledProductOffering/7120",
+                    "id": "7120",
+                    "name": "Magic Offer",
+                    "bundledProductOffering": []
+                  }
+                ]
+              }
+            ],
+            "termOrCondition": [
+              {
+                "description": "This agreement term or condition ",
+                "id": "8905",
+                "validFor": {
+                  "startDateTime": "2016-03-16T15:15:51.211Z",
+                  "endDateTime": "2016-09-16T15:15:51.211Z"
+                }
+              }
+            ]
           }
         ],
+        "engagedPartyRole": [
+          {
+            "href": "http://serverLocation:port/partyManagement/partyRole/1",
+            "id": "1",
+            "name": "Customer",
+            "partyId": "2345",
+            "partyName": "John Doe"
+          }
+        ],
+        "agreementAuthorization": [
+          {
+            "date": "2016-03-16T15:15:51.211Z",
+            "signatureRepresentation": "Digital",
+            "state": "approved"
+          }
+        ],
+        "characteristic": [
+          {
+            "name": "country",
+            "value": "France"
+          }
+        ],
+        "associatedAgreement": [
+          {
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/987654",
+            "id": "987654",
+            "name": "General Privacy Agreement"
+          }
+        ],
+        "partyPrivacyProfile": [
+          {
+            "id": "394",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/394"
+          },
+          {
+            "id": "1312",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/1312"
+          }
+        ],
+        "partyPrivacyProfileCharValue": [
+          {
+            "name": "eMailAddress",
+            "privacyUsagePurpose": "MARKETING",
+            "value": "Authorized",
+            "validFor": {
+              "startDateTime": "2016-03-16T15:15:51.211Z ",
+              "endDateTime": "2016-06-16T15:15:51.211Z "
+            },
+            "relatedParty": [
+              {
+                "id": "11",
+                "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+                "role": "Vendor",
+                "name": "Alice"
+              }
+            ]
+          }
+        ],
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
         "id": 7
       },
       {
-        "name": "eMailAddress",
-        "privacyUsagePurpose": "RESEARCH",
-        "value": "Unauthorized",
-        "validFor": {
-          "startDateTime": "2016-03-16T15:15:51.209Z",
-          "endDateTime": ""
-        },
-        "relatedParty": [
+        "agreementPeriod": 14,
+        "description": "This agreement …",
+        "documentNumber": 13,
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "name": "Customer mass market privacy agreement",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "status": "validated",
+        "type": "commercial",
+        "version": "1",
+        "agreementSpecification": "8139",
+        "agreementItem": [
           {
-            "id": "12",
-            "href": "http ://serverLocation:port/partyManagement/individual/12",
-            "role": "Employee",
-            "name": "Bob"
+            "productOffering": [
+              {
+                "href": "https://host:port/productOffering/productOffering/9559",
+                "id": "9559",
+                "name": "Privacy Service",
+                "bundledProductOffering": [
+                  {
+                    "href": "https://host:port/productOffering/bundledProductOffering/7120",
+                    "id": "7120",
+                    "name": "Magic Offer",
+                    "bundledProductOffering": []
+                  }
+                ]
+              }
+            ],
+            "termOrCondition": [
+              {
+                "description": "This agreement term or condition ",
+                "id": "8905",
+                "validFor": {
+                  "startDateTime": "2016-03-16T15:15:51.211Z",
+                  "endDateTime": "2016-09-16T15:15:51.211Z"
+                }
+              }
+            ]
           }
         ],
+        "engagedPartyRole": [
+          {
+            "href": "http://serverLocation:port/partyManagement/partyRole/1",
+            "id": "1",
+            "name": "Customer",
+            "partyId": "2345",
+            "partyName": "John Doe"
+          }
+        ],
+        "agreementAuthorization": [
+          {
+            "date": "2016-03-16T15:15:51.211Z",
+            "signatureRepresentation": "Digital",
+            "state": "approved"
+          }
+        ],
+        "characteristic": [
+          {
+            "name": "country",
+            "value": "France"
+          }
+        ],
+        "associatedAgreement": [
+          {
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/987654",
+            "id": "987654",
+            "name": "General Privacy Agreement"
+          }
+        ],
+        "partyPrivacyProfile": [
+          {
+            "id": "394",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/394"
+          },
+          {
+            "id": "1312",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/1312"
+          }
+        ],
+        "partyPrivacyProfileCharValue": [
+          {
+            "name": "eMailAddress",
+            "privacyUsagePurpose": "MARKETING",
+            "value": "Authorized",
+            "validFor": {
+              "startDateTime": "2016-03-16T15:15:51.211Z ",
+              "endDateTime": "2016-06-16T15:15:51.211Z "
+            },
+            "relatedParty": [
+              {
+                "id": "11",
+                "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+                "role": "Vendor",
+                "name": "Alice"
+              }
+            ]
+          }
+        ],
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
         "id": 8
       },
       {
-        "name": "eMailAddress",
-        "privacyUsagePurpose": "ADMIN",
-        "value": "Authorized",
-        "validFor": {
-          "startDateTime": "2016-03-16T15:15:51.209Z",
-          "endDateTime": ""
-        },
-        "relatedParty": [
+        "agreementPeriod": 15,
+        "description": "This agreement …",
+        "documentNumber": 13,
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "name": "Customer mass market privacy agreement",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "status": "validated",
+        "type": "commercial",
+        "version": "1",
+        "agreementSpecification": "8139",
+        "agreementItem": [
           {
-            "id": "10",
-            "href": "http ://serverLocation:port/partyManagement/organization/10",
-            "role": "Administrator",
-            "name": "Orange"
+            "productOffering": [
+              {
+                "href": "https://host:port/productOffering/productOffering/9559",
+                "id": "9559",
+                "name": "Privacy Service",
+                "bundledProductOffering": [
+                  {
+                    "href": "https://host:port/productOffering/bundledProductOffering/7120",
+                    "id": "7120",
+                    "name": "Magic Offer",
+                    "bundledProductOffering": []
+                  }
+                ]
+              }
+            ],
+            "termOrCondition": [
+              {
+                "description": "This agreement term or condition ",
+                "id": "8905",
+                "validFor": {
+                  "startDateTime": "2016-03-16T15:15:51.211Z",
+                  "endDateTime": "2016-09-16T15:15:51.211Z"
+                }
+              }
+            ]
           }
         ],
+        "engagedPartyRole": [
+          {
+            "href": "http://serverLocation:port/partyManagement/partyRole/1",
+            "id": "1",
+            "name": "Customer",
+            "partyId": "2345",
+            "partyName": "John Doe"
+          }
+        ],
+        "agreementAuthorization": [
+          {
+            "date": "2016-03-16T15:15:51.211Z",
+            "signatureRepresentation": "Digital",
+            "state": "approved"
+          }
+        ],
+        "characteristic": [
+          {
+            "name": "country",
+            "value": "France"
+          }
+        ],
+        "associatedAgreement": [
+          {
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/987654",
+            "id": "987654",
+            "name": "General Privacy Agreement"
+          }
+        ],
+        "partyPrivacyProfile": [
+          {
+            "id": "394",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/394"
+          },
+          {
+            "id": "1312",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/1312"
+          }
+        ],
+        "partyPrivacyProfileCharValue": [
+          {
+            "name": "eMailAddress",
+            "privacyUsagePurpose": "MARKETING",
+            "value": "Authorized",
+            "validFor": {
+              "startDateTime": "2016-03-16T15:15:51.211Z ",
+              "endDateTime": "2016-06-16T15:15:51.211Z "
+            },
+            "relatedParty": [
+              {
+                "id": "11",
+                "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+                "role": "Vendor",
+                "name": "Alice"
+              }
+            ]
+          }
+        ],
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
         "id": 9
       },
       {
-        "name": "eMailAddress",
-        "privacyUsagePurpose": "INFORMATION",
-        "value": "Authorized",
-        "validFor": {
-          "startDateTime": "2016-03-16T15:15:51.209Z",
-          "endDateTime": ""
-        },
-        "relatedParty": [
+        "agreementPeriod": 16,
+        "description": "This agreement …",
+        "documentNumber": 13,
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "name": "Customer mass market privacy agreement",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "status": "validated",
+        "type": "commercial",
+        "version": "1",
+        "agreementSpecification": "8139",
+        "agreementItem": [
           {
-            "id": "11",
-            "href": "http ://serverLocation:port/partyManagement/individual/11",
-            "role": "Vendor",
-            "name": "Alice"
-          },
-          {
-            "id": "12",
-            "href": "http ://serverLocation:port/partyManagement/individual/12",
-            "role": "Employee",
-            "name": "Bob"
+            "productOffering": [
+              {
+                "href": "https://host:port/productOffering/productOffering/9559",
+                "id": "9559",
+                "name": "Privacy Service",
+                "bundledProductOffering": [
+                  {
+                    "href": "https://host:port/productOffering/bundledProductOffering/7120",
+                    "id": "7120",
+                    "name": "Magic Offer",
+                    "bundledProductOffering": []
+                  }
+                ]
+              }
+            ],
+            "termOrCondition": [
+              {
+                "description": "This agreement term or condition ",
+                "id": "8905",
+                "validFor": {
+                  "startDateTime": "2016-03-16T15:15:51.211Z",
+                  "endDateTime": "2016-09-16T15:15:51.211Z"
+                }
+              }
+            ]
           }
         ],
+        "engagedPartyRole": [
+          {
+            "href": "http://serverLocation:port/partyManagement/partyRole/1",
+            "id": "1",
+            "name": "Customer",
+            "partyId": "2345",
+            "partyName": "John Doe"
+          }
+        ],
+        "agreementAuthorization": [
+          {
+            "date": "2016-03-16T15:15:51.211Z",
+            "signatureRepresentation": "Digital",
+            "state": "approved"
+          }
+        ],
+        "characteristic": [
+          {
+            "name": "country",
+            "value": "France"
+          }
+        ],
+        "associatedAgreement": [
+          {
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/987654",
+            "id": "987654",
+            "name": "General Privacy Agreement"
+          }
+        ],
+        "partyPrivacyProfile": [
+          {
+            "id": "394",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/394"
+          },
+          {
+            "id": "1312",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/1312"
+          }
+        ],
+        "partyPrivacyProfileCharValue": [
+          {
+            "name": "eMailAddress",
+            "privacyUsagePurpose": "MARKETING",
+            "value": "Authorized",
+            "validFor": {
+              "startDateTime": "2016-03-16T15:15:51.211Z ",
+              "endDateTime": "2016-06-16T15:15:51.211Z "
+            },
+            "relatedParty": [
+              {
+                "id": "11",
+                "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+                "role": "Vendor",
+                "name": "Alice"
+              }
+            ]
+          }
+        ],
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
         "id": 10
       },
       {
-        "name": "eMailAddress",
-        "privacyUsagePurpose": "MARKETING",
-        "value": "Authorized",
-        "validFor": {
-          "startDateTime": "2016-03-16T15:15:51.209Z",
-          "endDateTime": "2016-06-16T15:15:51.209Z"
-        },
-        "relatedParty": [
+        "agreementPeriod": 17,
+        "description": "This agreement …",
+        "documentNumber": 13,
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "name": "Customer mass market privacy agreement",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "status": "validated",
+        "type": "commercial",
+        "version": "1",
+        "agreementSpecification": "8139",
+        "agreementItem": [
           {
-            "id": "11",
-            "href": "http ://serverLocation:port/partyManagement/individual/11",
-            "role": "Vendor",
-            "name": "Alice"
+            "productOffering": [
+              {
+                "href": "https://host:port/productOffering/productOffering/9559",
+                "id": "9559",
+                "name": "Privacy Service",
+                "bundledProductOffering": [
+                  {
+                    "href": "https://host:port/productOffering/bundledProductOffering/7120",
+                    "id": "7120",
+                    "name": "Magic Offer",
+                    "bundledProductOffering": []
+                  }
+                ]
+              }
+            ],
+            "termOrCondition": [
+              {
+                "description": "This agreement term or condition ",
+                "id": "8905",
+                "validFor": {
+                  "startDateTime": "2016-03-16T15:15:51.211Z",
+                  "endDateTime": "2016-09-16T15:15:51.211Z"
+                }
+              }
+            ]
           }
         ],
-        "id": 11
-      },
-      {
-        "name": "eMailAddress",
-        "privacyUsagePurpose": "RESEARCH",
-        "value": "Unauthorized",
-        "validFor": {
-          "startDateTime": "2016-03-16T15:15:51.209Z",
-          "endDateTime": ""
-        },
-        "relatedParty": [
+        "engagedPartyRole": [
           {
-            "id": "12",
-            "href": "http ://serverLocation:port/partyManagement/individual/12",
-            "role": "Employee",
-            "name": "Bob"
+            "href": "http://serverLocation:port/partyManagement/partyRole/1",
+            "id": "1",
+            "name": "Customer",
+            "partyId": "2345",
+            "partyName": "John Doe"
           }
         ],
-        "id": 12
-      },
-      {
-        "name": "eMailAddress",
-        "privacyUsagePurpose": "ADMIN",
-        "value": "Authorized",
-        "validFor": {
-          "startDateTime": "2016-03-16T15:15:51.209Z",
-          "endDateTime": ""
-        },
-        "relatedParty": [
+        "agreementAuthorization": [
           {
-            "id": "10",
-            "href": "http ://serverLocation:port/partyManagement/organization/10",
-            "role": "Administrator",
-            "name": "Orange"
+            "date": "2016-03-16T15:15:51.211Z",
+            "signatureRepresentation": "Digital",
+            "state": "approved"
           }
         ],
-        "id": 13
-      },
-      {
-        "name": "eMailAddress",
-        "privacyUsagePurpose": "INFORMATION",
-        "value": "Authorized",
-        "validFor": {
-          "startDateTime": "2016-03-16T15:15:51.209Z",
-          "endDateTime": ""
-        },
-        "relatedParty": [
+        "characteristic": [
           {
-            "id": "11",
-            "href": "http ://serverLocation:port/partyManagement/individual/11",
-            "role": "Vendor",
-            "name": "Alice"
+            "name": "country",
+            "value": "France"
+          }
+        ],
+        "associatedAgreement": [
+          {
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/987654",
+            "id": "987654",
+            "name": "General Privacy Agreement"
+          }
+        ],
+        "partyPrivacyProfile": [
+          {
+            "id": "394",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/394"
           },
           {
-            "id": "12",
-            "href": "http ://serverLocation:port/partyManagement/individual/12",
-            "role": "Employee",
-            "name": "Bob"
+            "id": "1312",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/1312"
           }
         ],
-        "id": 14
-      },
-      {
-        "name": "eMailAddress",
-        "privacyUsagePurpose": "MARKETING",
-        "value": "Authorized",
-        "validFor": {
-          "startDateTime": "2016-03-16T15:15:51.209Z",
-          "endDateTime": "2016-06-16T15:15:51.209Z"
-        },
-        "relatedParty": [
+        "partyPrivacyProfileCharValue": [
           {
-            "id": "11",
-            "href": "http ://serverLocation:port/partyManagement/individual/11",
-            "role": "Vendor",
-            "name": "Alice"
+            "name": "eMailAddress",
+            "privacyUsagePurpose": "MARKETING",
+            "value": "Authorized",
+            "validFor": {
+              "startDateTime": "2016-03-16T15:15:51.211Z ",
+              "endDateTime": "2016-06-16T15:15:51.211Z "
+            },
+            "relatedParty": [
+              {
+                "id": "11",
+                "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+                "role": "Vendor",
+                "name": "Alice"
+              }
+            ]
           }
         ],
-        "id": 15
-      },
-      {
-        "name": "eMailAddress",
-        "privacyUsagePurpose": "RESEARCH",
-        "value": "Unauthorized",
-        "validFor": {
-          "startDateTime": "2016-03-16T15:15:51.209Z",
-          "endDateTime": ""
-        },
-        "relatedParty": [
-          {
-            "id": "12",
-            "href": "http ://serverLocation:port/partyManagement/individual/12",
-            "role": "Employee",
-            "name": "Bob"
-          }
-        ],
-        "id": 16
-      }
-    ],
-    "partyprivacyprofiletype": [
-      {
-        "id": "103",
-        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfileType/103",
-        "lastUpdate": "2016-04-14T14:59:51.872Z"
-      }
-    ],
-    "partyprivacyprofiletypecharvalue": [],
-    "partyprivacyprofiletypecharacteristic": [],
-    "agreementauthorization_agreementauthorization_agreementauthorization__partyprivacyagreement_agreementauthorization": [],
-    "partyprivacyagreement_partyprivacyprofilecharvalue__partyprivacyprofilecharvalue_partyprivacyprofilecharvalue_partyprivacyprofilecharvalue": [],
-    "partyprivacyprofile_partyprivacyprofilecharvalue__partyprivacyprofilecharvalue_partyprivacyprofilecharvalue_partyprivacyprofilecharvalue": [
-      {
-        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 1,
-        "partyprivacyprofile_partyPrivacyProfileCharValue": 1,
-        "id": 1
-      },
-      {
-        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 2,
-        "partyprivacyprofile_partyPrivacyProfileCharValue": 1,
-        "id": 2
-      },
-      {
-        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 3,
-        "partyprivacyprofile_partyPrivacyProfileCharValue": 1,
-        "id": 3
-      },
-      {
-        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 4,
-        "partyprivacyprofile_partyPrivacyProfileCharValue": 1,
-        "id": 4
-      },
-      {
-        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 5,
-        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
-        "id": 5
-      },
-      {
-        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 6,
-        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
-        "id": 6
-      },
-      {
-        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 7,
-        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
-        "id": 7
-      },
-      {
-        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 8,
-        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
-        "id": 8
-      },
-      {
-        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 9,
-        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
-        "id": 9
-      },
-      {
-        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 10,
-        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
-        "id": 10
-      },
-      {
-        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 11,
-        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
         "id": 11
       },
       {
-        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 12,
-        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "agreementPeriod": 18,
+        "description": "This agreement …",
+        "documentNumber": 13,
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "name": "Customer mass market privacy agreement",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "status": "validated",
+        "type": "commercial",
+        "version": "1",
+        "agreementSpecification": "8139",
+        "agreementItem": [
+          {
+            "productOffering": [
+              {
+                "href": "https://host:port/productOffering/productOffering/9559",
+                "id": "9559",
+                "name": "Privacy Service",
+                "bundledProductOffering": [
+                  {
+                    "href": "https://host:port/productOffering/bundledProductOffering/7120",
+                    "id": "7120",
+                    "name": "Magic Offer",
+                    "bundledProductOffering": []
+                  }
+                ]
+              }
+            ],
+            "termOrCondition": [
+              {
+                "description": "This agreement term or condition ",
+                "id": "8905",
+                "validFor": {
+                  "startDateTime": "2016-03-16T15:15:51.211Z",
+                  "endDateTime": "2016-09-16T15:15:51.211Z"
+                }
+              }
+            ]
+          }
+        ],
+        "engagedPartyRole": [
+          {
+            "href": "http://serverLocation:port/partyManagement/partyRole/1",
+            "id": "1",
+            "name": "Customer",
+            "partyId": "2345",
+            "partyName": "John Doe"
+          }
+        ],
+        "agreementAuthorization": [
+          {
+            "date": "2016-03-16T15:15:51.211Z",
+            "signatureRepresentation": "Digital",
+            "state": "approved"
+          }
+        ],
+        "characteristic": [
+          {
+            "name": "country",
+            "value": "France"
+          }
+        ],
+        "associatedAgreement": [
+          {
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/987654",
+            "id": "987654",
+            "name": "General Privacy Agreement"
+          }
+        ],
+        "partyPrivacyProfile": [
+          {
+            "id": "394",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/394"
+          },
+          {
+            "id": "1312",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/1312"
+          }
+        ],
+        "partyPrivacyProfileCharValue": [
+          {
+            "name": "eMailAddress",
+            "privacyUsagePurpose": "MARKETING",
+            "value": "Authorized",
+            "validFor": {
+              "startDateTime": "2016-03-16T15:15:51.211Z ",
+              "endDateTime": "2016-06-16T15:15:51.211Z "
+            },
+            "relatedParty": [
+              {
+                "id": "11",
+                "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+                "role": "Vendor",
+                "name": "Alice"
+              }
+            ]
+          }
+        ],
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
         "id": 12
       },
       {
-        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 13,
-        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "agreementPeriod": 19,
+        "description": "This agreement …",
+        "documentNumber": 13,
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "name": "Customer mass market privacy agreement",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "status": "validated",
+        "type": "commercial",
+        "version": "1",
+        "agreementSpecification": "8139",
+        "agreementItem": [
+          {
+            "productOffering": [
+              {
+                "href": "https://host:port/productOffering/productOffering/9559",
+                "id": "9559",
+                "name": "Privacy Service",
+                "bundledProductOffering": [
+                  {
+                    "href": "https://host:port/productOffering/bundledProductOffering/7120",
+                    "id": "7120",
+                    "name": "Magic Offer",
+                    "bundledProductOffering": []
+                  }
+                ]
+              }
+            ],
+            "termOrCondition": [
+              {
+                "description": "This agreement term or condition ",
+                "id": "8905",
+                "validFor": {
+                  "startDateTime": "2016-03-16T15:15:51.211Z",
+                  "endDateTime": "2016-09-16T15:15:51.211Z"
+                }
+              }
+            ]
+          }
+        ],
+        "engagedPartyRole": [
+          {
+            "href": "http://serverLocation:port/partyManagement/partyRole/1",
+            "id": "1",
+            "name": "Customer",
+            "partyId": "2345",
+            "partyName": "John Doe"
+          }
+        ],
+        "agreementAuthorization": [
+          {
+            "date": "2016-03-16T15:15:51.211Z",
+            "signatureRepresentation": "Digital",
+            "state": "approved"
+          }
+        ],
+        "characteristic": [
+          {
+            "name": "country",
+            "value": "France"
+          }
+        ],
+        "associatedAgreement": [
+          {
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/987654",
+            "id": "987654",
+            "name": "General Privacy Agreement"
+          }
+        ],
+        "partyPrivacyProfile": [
+          {
+            "id": "394",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/394"
+          },
+          {
+            "id": "1312",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/1312"
+          }
+        ],
+        "partyPrivacyProfileCharValue": [
+          {
+            "name": "eMailAddress",
+            "privacyUsagePurpose": "MARKETING",
+            "value": "Authorized",
+            "validFor": {
+              "startDateTime": "2016-03-16T15:15:51.211Z ",
+              "endDateTime": "2016-06-16T15:15:51.211Z "
+            },
+            "relatedParty": [
+              {
+                "id": "11",
+                "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+                "role": "Vendor",
+                "name": "Alice"
+              }
+            ]
+          }
+        ],
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
         "id": 13
       },
       {
-        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 14,
-        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "agreementPeriod": 20,
+        "description": "This agreement …",
+        "documentNumber": 13,
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "name": "Customer mass market privacy agreement",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "status": "validated",
+        "type": "commercial",
+        "version": "1",
+        "agreementSpecification": "8139",
+        "agreementItem": [
+          {
+            "productOffering": [
+              {
+                "href": "https://host:port/productOffering/productOffering/9559",
+                "id": "9559",
+                "name": "Privacy Service",
+                "bundledProductOffering": [
+                  {
+                    "href": "https://host:port/productOffering/bundledProductOffering/7120",
+                    "id": "7120",
+                    "name": "Magic Offer",
+                    "bundledProductOffering": []
+                  }
+                ]
+              }
+            ],
+            "termOrCondition": [
+              {
+                "description": "This agreement term or condition ",
+                "id": "8905",
+                "validFor": {
+                  "startDateTime": "2016-03-16T15:15:51.211Z",
+                  "endDateTime": "2016-09-16T15:15:51.211Z"
+                }
+              }
+            ]
+          }
+        ],
+        "engagedPartyRole": [
+          {
+            "href": "http://serverLocation:port/partyManagement/partyRole/1",
+            "id": "1",
+            "name": "Customer",
+            "partyId": "2345",
+            "partyName": "John Doe"
+          }
+        ],
+        "agreementAuthorization": [
+          {
+            "date": "2016-03-16T15:15:51.211Z",
+            "signatureRepresentation": "Digital",
+            "state": "approved"
+          }
+        ],
+        "characteristic": [
+          {
+            "name": "country",
+            "value": "France"
+          }
+        ],
+        "associatedAgreement": [
+          {
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/987654",
+            "id": "987654",
+            "name": "General Privacy Agreement"
+          }
+        ],
+        "partyPrivacyProfile": [
+          {
+            "id": "394",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/394"
+          },
+          {
+            "id": "1312",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/1312"
+          }
+        ],
+        "partyPrivacyProfileCharValue": [
+          {
+            "name": "eMailAddress",
+            "privacyUsagePurpose": "MARKETING",
+            "value": "Authorized",
+            "validFor": {
+              "startDateTime": "2016-03-16T15:15:51.211Z ",
+              "endDateTime": "2016-06-16T15:15:51.211Z "
+            },
+            "relatedParty": [
+              {
+                "id": "11",
+                "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+                "role": "Vendor",
+                "name": "Alice"
+              }
+            ]
+          }
+        ],
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
         "id": 14
       },
       {
-        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 15,
-        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "agreementPeriod": 21,
+        "description": "This agreement …",
+        "documentNumber": 13,
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "name": "Customer mass market privacy agreement",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "status": "validated",
+        "type": "commercial",
+        "version": "1",
+        "agreementSpecification": "8139",
+        "agreementItem": [
+          {
+            "productOffering": [
+              {
+                "href": "https://host:port/productOffering/productOffering/9559",
+                "id": "9559",
+                "name": "Privacy Service",
+                "bundledProductOffering": [
+                  {
+                    "href": "https://host:port/productOffering/bundledProductOffering/7120",
+                    "id": "7120",
+                    "name": "Magic Offer",
+                    "bundledProductOffering": []
+                  }
+                ]
+              }
+            ],
+            "termOrCondition": [
+              {
+                "description": "This agreement term or condition ",
+                "id": "8905",
+                "validFor": {
+                  "startDateTime": "2016-03-16T15:15:51.211Z",
+                  "endDateTime": "2016-09-16T15:15:51.211Z"
+                }
+              }
+            ]
+          }
+        ],
+        "engagedPartyRole": [
+          {
+            "href": "http://serverLocation:port/partyManagement/partyRole/1",
+            "id": "1",
+            "name": "Customer",
+            "partyId": "2345",
+            "partyName": "John Doe"
+          }
+        ],
+        "agreementAuthorization": [
+          {
+            "date": "2016-03-16T15:15:51.211Z",
+            "signatureRepresentation": "Digital",
+            "state": "approved"
+          }
+        ],
+        "characteristic": [
+          {
+            "name": "country",
+            "value": "France"
+          }
+        ],
+        "associatedAgreement": [
+          {
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/987654",
+            "id": "987654",
+            "name": "General Privacy Agreement"
+          }
+        ],
+        "partyPrivacyProfile": [
+          {
+            "id": "394",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/394"
+          },
+          {
+            "id": "1312",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/1312"
+          }
+        ],
+        "partyPrivacyProfileCharValue": [
+          {
+            "name": "eMailAddress",
+            "privacyUsagePurpose": "MARKETING",
+            "value": "Authorized",
+            "validFor": {
+              "startDateTime": "2016-03-16T15:15:51.211Z ",
+              "endDateTime": "2016-06-16T15:15:51.211Z "
+            },
+            "relatedParty": [
+              {
+                "id": "11",
+                "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+                "role": "Vendor",
+                "name": "Alice"
+              }
+            ]
+          }
+        ],
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
         "id": 15
       },
       {
-        "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": 16,
-        "partyprivacyprofile_partyPrivacyProfileCharValue": 394,
+        "agreementPeriod": 22,
+        "description": "This agreement …",
+        "documentNumber": 13,
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "name": "Customer mass market privacy agreement",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "status": "validated",
+        "type": "commercial",
+        "version": "1",
+        "agreementSpecification": "8139",
+        "agreementItem": [
+          {
+            "productOffering": [
+              {
+                "href": "https://host:port/productOffering/productOffering/9559",
+                "id": "9559",
+                "name": "Privacy Service",
+                "bundledProductOffering": [
+                  {
+                    "href": "https://host:port/productOffering/bundledProductOffering/7120",
+                    "id": "7120",
+                    "name": "Magic Offer",
+                    "bundledProductOffering": []
+                  }
+                ]
+              }
+            ],
+            "termOrCondition": [
+              {
+                "description": "This agreement term or condition ",
+                "id": "8905",
+                "validFor": {
+                  "startDateTime": "2016-03-16T15:15:51.211Z",
+                  "endDateTime": "2016-09-16T15:15:51.211Z"
+                }
+              }
+            ]
+          }
+        ],
+        "engagedPartyRole": [
+          {
+            "href": "http://serverLocation:port/partyManagement/partyRole/1",
+            "id": "1",
+            "name": "Customer",
+            "partyId": "2345",
+            "partyName": "John Doe"
+          }
+        ],
+        "agreementAuthorization": [
+          {
+            "date": "2016-03-16T15:15:51.211Z",
+            "signatureRepresentation": "Digital",
+            "state": "approved"
+          }
+        ],
+        "characteristic": [
+          {
+            "name": "country",
+            "value": "France"
+          }
+        ],
+        "associatedAgreement": [
+          {
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/987654",
+            "id": "987654",
+            "name": "General Privacy Agreement"
+          }
+        ],
+        "partyPrivacyProfile": [
+          {
+            "id": "394",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/394"
+          },
+          {
+            "id": "1312",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/1312"
+          }
+        ],
+        "partyPrivacyProfileCharValue": [
+          {
+            "name": "eMailAddress",
+            "privacyUsagePurpose": "MARKETING",
+            "value": "Authorized",
+            "validFor": {
+              "startDateTime": "2016-03-16T15:15:51.211Z ",
+              "endDateTime": "2016-06-16T15:15:51.211Z "
+            },
+            "relatedParty": [
+              {
+                "id": "11",
+                "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+                "role": "Vendor",
+                "name": "Alice"
+              }
+            ]
+          }
+        ],
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
         "id": 16
-      }
-    ],
-    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__partyprivacyprofiletypecharacteristic_partyprivacyprofiletypecharacteristic_partyprivacyprofiletypecharacteristic": [],
-    "contact": [],
-    "group": [],
-    "accesstoken": [
-      {
-        "id": "nurse#111",
-        "role": "nurse",
-        "token": "ABCDEFGH"
       },
       {
-        "id": "doctor#111",
-        "role": "doctor",
-        "token": "ABCDEFGH"
+        "agreementPeriod": 23,
+        "description": "This agreement …",
+        "documentNumber": 13,
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "name": "Customer mass market privacy agreement",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "status": "validated",
+        "type": "commercial",
+        "version": "1",
+        "agreementSpecification": "8139",
+        "agreementItem": [
+          {
+            "productOffering": [
+              {
+                "href": "https://host:port/productOffering/productOffering/9559",
+                "id": "9559",
+                "name": "Privacy Service",
+                "bundledProductOffering": [
+                  {
+                    "href": "https://host:port/productOffering/bundledProductOffering/7120",
+                    "id": "7120",
+                    "name": "Magic Offer",
+                    "bundledProductOffering": []
+                  }
+                ]
+              }
+            ],
+            "termOrCondition": [
+              {
+                "description": "This agreement term or condition ",
+                "id": "8905",
+                "validFor": {
+                  "startDateTime": "2016-03-16T15:15:51.211Z",
+                  "endDateTime": "2016-09-16T15:15:51.211Z"
+                }
+              }
+            ]
+          }
+        ],
+        "engagedPartyRole": [
+          {
+            "href": "http://serverLocation:port/partyManagement/partyRole/1",
+            "id": "1",
+            "name": "Customer",
+            "partyId": "2345",
+            "partyName": "John Doe"
+          }
+        ],
+        "agreementAuthorization": [
+          {
+            "date": "2016-03-16T15:15:51.211Z",
+            "signatureRepresentation": "Digital",
+            "state": "approved"
+          }
+        ],
+        "characteristic": [
+          {
+            "name": "country",
+            "value": "France"
+          }
+        ],
+        "associatedAgreement": [
+          {
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/987654",
+            "id": "987654",
+            "name": "General Privacy Agreement"
+          }
+        ],
+        "partyPrivacyProfile": [
+          {
+            "id": "394",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/394"
+          },
+          {
+            "id": "1312",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/1312"
+          }
+        ],
+        "partyPrivacyProfileCharValue": [
+          {
+            "name": "eMailAddress",
+            "privacyUsagePurpose": "MARKETING",
+            "value": "Authorized",
+            "validFor": {
+              "startDateTime": "2016-03-16T15:15:51.211Z ",
+              "endDateTime": "2016-06-16T15:15:51.211Z "
+            },
+            "relatedParty": [
+              {
+                "id": "11",
+                "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+                "role": "Vendor",
+                "name": "Alice"
+              }
+            ]
+          }
+        ],
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
+        "id": 17
       },
       {
-        "id": "user#111",
-        "role": "user",
-        "token": "ABCDEFGH"
+        "agreementPeriod": 24,
+        "description": "This agreement …",
+        "documentNumber": 13,
+        "initialDate": "2016-03-16T15:15:51.210Z",
+        "name": "Customer mass market privacy agreement",
+        "statementOfIntent": "Agreement on customer mass market privacy profile",
+        "status": "validated",
+        "type": "commercial",
+        "version": "1",
+        "agreementSpecification": "8139",
+        "agreementItem": [
+          {
+            "productOffering": [
+              {
+                "href": "https://host:port/productOffering/productOffering/9559",
+                "id": "9559",
+                "name": "Privacy Service",
+                "bundledProductOffering": [
+                  {
+                    "href": "https://host:port/productOffering/bundledProductOffering/7120",
+                    "id": "7120",
+                    "name": "Magic Offer",
+                    "bundledProductOffering": []
+                  }
+                ]
+              }
+            ],
+            "termOrCondition": [
+              {
+                "description": "This agreement term or condition ",
+                "id": "8905",
+                "validFor": {
+                  "startDateTime": "2016-03-16T15:15:51.211Z",
+                  "endDateTime": "2016-09-16T15:15:51.211Z"
+                }
+              }
+            ]
+          }
+        ],
+        "engagedPartyRole": [
+          {
+            "href": "http://serverLocation:port/partyManagement/partyRole/1",
+            "id": "1",
+            "name": "Customer",
+            "partyId": "2345",
+            "partyName": "John Doe"
+          }
+        ],
+        "agreementAuthorization": [
+          {
+            "date": "2016-03-16T15:15:51.211Z",
+            "signatureRepresentation": "Digital",
+            "state": "approved"
+          }
+        ],
+        "characteristic": [
+          {
+            "name": "country",
+            "value": "France"
+          }
+        ],
+        "associatedAgreement": [
+          {
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/987654",
+            "id": "987654",
+            "name": "General Privacy Agreement"
+          }
+        ],
+        "partyPrivacyProfile": [
+          {
+            "id": "394",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/394"
+          },
+          {
+            "id": "1312",
+            "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfile/1312"
+          }
+        ],
+        "partyPrivacyProfileCharValue": [
+          {
+            "name": "eMailAddress",
+            "privacyUsagePurpose": "MARKETING",
+            "value": "Authorized",
+            "validFor": {
+              "startDateTime": "2016-03-16T15:15:51.211Z ",
+              "endDateTime": "2016-06-16T15:15:51.211Z "
+            },
+            "relatedParty": [
+              {
+                "id": "11",
+                "href": "http ://serverLocation:port/partyManagement/partyRole/11",
+                "role": "Vendor",
+                "name": "Alice"
+              }
+            ]
+          }
+        ],
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/undefined",
+        "id": 18
       }
     ],
-    "AgreeAuthoriz": [],
-    "agreementitem": [],
-    "AssoAgreem": [],
-    "BundProdOffer": [],
-    "characteristic": [],
-    "party": [],
-    "ppAgreement": [],
-    "partyprivacyprofile": [
+    "partyprivacyprofile": [],
+    "productoffering": [
       {
-        "id": 1,
-        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/1",
-        "name": "John Doe's Privacy Profile",
-        "description": "This is John Does Privacy profile",
-        "status": "created",
-        "validFor": 1,
-        "agreedByParty": "userid#1234",
-        "dateCreated": "2016-04-14T14:59:51.919Z",
-        "partyPrivacyProfileType": 103,
-        "agreement": "6810"
+        "id": "9559",
+        "name": "Privacy Service",
+        "href": "https://host:port/productOffering/productOffering/9559"
+      },
+      {
+        "id": "9559",
+        "name": "Privacy Service",
+        "href": "https://host:port/productOffering/productOffering/9559"
       }
     ],
-    "ppProfType": [],
-    "ppAgreSpec": [],
-    "ppProfCharVal": [],
-    "pppTypeCharac": [],
-    "pppTypeCharVal": [],
-    "productoffering": [],
     "role": [],
-    "storetoken": [
+    "storetoken": [],
+    "termorcondition": [
       {
-        "privacyProfileId": 1,
-        "id": 1
+        "id": "8905",
+        "description": "This agreement term or condition ",
+        "validFor": 7
+      },
+      {
+        "id": "8905",
+        "description": "This agreement term or condition ",
+        "validFor": 9
       }
     ],
-    "termorcondition": [],
     "timeperiod": [
       {
-        "startDateTime": "2016-03-16T15:15:51.209Z",
-        "endDateTime": "",
+        "startDateTime": "2013-04-19T16:42:23-04:00",
+        "endDateTime": "2013-06-19T00:00:00-04:00",
         "id": 1
       },
       {
-        "startDateTime": "2016-03-16T15:15:51.209Z",
-        "endDateTime": "",
+        "startDateTime": "2013-04-19T16:42:23-04:00",
+        "endDateTime": "2013-06-19T00:00:00-04:00",
         "id": 2
       },
       {
-        "startDateTime": "2016-03-16T15:15:51.209Z",
-        "endDateTime": "",
+        "startDateTime": "2013-04-19T16:42:23-04:00",
+        "endDateTime": "2013-06-19T00:00:00-04:00",
         "id": 3
       },
       {
-        "startDateTime": "2016-03-16T15:15:51.209Z",
-        "endDateTime": "",
+        "startDateTime": "2013-04-19T16:42:23-04:00",
+        "endDateTime": "2013-06-19T00:00:00-04:00",
         "id": 4
       },
       {
         "startDateTime": "2016-03-16T15:15:51.209Z",
-        "endDateTime": "",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
         "id": 5
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
+        "id": 6
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.211Z",
+        "endDateTime": "2016-09-16T15:15:51.211Z",
+        "id": 7
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
+        "id": 8
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.211Z",
+        "endDateTime": "2016-09-16T15:15:51.211Z",
+        "id": 9
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
+        "id": 10
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
+        "id": 11
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
+        "id": 12
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
+        "id": 13
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
+        "id": 14
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
+        "id": 15
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
+        "id": 16
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
+        "id": 17
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
+        "id": 18
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
+        "id": 19
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
+        "id": 20
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
+        "id": 21
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
+        "id": 22
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
+        "id": 23
+      },
+      {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "2016-09-16T15:15:51.209Z ",
+        "id": 24
       }
     ],
-    "contact_contacts_contact__group_contacts": [],
-    "agreementitem_productoffering__productoffering_productoffering_productoffering": [],
-    "agreementitem_termorcondition__termorcondition_termorcondition_termorcondition": [],
-    "agreementitem_agreementitem_agreementitem__partyprivacyagreement_agreementitem": [],
-    "party_engagedpartyrole_party__partyprivacyagreement_engagedpartyrole": [],
-    "agreeauth_agreementauthorization_agreeauth__partyprivacyagreement_agreementauthorization": [],
-    "characteristic_characteristic_characteristic__partyprivacyagreement_characteristic": [],
-    "partyprivacyagreement_associatedagreement_partyprivacyagreement__partyprivacyagreement_associatedagreement": [],
-    "partyprivacyagreement_partyprivacyprofile__partyprivacyprofile_partyprivacyprofile_partyprivacyprofile": [],
-    "partyprivacyagreement_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": [],
-    "partyprivacyprofile_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": [],
-    "party_relatedparty_party__partyprivacyprofiletype_relatedparty": [],
-    "partyprivacyprofiletype_applicablerole__role_applicablerole_role": [],
-    "partyprivacyprofiletype_partyprproftypchara__ppproftypchar_partyprproftypchara_ppproftypchar": [],
-    "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": [],
-    "accesstoken_accesstoken_accesstoken__storetoken_accesstoken": [
+    "ppProfType": [
       {
-        "accesstoken_accessToken_accesstoken": "nurse#111",
-        "storetoken_accessToken": 1,
+        "id": 1,
+        "name": "Customer Mass Market Privacy",
+        "description": "This is the customer mass market privacy",
+        "lastUpdate": "2013-04-19T20:42:23.000Z",
+        "version": "1.0",
+        "lifecycleStatus": "active",
+        "validFor": 1,
+        "relatedParty": [
+          {
+            "id": "1066",
+            "href": "http://serverlocation:port/partyManagement/individual/1066",
+            "role": "Profile Type Admin",
+            "name": "James Smith"
+          }
+        ],
+        "applicableRole": [
+          {
+            "role": "Customer"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Customer Mass Market Privacy",
+        "description": "This is the customer mass market privacy",
+        "lastUpdate": "2013-04-19T20:42:23.000Z",
+        "version": "1.0",
+        "lifecycleStatus": "active",
+        "validFor": 2,
+        "relatedParty": [
+          {
+            "id": "1066",
+            "href": "http://serverlocation:port/partyManagement/individual/1066",
+            "role": "Profile Type Admin",
+            "name": "James Smith"
+          }
+        ],
+        "applicableRole": [
+          {
+            "role": "Customer"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Customer Mass Market Privacy",
+        "description": "This is the customer mass market privacy",
+        "lastUpdate": "2013-04-19T20:42:23.000Z",
+        "version": "1.0",
+        "lifecycleStatus": "active",
+        "validFor": 3,
+        "relatedParty": [
+          {
+            "id": "1066",
+            "href": "http://serverlocation:port/partyManagement/individual/1066",
+            "role": "Profile Type Admin",
+            "name": "James Smith"
+          }
+        ],
+        "applicableRole": [
+          {
+            "role": "Customer"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Customer Mass Market Privacy",
+        "description": "This is the customer mass market privacy",
+        "lastUpdate": "2013-04-19T20:42:23.000Z",
+        "version": "1.0",
+        "lifecycleStatus": "active",
+        "validFor": 4,
+        "relatedParty": [
+          {
+            "id": "1066",
+            "href": "http://serverlocation:port/partyManagement/individual/1066",
+            "role": "Profile Type Admin",
+            "name": "James Smith"
+          }
+        ],
+        "applicableRole": [
+          {
+            "role": "Customer"
+          }
+        ]
+      }
+    ],
+    "agreementitem_productoffering__productoffering_productoffering_productoffering": [
+      {
+        "productoffering_productOffering_productoffering": "9559",
+        "agreementitem_productOffering": 1,
+        "id": 1
+      }
+    ],
+    "agreementitem_termorcondition__termorcondition_termorcondition_termorcondition": [
+      {
+        "termorcondition_termOrCondition_termorcondition": "8905",
+        "agreementitem_termOrCondition": 1,
         "id": 1
       },
       {
-        "accesstoken_accessToken_accesstoken": "doctor#111",
-        "storetoken_accessToken": 1,
+        "termorcondition_termOrCondition_termorcondition": "8905",
+        "agreementitem_termOrCondition": 2,
+        "id": 2
+      }
+    ],
+    "partyprivacyprofile_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": [],
+    "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": [
+      {
+        "bundledproductoffering_bundledProductOffering_bundledproductoffering": "7120",
+        "productoffering_bundledProductOffering": "9559",
+        "id": 1
+      }
+    ],
+    "accesstoken_accesstoken_accesstoken__storetoken_accesstoken": [],
+    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__ppproftypchar_partyprivacyprofiletypecharacteristic_ppproftypchar": [
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "42",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "id": 1
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "43",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
         "id": 2
       },
       {
-        "accesstoken_accessToken_accesstoken": "user#111",
-        "storetoken_accessToken": 1,
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "44",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
         "id": 3
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "45",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "id": 4
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "46",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "id": 5
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "47",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "id": 6
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "48",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "id": 7
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "49",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "id": 8
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "42",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
+        "id": 9
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "43",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
+        "id": 10
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "44",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
+        "id": 11
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "45",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
+        "id": 12
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "46",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
+        "id": 13
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "47",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
+        "id": 14
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "48",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
+        "id": 15
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "49",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
+        "id": 16
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "42",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 3,
+        "id": 17
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "43",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 3,
+        "id": 18
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "44",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 3,
+        "id": 19
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "45",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 3,
+        "id": 20
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "46",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 3,
+        "id": 21
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "47",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 3,
+        "id": 22
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "48",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 3,
+        "id": 23
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "49",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 3,
+        "id": 24
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "42",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 4,
+        "id": 25
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "43",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 4,
+        "id": 26
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "44",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 4,
+        "id": 27
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "45",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 4,
+        "id": 28
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "46",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 4,
+        "id": 29
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "47",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 4,
+        "id": 30
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "48",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 4,
+        "id": 31
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "49",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 4,
+        "id": 32
       }
     ]
   },
   "schema": {
-    "agreementauthorization": {
-      "state": {
-        "type": "string"
-      },
-      "signatureRepresentation": {
-        "type": "string"
-      },
-      "date": {
-        "type": "datetime"
-      },
+    "party_engagedpartyrole_party__partyprivacyagreement_engagedpartyrole": {
       "id": {
-        "type": "integer",
-        "autoIncrement": true,
-        "primaryKey": true,
-        "unique": true
-      }
-    },
-    "associatedagreement": {
-      "id": {
-        "type": "string",
-        "primaryKey": true,
-        "unique": true
-      },
-      "href": {
-        "type": "string"
-      },
-      "name": {
-        "type": "string"
-      }
-    },
-    "bundledproductoffering": {
-      "id": {
-        "type": "string",
-        "primaryKey": true,
-        "unique": true
-      },
-      "name": {
-        "type": "string"
-      },
-      "href": {
-        "type": "string"
-      }
-    },
-    "partyprivacyagreement": {
-      "id": {
-        "type": "string",
-        "primaryKey": true,
-        "unique": true
-      },
-      "name": {
-        "type": "string"
-      },
-      "version": {
-        "type": "string"
-      },
-      "documentNumber": {
-        "type": "integer"
-      },
-      "status": {
-        "type": "string"
-      },
-      "type": {
-        "type": "string"
-      },
-      "statementOfIntent": {
-        "type": "string"
-      },
-      "agreementPeriod": {
-        "type": "integer",
-        "model": "timeperiod",
-        "foreignKey": true,
-        "alias": "agreementPeriod"
-      },
-      "description": {
-        "type": "string"
-      },
-      "href": {
-        "type": "string"
-      },
-      "initialDate": {
-        "type": "datetime"
-      },
-      "agreementSpecification": {
-        "type": "string",
-        "model": "partyprivacyagreementspecification",
-        "foreignKey": true,
-        "alias": "agreementSpecification"
-      }
-    },
-    "partyprivacyagreementspecification": {
-      "id": {
-        "type": "string",
-        "primaryKey": true,
-        "unique": true
-      },
-      "name": {
-        "type": "string"
-      },
-      "href": {
-        "type": "string"
-      },
-      "description": {
-        "type": "string"
-      }
-    },
-    "partyprivacyprofilecharvalue": {
-      "id": {
-        "type": "integer",
         "primaryKey": true,
         "unique": true,
-        "autoIncrement": true
-      },
-      "name": {
-        "type": "string"
-      },
-      "value": {
-        "type": "string"
-      },
-      "relatedParty": {
-        "type": "json"
-      },
-      "characteristicAgreement": {
-        "type": "json"
-      },
-      "privacyUsagePurpose": {
-        "type": "string"
-      },
-      "validFor": {
-        "type": "json"
-      }
-    },
-    "partyprivacyprofiletype": {
-      "id": {
-        "type": "string",
-        "primaryKey": true,
-        "unique": true
-      },
-      "name": {
-        "type": "string"
-      },
-      "href": {
-        "type": "string"
-      },
-      "description": {
-        "type": "string"
-      },
-      "lastUpdate": {
-        "type": "datetime"
-      },
-      "version": {
-        "type": "string"
-      },
-      "lifecycleStatus": {
-        "type": "string"
-      },
-      "validFor": {
-        "type": "integer",
-        "model": "timeperiod",
-        "foreignKey": true,
-        "alias": "validFor"
-      }
-    },
-    "partyprivacyprofiletypecharvalue": {
-      "value": {
-        "type": "string"
-      },
-      "valueType": {
-        "type": "string"
-      },
-      "default": {
-        "type": "boolean"
-      },
-      "validityDuration": {
-        "type": "string"
-      },
-      "unitOfMeasure": {
-        "type": "string"
-      },
-      "fromValue": {
-        "type": "string"
-      },
-      "toValue": {
-        "type": "string"
-      },
-      "rangeInterval": {
-        "type": "string"
-      },
-      "id": {
-        "type": "integer",
         "autoIncrement": true,
-        "primaryKey": true,
-        "unique": true
+        "type": "integer"
+      },
+      "partyprivacyagreement_engagedPartyRole": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "partyprivacyagreement",
+        "on": "id",
+        "via": "party_engagedPartyRole_party"
+      },
+      "party_engagedPartyRole_party": {
+        "type": "string",
+        "foreignKey": true,
+        "references": "party",
+        "on": "id",
+        "via": "partyprivacyagreement_engagedPartyRole"
       }
     },
-    "partyprivacyprofiletypecharacteristic": {
+    "agreementitem_agreementitem_agreementitem__partyprivacyagreement_agreementitem": {
       "id": {
-        "type": "string",
         "primaryKey": true,
-        "unique": true
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
       },
-      "name": {
-        "type": "string"
+      "partyprivacyagreement_agreementItem": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "partyprivacyagreement",
+        "on": "id",
+        "via": "agreementitem_agreementItem_agreementitem"
       },
-      "description": {
-        "type": "string"
-      },
-      "criticalityLevel": {
-        "type": "string",
-        "enum": [
-          "low",
-          "high"
-        ]
-      },
-      "privacyType": {
-        "type": "string"
-      },
-      "privacyUsagePurpose": {
-        "type": "string"
-      },
-      "validFor": {
-        "type": "json"
-      },
-      "partyPrivacyProfileTypeCharValue": {
-        "type": "json"
-      },
-      "relatedParty": {
-        "type": "json"
+      "agreementitem_agreementItem_agreementitem": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "agreementitem",
+        "on": "id",
+        "via": "partyprivacyagreement_agreementItem"
       }
     },
-    "agreementauthorization_agreementauthorization_agreementauthorization__partyprivacyagreement_agreementauthorization": {
+    "agreeauth_agreementauthorization_agreeauth__partyprivacyagreement_agreementauthorization": {
       "id": {
         "primaryKey": true,
         "unique": true,
@@ -804,21 +2902,87 @@
         "type": "integer"
       },
       "partyprivacyagreement_agreementAuthorization": {
-        "type": "string",
+        "type": "integer",
         "foreignKey": true,
         "references": "partyprivacyagreement",
         "on": "id",
-        "via": "agreementauthorization_agreementAuthorization_agreementauthorization"
+        "via": "agreeauth_agreementAuthorization_agreeauth"
       },
-      "agreementauthorization_agreementAuthorization_agreementauthorization": {
+      "agreeauth_agreementAuthorization_agreeauth": {
         "type": "integer",
         "foreignKey": true,
-        "references": "agreementauthorization",
+        "references": "agreeauth",
         "on": "id",
         "via": "partyprivacyagreement_agreementAuthorization"
       }
     },
-    "partyprivacyagreement_partyprivacyprofilecharvalue__partyprivacyprofilecharvalue_partyprivacyprofilecharvalue_partyprivacyprofilecharvalue": {
+    "characteristic_characteristic_characteristic__partyprivacyagreement_characteristic": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "partyprivacyagreement_characteristic": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "partyprivacyagreement",
+        "on": "id",
+        "via": "characteristic_characteristic_characteristic"
+      },
+      "characteristic_characteristic_characteristic": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "characteristic",
+        "on": "id",
+        "via": "partyprivacyagreement_characteristic"
+      }
+    },
+    "partyprivacyagreement_associatedagreement_partyprivacyagreement__partyprivacyagreement_associatedagreement": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "partyprivacyagreement_associatedAgreement": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "partyprivacyagreement",
+        "on": "id",
+        "via": "partyprivacyagreement_associatedAgreement_partyprivacyagreement"
+      },
+      "partyprivacyagreement_associatedAgreement_partyprivacyagreement": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "partyprivacyagreement",
+        "on": "id",
+        "via": "partyprivacyagreement_associatedAgreement"
+      }
+    },
+    "partyprivacyagreement_partyprivacyprofile__partyprivacyprofile_partyprivacyprofile_partyprivacyprofile": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "partyprivacyagreement_partyPrivacyProfile": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "partyprivacyagreement",
+        "on": "id",
+        "via": "partyprivacyprofile_partyPrivacyProfile_partyprivacyprofile"
+      },
+      "partyprivacyprofile_partyPrivacyProfile_partyprivacyprofile": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "partyprivacyprofile",
+        "on": "id",
+        "via": "partyprivacyagreement_partyPrivacyProfile"
+      }
+    },
+    "partyprivacyagreement_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": {
       "id": {
         "primaryKey": true,
         "unique": true,
@@ -826,84 +2990,18 @@
         "type": "integer"
       },
       "partyprivacyagreement_partyPrivacyProfileCharValue": {
-        "type": "string",
+        "type": "integer",
         "foreignKey": true,
         "references": "partyprivacyagreement",
         "on": "id",
-        "via": "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue"
+        "via": "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval"
       },
-      "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": {
+      "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval": {
         "type": "integer",
         "foreignKey": true,
-        "references": "partyprivacyprofilecharvalue",
+        "references": "ppprofcharval",
         "on": "id",
         "via": "partyprivacyagreement_partyPrivacyProfileCharValue"
-      }
-    },
-    "partyprivacyprofile_partyprivacyprofilecharvalue__partyprivacyprofilecharvalue_partyprivacyprofilecharvalue_partyprivacyprofilecharvalue": {
-      "id": {
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "type": "integer"
-      },
-      "partyprivacyprofile_partyPrivacyProfileCharValue": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "partyprivacyprofile",
-        "on": "id",
-        "via": "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue"
-      },
-      "partyprivacyprofilecharvalue_partyPrivacyProfileCharValue_partyprivacyprofilecharvalue": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "partyprivacyprofilecharvalue",
-        "on": "id",
-        "via": "partyprivacyprofile_partyPrivacyProfileCharValue"
-      }
-    },
-    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__partyprivacyprofiletypecharacteristic_partyprivacyprofiletypecharacteristic_partyprivacyprofiletypecharacteristic": {
-      "id": {
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "type": "integer"
-      },
-      "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": {
-        "type": "string",
-        "foreignKey": true,
-        "references": "partyprivacyprofiletype",
-        "on": "id",
-        "via": "partyprivacyprofiletypecharacteristic_partyPrivacyProfileTypeCharacteristic_partyprivacyprofiletypecharacteristic"
-      },
-      "partyprivacyprofiletypecharacteristic_partyPrivacyProfileTypeCharacteristic_partyprivacyprofiletypecharacteristic": {
-        "type": "string",
-        "foreignKey": true,
-        "references": "partyprivacyprofiletypecharacteristic",
-        "on": "id",
-        "via": "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic"
-      }
-    },
-    "contact": {
-      "group": {
-        "type": "integer",
-        "model": "group",
-        "foreignKey": true,
-        "alias": "group"
-      },
-      "id": {
-        "type": "integer",
-        "autoIncrement": true,
-        "primaryKey": true,
-        "unique": true
-      }
-    },
-    "group": {
-      "id": {
-        "type": "integer",
-        "autoIncrement": true,
-        "primaryKey": true,
-        "unique": true
       }
     },
     "accesstoken": {
@@ -982,150 +3080,6 @@
         "autoIncrement": true,
         "primaryKey": true,
         "unique": true
-      }
-    },
-    "party": {
-      "id": {
-        "type": "integer",
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true
-      },
-      "href": {
-        "type": "string"
-      },
-      "name": {
-        "type": "string"
-      },
-      "role": {
-        "type": "string"
-      }
-    },
-    "ppAgreement": {
-      "id": {
-        "type": "string",
-        "primaryKey": true,
-        "unique": true
-      },
-      "name": {
-        "type": "string"
-      },
-      "version": {
-        "type": "string"
-      },
-      "documentNumber": {
-        "type": "integer"
-      },
-      "status": {
-        "type": "string"
-      },
-      "type": {
-        "type": "string"
-      },
-      "statementOfIntent": {
-        "type": "string"
-      },
-      "agreementPeriod": {
-        "type": "integer",
-        "model": "timeperiod",
-        "foreignKey": true,
-        "alias": "agreementPeriod"
-      },
-      "description": {
-        "type": "string"
-      },
-      "href": {
-        "type": "string"
-      },
-      "initialDate": {
-        "type": "datetime"
-      },
-      "agreementSpecification": {
-        "type": "string",
-        "model": "ppagreespec",
-        "foreignKey": true,
-        "alias": "agreementSpecification"
-      }
-    },
-    "partyprivacyprofile": {
-      "id": {
-        "type": "integer",
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "index": true
-      },
-      "href": {
-        "type": "string"
-      },
-      "name": {
-        "type": "string"
-      },
-      "description": {
-        "type": "string"
-      },
-      "status": {
-        "type": "string"
-      },
-      "validFor": {
-        "type": "integer",
-        "model": "timeperiod",
-        "foreignKey": true,
-        "alias": "validFor"
-      },
-      "agreedByParty": {
-        "type": "string",
-        "model": "party",
-        "foreignKey": true,
-        "alias": "agreedByParty"
-      },
-      "dateCreated": {
-        "type": "datetime"
-      },
-      "partyPrivacyProfileType": {
-        "type": "integer",
-        "model": "partyprivacyprofiletype",
-        "foreignKey": true,
-        "alias": "partyPrivacyProfileType"
-      },
-      "agreement": {
-        "type": "string",
-        "model": "partyprivacyagreement",
-        "foreignKey": true,
-        "alias": "agreement"
-      }
-    },
-    "ppProfType": {
-      "id": {
-        "type": "integer",
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "index": true
-      },
-      "name": {
-        "type": "string"
-      },
-      "href": {
-        "type": "string"
-      },
-      "description": {
-        "type": "string"
-      },
-      "lastUpdate": {
-        "type": "datetime"
-      },
-      "version": {
-        "type": "string"
-      },
-      "lifecycleStatus": {
-        "type": "string"
-      },
-      "validFor": {
-        "type": "integer",
-        "model": "timeperiod",
-        "foreignKey": true,
-        "alias": "validFor"
       }
     },
     "ppAgreSpec": {
@@ -1237,6 +3191,140 @@
         "unique": true
       }
     },
+    "party": {
+      "id": {
+        "type": "integer",
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true
+      },
+      "href": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "role": {
+        "type": "string"
+      }
+    },
+    "ppAgreement": {
+      "id": {
+        "type": "integer",
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "index": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "version": {
+        "type": "string"
+      },
+      "documentNumber": {
+        "type": "integer"
+      },
+      "status": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      },
+      "statementOfIntent": {
+        "type": "string"
+      },
+      "agreementPeriod": {
+        "type": "integer",
+        "model": "timeperiod",
+        "foreignKey": true,
+        "alias": "agreementPeriod"
+      },
+      "description": {
+        "type": "string"
+      },
+      "href": {
+        "type": "string"
+      },
+      "initialDate": {
+        "type": "datetime"
+      },
+      "agreementSpecification": {
+        "type": "string",
+        "model": "ppagreespec",
+        "foreignKey": true,
+        "alias": "agreementSpecification"
+      },
+      "agreementItem": {
+        "type": "json"
+      },
+      "engagedPartyRole": {
+        "type": "json"
+      },
+      "agreementAuthorization": {
+        "type": "json"
+      },
+      "characteristic": {
+        "type": "json"
+      },
+      "associatedAgreement": {
+        "type": "json"
+      },
+      "partyPrivacyProfile": {
+        "type": "json"
+      },
+      "partyPrivacyProfileCharValue": {
+        "type": "json"
+      }
+    },
+    "partyprivacyprofile": {
+      "id": {
+        "type": "integer",
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "index": true
+      },
+      "href": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string"
+      },
+      "validFor": {
+        "type": "integer",
+        "model": "timeperiod",
+        "foreignKey": true,
+        "alias": "validFor"
+      },
+      "agreedByParty": {
+        "type": "string",
+        "model": "party",
+        "foreignKey": true,
+        "alias": "agreedByParty"
+      },
+      "dateCreated": {
+        "type": "datetime"
+      },
+      "partyPrivacyProfileType": {
+        "type": "integer",
+        "model": "partyprivacyprofiletype",
+        "foreignKey": true,
+        "alias": "partyPrivacyProfileType"
+      },
+      "agreement": {
+        "type": "integer",
+        "model": "partyprivacyagreement",
+        "foreignKey": true,
+        "alias": "agreement"
+      }
+    },
     "productoffering": {
       "id": {
         "type": "string",
@@ -1302,26 +3390,43 @@
         "unique": true
       }
     },
-    "contact_contacts_contact__group_contacts": {
+    "ppProfType": {
       "id": {
+        "type": "integer",
         "primaryKey": true,
         "unique": true,
         "autoIncrement": true,
-        "type": "integer"
+        "index": true
       },
-      "group_contacts": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "group",
-        "on": "id",
-        "via": "contact_contacts_contact"
+      "name": {
+        "type": "string"
       },
-      "contact_contacts_contact": {
+      "href": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "lastUpdate": {
+        "type": "datetime"
+      },
+      "version": {
+        "type": "string"
+      },
+      "lifecycleStatus": {
+        "type": "string"
+      },
+      "validFor": {
         "type": "integer",
+        "model": "timeperiod",
         "foreignKey": true,
-        "references": "contact",
-        "on": "id",
-        "via": "group_contacts"
+        "alias": "validFor"
+      },
+      "relatedParty": {
+        "type": "json"
+      },
+      "applicableRole": {
+        "type": "json"
       }
     },
     "agreementitem_productoffering__productoffering_productoffering_productoffering": {
@@ -1368,160 +3473,6 @@
         "via": "agreementitem_termOrCondition"
       }
     },
-    "agreementitem_agreementitem_agreementitem__partyprivacyagreement_agreementitem": {
-      "id": {
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "type": "integer"
-      },
-      "partyprivacyagreement_agreementItem": {
-        "type": "string",
-        "foreignKey": true,
-        "references": "partyprivacyagreement",
-        "on": "id",
-        "via": "agreementitem_agreementItem_agreementitem"
-      },
-      "agreementitem_agreementItem_agreementitem": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "agreementitem",
-        "on": "id",
-        "via": "partyprivacyagreement_agreementItem"
-      }
-    },
-    "party_engagedpartyrole_party__partyprivacyagreement_engagedpartyrole": {
-      "id": {
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "type": "integer"
-      },
-      "partyprivacyagreement_engagedPartyRole": {
-        "type": "string",
-        "foreignKey": true,
-        "references": "partyprivacyagreement",
-        "on": "id",
-        "via": "party_engagedPartyRole_party"
-      },
-      "party_engagedPartyRole_party": {
-        "type": "string",
-        "foreignKey": true,
-        "references": "party",
-        "on": "id",
-        "via": "partyprivacyagreement_engagedPartyRole"
-      }
-    },
-    "agreeauth_agreementauthorization_agreeauth__partyprivacyagreement_agreementauthorization": {
-      "id": {
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "type": "integer"
-      },
-      "partyprivacyagreement_agreementAuthorization": {
-        "type": "string",
-        "foreignKey": true,
-        "references": "partyprivacyagreement",
-        "on": "id",
-        "via": "agreeauth_agreementAuthorization_agreeauth"
-      },
-      "agreeauth_agreementAuthorization_agreeauth": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "agreeauth",
-        "on": "id",
-        "via": "partyprivacyagreement_agreementAuthorization"
-      }
-    },
-    "characteristic_characteristic_characteristic__partyprivacyagreement_characteristic": {
-      "id": {
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "type": "integer"
-      },
-      "partyprivacyagreement_characteristic": {
-        "type": "string",
-        "foreignKey": true,
-        "references": "partyprivacyagreement",
-        "on": "id",
-        "via": "characteristic_characteristic_characteristic"
-      },
-      "characteristic_characteristic_characteristic": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "characteristic",
-        "on": "id",
-        "via": "partyprivacyagreement_characteristic"
-      }
-    },
-    "partyprivacyagreement_associatedagreement_partyprivacyagreement__partyprivacyagreement_associatedagreement": {
-      "id": {
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "type": "integer"
-      },
-      "partyprivacyagreement_associatedAgreement": {
-        "type": "string",
-        "foreignKey": true,
-        "references": "partyprivacyagreement",
-        "on": "id",
-        "via": "partyprivacyagreement_associatedAgreement_partyprivacyagreement"
-      },
-      "partyprivacyagreement_associatedAgreement_partyprivacyagreement": {
-        "type": "string",
-        "foreignKey": true,
-        "references": "partyprivacyagreement",
-        "on": "id",
-        "via": "partyprivacyagreement_associatedAgreement"
-      }
-    },
-    "partyprivacyagreement_partyprivacyprofile__partyprivacyprofile_partyprivacyprofile_partyprivacyprofile": {
-      "id": {
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "type": "integer"
-      },
-      "partyprivacyagreement_partyPrivacyProfile": {
-        "type": "string",
-        "foreignKey": true,
-        "references": "partyprivacyagreement",
-        "on": "id",
-        "via": "partyprivacyprofile_partyPrivacyProfile_partyprivacyprofile"
-      },
-      "partyprivacyprofile_partyPrivacyProfile_partyprivacyprofile": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "partyprivacyprofile",
-        "on": "id",
-        "via": "partyprivacyagreement_partyPrivacyProfile"
-      }
-    },
-    "partyprivacyagreement_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": {
-      "id": {
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "type": "integer"
-      },
-      "partyprivacyagreement_partyPrivacyProfileCharValue": {
-        "type": "string",
-        "foreignKey": true,
-        "references": "partyprivacyagreement",
-        "on": "id",
-        "via": "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval"
-      },
-      "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "ppprofcharval",
-        "on": "id",
-        "via": "partyprivacyagreement_partyPrivacyProfileCharValue"
-      }
-    },
     "partyprivacyprofile_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": {
       "id": {
         "primaryKey": true,
@@ -1542,72 +3493,6 @@
         "references": "ppprofcharval",
         "on": "id",
         "via": "partyprivacyprofile_partyPrivacyProfileCharValue"
-      }
-    },
-    "party_relatedparty_party__partyprivacyprofiletype_relatedparty": {
-      "id": {
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "type": "integer"
-      },
-      "partyprivacyprofiletype_relatedParty": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "partyprivacyprofiletype",
-        "on": "id",
-        "via": "party_relatedParty_party"
-      },
-      "party_relatedParty_party": {
-        "type": "string",
-        "foreignKey": true,
-        "references": "party",
-        "on": "id",
-        "via": "partyprivacyprofiletype_relatedParty"
-      }
-    },
-    "partyprivacyprofiletype_applicablerole__role_applicablerole_role": {
-      "id": {
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "type": "integer"
-      },
-      "partyprivacyprofiletype_applicableRole": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "partyprivacyprofiletype",
-        "on": "id",
-        "via": "role_applicableRole_role"
-      },
-      "role_applicableRole_role": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "role",
-        "on": "id",
-        "via": "partyprivacyprofiletype_applicableRole"
-      }
-    },
-    "partyprivacyprofiletype_partyprproftypchara__ppproftypchar_partyprproftypchara_ppproftypchar": {
-      "id": {
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "type": "integer"
-      },
-      "partyprivacyprofiletype_partyPrProfTypChara": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "partyprivacyprofiletype",
-        "on": "id",
-        "via": "ppproftypchar_partyPrProfTypChara_ppproftypchar"
-      },
-      "ppproftypchar_partyPrProfTypChara_ppproftypchar": {
-        "type": "string",
-        "foreignKey": true,
-        "references": "ppproftypchar",
-        "on": "id",
-        "via": "partyprivacyprofiletype_partyPrProfTypChara"
       }
     },
     "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": {
@@ -1653,70 +3538,92 @@
         "on": "id",
         "via": "storetoken_accessToken"
       }
+    },
+    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__ppproftypchar_partyprivacyprofiletypecharacteristic_ppproftypchar": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "partyprivacyprofiletype",
+        "on": "id",
+        "via": "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar"
+      },
+      "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": {
+        "type": "string",
+        "foreignKey": true,
+        "references": "ppproftypchar",
+        "on": "id",
+        "via": "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic"
+      }
     }
   },
   "counters": {
-    "contact": {},
-    "group": {},
     "accesstoken": {},
-    "agreementauthorization": {},
-    "agreementitem": {},
-    "associatedagreement": {},
-    "bundledproductoffering": {},
-    "characteristic": {},
-    "party": {},
-    "partyprivacyagreement": {},
-    "partyprivacyagreementspecification": {},
-    "partyprivacyprofile": {
-      "id": 394
+    "AgreeAuthoriz": {
+      "id": 2
     },
-    "partyprivacyprofilecharvalue": {
-      "id": 16
+    "agreementitem": {
+      "id": 2
     },
-    "partyprivacyprofiletype": {},
-    "partyprivacyprofiletypecharacteristic": {},
-    "partyprivacyprofiletypecharvalue": {},
-    "productoffering": {},
-    "role": {},
-    "storetoken": {
-      "id": 1
-    },
-    "termorcondition": {},
-    "timeperiod": {
-      "id": 5
-    },
-    "contact_contacts_contact__group_contacts": {},
-    "agreementitem_productoffering__productoffering_productoffering_productoffering": {},
-    "agreementitem_termorcondition__termorcondition_termorcondition_termorcondition": {},
-    "agreementitem_agreementitem_agreementitem__partyprivacyagreement_agreementitem": {},
-    "party_engagedpartyrole_party__partyprivacyagreement_engagedpartyrole": {},
-    "agreementauthorization_agreementauthorization_agreementauthorization__partyprivacyagreement_agreementauthorization": {},
-    "characteristic_characteristic_characteristic__partyprivacyagreement_characteristic": {},
-    "partyprivacyagreement_associatedagreement_partyprivacyagreement__partyprivacyagreement_associatedagreement": {},
-    "partyprivacyagreement_partyprivacyprofile__partyprivacyprofile_partyprivacyprofile_partyprivacyprofile": {},
-    "partyprivacyagreement_partyprivacyprofilecharvalue__partyprivacyprofilecharvalue_partyprivacyprofilecharvalue_partyprivacyprofilecharvalue": {},
-    "partyprivacyprofile_partyprivacyprofilecharvalue__partyprivacyprofilecharvalue_partyprivacyprofilecharvalue_partyprivacyprofilecharvalue": {
-      "id": 16
-    },
-    "party_relatedparty_party__partyprivacyprofiletype_relatedparty": {},
-    "partyprivacyprofiletype_applicablerole__role_applicablerole_role": {},
-    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__partyprivacyprofiletypecharacteristic_partyprivacyprofiletypecharacteristic_partyprivacyprofiletypecharacteristic": {},
-    "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": {},
-    "accesstoken_accesstoken_accesstoken__storetoken_accesstoken": {
-      "id": 3
-    },
-    "AgreeAuthoriz": {},
     "AssoAgreem": {},
     "BundProdOffer": {},
-    "ppAgreement": {},
-    "ppProfType": {},
+    "characteristic": {
+      "id": 3
+    },
     "ppAgreSpec": {},
-    "ppProfCharVal": {},
+    "ppProfCharVal": {
+      "id": 3
+    },
     "pppTypeCharac": {},
     "pppTypeCharVal": {},
-    "agreeauth_agreementauthorization_agreeauth__partyprivacyagreement_agreementauthorization": {},
-    "partyprivacyagreement_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": {},
+    "party": {},
+    "ppAgreement": {
+      "id": 18
+    },
+    "partyprivacyprofile": {},
+    "productoffering": {},
+    "role": {},
+    "storetoken": {},
+    "termorcondition": {},
+    "timeperiod": {
+      "id": 24
+    },
+    "ppProfType": {
+      "id": 4
+    },
+    "agreementitem_productoffering__productoffering_productoffering_productoffering": {
+      "id": 1
+    },
+    "agreementitem_termorcondition__termorcondition_termorcondition_termorcondition": {
+      "id": 2
+    },
+    "agreementitem_agreementitem_agreementitem__partyprivacyagreement_agreementitem": {
+      "id": 1
+    },
+    "party_engagedpartyrole_party__partyprivacyagreement_engagedpartyrole": {},
+    "agreeauth_agreementauthorization_agreeauth__partyprivacyagreement_agreementauthorization": {
+      "id": 2
+    },
+    "characteristic_characteristic_characteristic__partyprivacyagreement_characteristic": {
+      "id": 3
+    },
+    "partyprivacyagreement_associatedagreement_partyprivacyagreement__partyprivacyagreement_associatedagreement": {},
+    "partyprivacyagreement_partyprivacyprofile__partyprivacyprofile_partyprivacyprofile_partyprivacyprofile": {},
+    "partyprivacyagreement_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": {
+      "id": 3
+    },
     "partyprivacyprofile_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": {},
-    "partyprivacyprofiletype_partyprproftypchara__ppproftypchar_partyprproftypchara_ppproftypchar": {}
+    "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": {
+      "id": 1
+    },
+    "accesstoken_accesstoken_accesstoken__storetoken_accesstoken": {},
+    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__ppproftypchar_partyprivacyprofiletypecharacteristic_ppproftypchar": {
+      "id": 32
+    }
   }
 }

@@ -36,16 +36,16 @@ module.exports = {
       model:'timePeriod'
     },
     relatedParty:{
-      collection:'party'
+      type:'json'
     },
     applicableRole:{
-      collection:'role'
+      type:'json'
     },
-    partyPrProfTypChara:{
+    partyPrivacyProfileTypeCharacteristic:{
       collection:'pPProfTypChar'
     }
   },
-  beforeCreate:function (privacyProfileType, cb) {
+  afterCreate:function (privacyProfileType, cb) {
     privacyProfileType.lastUpdate=new Date();
     privacyProfileType.href='http://privacy-orangegroup.rhcloud.com/partyPrivacyProfileType/'+privacyProfileType.id;
     cb();
