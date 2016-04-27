@@ -8,23 +8,520 @@
     "characteristic": [],
     "ppAgreSpec": [],
     "ppProfCharVal": [],
-    "pppTypeCharac": [],
+    "pppTypeCharac": [
+      {
+        "id": "42",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy for internal ADMIN purpose",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "ADMIN",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Authorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "43",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for internal INFORMATION purpose",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "INFORMATION",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Authorized",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "string",
+            "default": false,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "44",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for internal MARKETING purpose",
+        "criticalityLevel": "high",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "MARKETING",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "string",
+            "default": false,
+            "value": "Authorized",
+            "validityDuration": "3 months"
+          }
+        ]
+      },
+      {
+        "id": "45",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for internal RESEARCH purpose",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Purpose",
+        "privacyUsagePurpose": "RESEARCH",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "46",
+        "name": "eMailAddress",
+        "description": "this is the email address privacy attributes for external ADMIN purposes",
+        "criticalityLevel": "low",
+        "privacyType": "External Purpose",
+        "privacyUsagePurpose": "ADMIN",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "UnAuthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "47",
+        "name": "eMailAddress",
+        "description": "this is the internal retention privacy rule for email address",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Retention",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Indefinity",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "48",
+        "name": "eMailAddress",
+        "description": "this is the external retention privacy rule for email address",
+        "criticalityLevel": "low",
+        "privacyType": "External Retention",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "No-retention",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "49",
+        "name": "Invoice Amount",
+        "description": "this is the retention privacy rule for invoice amount",
+        "criticalityLevel": "low",
+        "privacyType": "Internal Retention",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "numeric",
+            "default": true,
+            "unitOfMeasure": "Year",
+            "value": "15",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "numeric",
+            "default": false,
+            "unitOfMeasure": "Year",
+            "fromValue": "10",
+            "toValue": "20",
+            "rangeInterval": "1",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "42",
+        "name": "eMailAddress",
+        "privacyUsagePurpose": "ADMIN",
+        "description": "this is the email address privacy for internal ADMIN purpose",
+        "privacyType": "Internal Purpose",
+        "criticalityLevel": "low",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Authorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "43",
+        "name": "eMailAddress",
+        "privacyUsagePurpose": "INFORMATION",
+        "description": "this is the email address privacy attributes for internal INFORMATION purpose",
+        "privacyType": "Internal Purpose",
+        "criticalityLevel": "low",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Authorized",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "string",
+            "default": false,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "44",
+        "name": "eMailAddress",
+        "privacyUsagePurpose": "MARKETING",
+        "description": "this is the email address privacy attributes for internal MARKETING purpose",
+        "privacyType": "Internal Purpose",
+        "criticalityLevel": "high",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "string",
+            "default": false,
+            "value": "Authorized",
+            "validityDuration": "3 months"
+          }
+        ]
+      },
+      {
+        "id": "45",
+        "name": "eMailAddress",
+        "privacyUsagePurpose": "RESEARCH",
+        "description": "this is the email address privacy attributes for internal RESEARCH purpose",
+        "privacyType": "Internal Purpose",
+        "criticalityLevel": "low",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Unauthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "46",
+        "name": "eMailAddress",
+        "privacyUsagePurpose": "ADMIN",
+        "description": "this is the email address privacy attributes for external ADMIN purposes",
+        "privacyType": "External Purpose",
+        "criticalityLevel": "low",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "UnAuthorized",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "47",
+        "name": "eMailAddress",
+        "description": "this is the internal retention privacy rule for email address",
+        "privacyType": "Internal Retention",
+        "criticalityLevel": "low",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "Indefinity",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "48",
+        "name": "eMailAddress",
+        "description": "this is the external retention privacy rule for email address",
+        "privacyType": "External Retention",
+        "criticalityLevel": "low",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "string",
+            "default": true,
+            "value": "No-retention",
+            "validityDuration": "Always"
+          }
+        ]
+      },
+      {
+        "id": "49",
+        "name": "Invoice Amount",
+        "description": "this is the retention privacy rule for invoice amount",
+        "privacyType": "Internal Retention",
+        "criticalityLevel": "low",
+        "validFor": {
+          "startDateTime": "2013-04-19T16:42:23-04:00",
+          "endDateTime": ""
+        },
+        "partyPrivacyProfileTypeCharValue": [
+          {
+            "valueType": "numeric",
+            "default": true,
+            "unitOfMeasure": "Year",
+            "value": "15",
+            "validityDuration": "Always"
+          },
+          {
+            "valueType": "numeric",
+            "default": false,
+            "unitOfMeasure": "Year",
+            "fromValue": "10",
+            "toValue": "20",
+            "rangeInterval": "1",
+            "validityDuration": "Always"
+          }
+        ]
+      }
+    ],
     "pppTypeCharVal": [],
     "party": [],
     "ppAgreement": [],
     "partyprivacyprofile": [],
+    "ppProfType": [
+      {
+        "id": 1,
+        "name": "Customer Mass Market Privacy",
+        "description": "This is the customer mass market privacy",
+        "lastUpdate": "2013-04-19T20:42:23.000Z",
+        "version": "1.0",
+        "lifecycleStatus": "active",
+        "validFor": 1,
+        "relatedParty": [
+          {
+            "id": "1066",
+            "href": "http://serverlocation:port/partyManagement/individual/1066",
+            "role": "Profile Type Admin",
+            "name": "James Smith"
+          }
+        ],
+        "applicableRole": [
+          {
+            "role": "Customer"
+          }
+        ]
+      },
+      {
+        "version": "1.0",
+        "lastUpdate": "2013-04-19T20:42:23.000Z",
+        "name": "Customer Mass Market Privacy",
+        "description": "This is the customer mass market privacy",
+        "lifecycleStatus": "active",
+        "validFor": 2,
+        "relatedParty": [
+          {
+            "id": "1066",
+            "href": "http://serverlocation:port/partyManagement/individual/1066",
+            "role": "Profile Type Admin",
+            "name": "James Smith"
+          }
+        ],
+        "applicableRole": [
+          {
+            "role": "Customer"
+          }
+        ],
+        "id": 2,
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfileType/2"
+      }
+    ],
     "productoffering": [],
     "role": [],
     "storetoken": [],
     "termorcondition": [],
-    "timeperiod": [],
-    "ppProfType": [],
+    "timeperiod": [
+      {
+        "startDateTime": "2013-04-19T16:42:23-04:00",
+        "endDateTime": "2013-06-19T00:00:00-04:00",
+        "id": 1
+      },
+      {
+        "startDateTime": "2013-04-19T16:42:23-04:00",
+        "endDateTime": "2013-06-19T00:00:00-04:00",
+        "id": 2
+      }
+    ],
     "agreementitem_productoffering__productoffering_productoffering_productoffering": [],
     "agreementitem_termorcondition__termorcondition_termorcondition_termorcondition": [],
     "partyprivacyprofile_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": [],
+    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__ppproftypchar_partyprivacyprofiletypecharacteristic_ppproftypchar": [
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "42",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "id": 1
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "43",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "id": 2
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "44",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "id": 3
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "45",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "id": 4
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "46",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "id": 5
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "47",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "id": 6
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "48",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "id": 7
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "49",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "id": 8
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "42",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
+        "id": 9
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "43",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
+        "id": 10
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "44",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
+        "id": 11
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "45",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
+        "id": 12
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "46",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
+        "id": 13
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "47",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
+        "id": 14
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "48",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
+        "id": 15
+      },
+      {
+        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "49",
+        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
+        "id": 16
+      }
+    ],
     "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": [],
-    "accesstoken_accesstoken_accesstoken__storetoken_accesstoken": [],
-    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__ppproftypchar_partyprivacyprofiletypecharacteristic_ppproftypchar": []
+    "accesstoken_accesstoken_accesstoken__storetoken_accesstoken": []
   },
   "schema": {
     "accesstoken": {
@@ -348,6 +845,45 @@
         "alias": "agreement"
       }
     },
+    "ppProfType": {
+      "id": {
+        "type": "integer",
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "index": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "href": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "lastUpdate": {
+        "type": "datetime"
+      },
+      "version": {
+        "type": "string"
+      },
+      "lifecycleStatus": {
+        "type": "string"
+      },
+      "validFor": {
+        "type": "integer",
+        "model": "timeperiod",
+        "foreignKey": true,
+        "alias": "validFor"
+      },
+      "relatedParty": {
+        "type": "json"
+      },
+      "applicableRole": {
+        "type": "json"
+      }
+    },
     "productoffering": {
       "id": {
         "type": "string",
@@ -411,45 +947,6 @@
         "autoIncrement": true,
         "primaryKey": true,
         "unique": true
-      }
-    },
-    "ppProfType": {
-      "id": {
-        "type": "integer",
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "index": true
-      },
-      "name": {
-        "type": "string"
-      },
-      "href": {
-        "type": "string"
-      },
-      "description": {
-        "type": "string"
-      },
-      "lastUpdate": {
-        "type": "datetime"
-      },
-      "version": {
-        "type": "string"
-      },
-      "lifecycleStatus": {
-        "type": "string"
-      },
-      "validFor": {
-        "type": "integer",
-        "model": "timeperiod",
-        "foreignKey": true,
-        "alias": "validFor"
-      },
-      "relatedParty": {
-        "type": "json"
-      },
-      "applicableRole": {
-        "type": "json"
       }
     },
     "agreementitem_productoffering__productoffering_productoffering_productoffering": {
@@ -518,6 +1015,28 @@
         "via": "partyprivacyprofile_partyPrivacyProfileCharValue"
       }
     },
+    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__ppproftypchar_partyprivacyprofiletypecharacteristic_ppproftypchar": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "partyprivacyprofiletype",
+        "on": "id",
+        "via": "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar"
+      },
+      "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": {
+        "type": "string",
+        "foreignKey": true,
+        "references": "ppproftypchar",
+        "on": "id",
+        "via": "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic"
+      }
+    },
     "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": {
       "id": {
         "primaryKey": true,
@@ -561,28 +1080,6 @@
         "on": "id",
         "via": "storetoken_accessToken"
       }
-    },
-    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__ppproftypchar_partyprivacyprofiletypecharacteristic_ppproftypchar": {
-      "id": {
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "type": "integer"
-      },
-      "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "partyprivacyprofiletype",
-        "on": "id",
-        "via": "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar"
-      },
-      "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": {
-        "type": "string",
-        "foreignKey": true,
-        "references": "ppproftypchar",
-        "on": "id",
-        "via": "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic"
-      }
     }
   },
   "counters": {
@@ -603,13 +1100,19 @@
     "role": {},
     "storetoken": {},
     "termorcondition": {},
-    "timeperiod": {},
-    "ppProfType": {},
+    "timeperiod": {
+      "id": 2
+    },
+    "ppProfType": {
+      "id": 2
+    },
     "agreementitem_productoffering__productoffering_productoffering_productoffering": {},
     "agreementitem_termorcondition__termorcondition_termorcondition_termorcondition": {},
     "partyprivacyprofile_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": {},
     "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": {},
     "accesstoken_accesstoken_accesstoken__storetoken_accesstoken": {},
-    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__ppproftypchar_partyprivacyprofiletypecharacteristic_ppproftypchar": {}
+    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__ppproftypchar_partyprivacyprofiletypecharacteristic_ppproftypchar": {
+      "id": 16
+    }
   }
 }
