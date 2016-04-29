@@ -8,27 +8,19 @@
 module.exports = {
 
   attributes: {
+    id: {
+      type: 'integer',
+      primaryKey: true,
+      autoIncrement: true,
+      index: true
+    },
     privacyProfileId:{
       type:'integer',
       required:true
     },
     accessToken:{
-      collection:'accessToken',
-      required:true
+     type:'json'
     }
-  },
-  beforeCreate:function (storeToken, cb) {
-    PartyPrivacyProfile.findOne({id:storeToken.privacyProfileId}).exec(function(err,partyPrivacyProfile){
-      if(err){
-        sails.log.warn('[StoreToken] - This profile Type is unavailable');
-        return cb(err);
-      }
-
-      if (!partyPrivacyProfile)
-        return cb('This Profile is unavailable');
-      cb();
-    });
-
   }
 };
 

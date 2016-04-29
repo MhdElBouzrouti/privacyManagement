@@ -7,521 +7,513 @@
     "BundProdOffer": [],
     "characteristic": [],
     "ppAgreSpec": [],
-    "ppProfCharVal": [],
-    "pppTypeCharac": [
+    "ppProfCharVal": [
       {
-        "id": "42",
-        "name": "eMailAddress",
-        "description": "this is the email address privacy for internal ADMIN purpose",
-        "criticalityLevel": "low",
-        "privacyType": "Internal Purpose",
-        "privacyUsagePurpose": "ADMIN",
-        "validFor": {
-          "startDateTime": "2013-04-19T16:42:23-04:00",
-          "endDateTime": ""
-        },
-        "partyPrivacyProfileTypeCharValue": [
+        "id": 1,
+        "name": "RegistrationData",
+        "value": "Authorized",
+        "relatedParty": [
           {
-            "valueType": "string",
-            "default": true,
-            "value": "Authorized",
-            "validityDuration": "Always"
-          }
-        ]
-      },
-      {
-        "id": "43",
-        "name": "eMailAddress",
-        "description": "this is the email address privacy attributes for internal INFORMATION purpose",
-        "criticalityLevel": "low",
-        "privacyType": "Internal Purpose",
-        "privacyUsagePurpose": "INFORMATION",
-        "validFor": {
-          "startDateTime": "2013-04-19T16:42:23-04:00",
-          "endDateTime": ""
-        },
-        "partyPrivacyProfileTypeCharValue": [
-          {
-            "valueType": "string",
-            "default": true,
-            "value": "Authorized",
-            "validityDuration": "Always"
+            "id": "10",
+            "href": "http ://ericssonserver:port/partyManagement/individual/10",
+            "role": "Administrator"
           },
           {
-            "valueType": "string",
-            "default": false,
-            "value": "Unauthorized",
-            "validityDuration": "Always"
+            "id": "userid#1234",
+            "href": "http ://serverLocation:port/partyManagement/individual/userid#1234",
+            "role": "Customer"
           }
-        ]
+        ],
+        "privacyUsagePurpose": "READ",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": ""
+        }
       },
       {
-        "id": "44",
-        "name": "eMailAddress",
-        "description": "this is the email address privacy attributes for internal MARKETING purpose",
-        "criticalityLevel": "high",
-        "privacyType": "Internal Purpose",
-        "privacyUsagePurpose": "MARKETING",
-        "validFor": {
-          "startDateTime": "2013-04-19T16:42:23-04:00",
-          "endDateTime": ""
-        },
-        "partyPrivacyProfileTypeCharValue": [
+        "id": 2,
+        "name": "ContactInformation",
+        "value": "Authorized",
+        "relatedParty": [
           {
-            "valueType": "string",
-            "default": true,
-            "value": "Unauthorized",
-            "validityDuration": "Always"
+            "id": "userid#1234",
+            "href": "http ://serverLocation:port/partyManagement/individual/userid#1234",
+            "role": "Customer"
           },
           {
-            "valueType": "string",
-            "default": false,
-            "value": "Authorized",
-            "validityDuration": "3 months"
-          }
-        ]
-      },
-      {
-        "id": "45",
-        "name": "eMailAddress",
-        "description": "this is the email address privacy attributes for internal RESEARCH purpose",
-        "criticalityLevel": "low",
-        "privacyType": "Internal Purpose",
-        "privacyUsagePurpose": "RESEARCH",
-        "validFor": {
-          "startDateTime": "2013-04-19T16:42:23-04:00",
-          "endDateTime": ""
-        },
-        "partyPrivacyProfileTypeCharValue": [
-          {
-            "valueType": "string",
-            "default": true,
-            "value": "Unauthorized",
-            "validityDuration": "Always"
-          }
-        ]
-      },
-      {
-        "id": "46",
-        "name": "eMailAddress",
-        "description": "this is the email address privacy attributes for external ADMIN purposes",
-        "criticalityLevel": "low",
-        "privacyType": "External Purpose",
-        "privacyUsagePurpose": "ADMIN",
-        "validFor": {
-          "startDateTime": "2013-04-19T16:42:23-04:00",
-          "endDateTime": ""
-        },
-        "partyPrivacyProfileTypeCharValue": [
-          {
-            "valueType": "string",
-            "default": true,
-            "value": "UnAuthorized",
-            "validityDuration": "Always"
-          }
-        ]
-      },
-      {
-        "id": "47",
-        "name": "eMailAddress",
-        "description": "this is the internal retention privacy rule for email address",
-        "criticalityLevel": "low",
-        "privacyType": "Internal Retention",
-        "validFor": {
-          "startDateTime": "2013-04-19T16:42:23-04:00",
-          "endDateTime": ""
-        },
-        "partyPrivacyProfileTypeCharValue": [
-          {
-            "valueType": "string",
-            "default": true,
-            "value": "Indefinity",
-            "validityDuration": "Always"
-          }
-        ]
-      },
-      {
-        "id": "48",
-        "name": "eMailAddress",
-        "description": "this is the external retention privacy rule for email address",
-        "criticalityLevel": "low",
-        "privacyType": "External Retention",
-        "validFor": {
-          "startDateTime": "2013-04-19T16:42:23-04:00",
-          "endDateTime": ""
-        },
-        "partyPrivacyProfileTypeCharValue": [
-          {
-            "valueType": "string",
-            "default": true,
-            "value": "No-retention",
-            "validityDuration": "Always"
-          }
-        ]
-      },
-      {
-        "id": "49",
-        "name": "Invoice Amount",
-        "description": "this is the retention privacy rule for invoice amount",
-        "criticalityLevel": "low",
-        "privacyType": "Internal Retention",
-        "validFor": {
-          "startDateTime": "2013-04-19T16:42:23-04:00",
-          "endDateTime": ""
-        },
-        "partyPrivacyProfileTypeCharValue": [
-          {
-            "valueType": "numeric",
-            "default": true,
-            "unitOfMeasure": "Year",
-            "value": "15",
-            "validityDuration": "Always"
+            "id": "doctor#999",
+            "href": "http ://serverLocation:port/partyManagement/individual/doctors/doctor#999",
+            "role": "Doctor"
           },
           {
-            "valueType": "numeric",
-            "default": false,
-            "unitOfMeasure": "Year",
-            "fromValue": "10",
-            "toValue": "20",
-            "rangeInterval": "1",
-            "validityDuration": "Always"
-          }
-        ]
-      },
-      {
-        "id": "42",
-        "name": "eMailAddress",
-        "privacyUsagePurpose": "ADMIN",
-        "description": "this is the email address privacy for internal ADMIN purpose",
-        "privacyType": "Internal Purpose",
-        "criticalityLevel": "low",
-        "validFor": {
-          "startDateTime": "2013-04-19T16:42:23-04:00",
-          "endDateTime": ""
-        },
-        "partyPrivacyProfileTypeCharValue": [
-          {
-            "valueType": "string",
-            "default": true,
-            "value": "Authorized",
-            "validityDuration": "Always"
-          }
-        ]
-      },
-      {
-        "id": "43",
-        "name": "eMailAddress",
-        "privacyUsagePurpose": "INFORMATION",
-        "description": "this is the email address privacy attributes for internal INFORMATION purpose",
-        "privacyType": "Internal Purpose",
-        "criticalityLevel": "low",
-        "validFor": {
-          "startDateTime": "2013-04-19T16:42:23-04:00",
-          "endDateTime": ""
-        },
-        "partyPrivacyProfileTypeCharValue": [
-          {
-            "valueType": "string",
-            "default": true,
-            "value": "Authorized",
-            "validityDuration": "Always"
+            "id": "nurse#111",
+            "href": "http ://serverLocation:port/partyManagement/organisation/nurses/nurses_of_texas",
+            "role": "Nurse organization of Texas State"
           },
           {
-            "valueType": "string",
-            "default": false,
-            "value": "Unauthorized",
-            "validityDuration": "Always"
+            "id": "9999",
+            "href": "http ://serverLocation:port/partyManagement/organization/family/99991111",
+            "name": "familyDoe",
+            "role": "Family"
           }
-        ]
+        ],
+        "privacyUsagePurpose": "READ",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": ""
+        }
       },
       {
-        "id": "44",
-        "name": "eMailAddress",
-        "privacyUsagePurpose": "MARKETING",
-        "description": "this is the email address privacy attributes for internal MARKETING purpose",
-        "privacyType": "Internal Purpose",
-        "criticalityLevel": "high",
-        "validFor": {
-          "startDateTime": "2013-04-19T16:42:23-04:00",
-          "endDateTime": ""
-        },
-        "partyPrivacyProfileTypeCharValue": [
+        "id": 3,
+        "name": "healthReports",
+        "value": "Authorized",
+        "relatedParty": [
           {
-            "valueType": "string",
-            "default": true,
-            "value": "Unauthorized",
-            "validityDuration": "Always"
+            "id": "userid#1234",
+            "href": "http ://serverLocation:port/partyManagement/individual/userid#1234",
+            "role": "Customer"
           },
           {
-            "valueType": "string",
-            "default": false,
-            "value": "Authorized",
-            "validityDuration": "3 months"
-          }
-        ]
-      },
-      {
-        "id": "45",
-        "name": "eMailAddress",
-        "privacyUsagePurpose": "RESEARCH",
-        "description": "this is the email address privacy attributes for internal RESEARCH purpose",
-        "privacyType": "Internal Purpose",
-        "criticalityLevel": "low",
-        "validFor": {
-          "startDateTime": "2013-04-19T16:42:23-04:00",
-          "endDateTime": ""
-        },
-        "partyPrivacyProfileTypeCharValue": [
-          {
-            "valueType": "string",
-            "default": true,
-            "value": "Unauthorized",
-            "validityDuration": "Always"
-          }
-        ]
-      },
-      {
-        "id": "46",
-        "name": "eMailAddress",
-        "privacyUsagePurpose": "ADMIN",
-        "description": "this is the email address privacy attributes for external ADMIN purposes",
-        "privacyType": "External Purpose",
-        "criticalityLevel": "low",
-        "validFor": {
-          "startDateTime": "2013-04-19T16:42:23-04:00",
-          "endDateTime": ""
-        },
-        "partyPrivacyProfileTypeCharValue": [
-          {
-            "valueType": "string",
-            "default": true,
-            "value": "UnAuthorized",
-            "validityDuration": "Always"
-          }
-        ]
-      },
-      {
-        "id": "47",
-        "name": "eMailAddress",
-        "description": "this is the internal retention privacy rule for email address",
-        "privacyType": "Internal Retention",
-        "criticalityLevel": "low",
-        "validFor": {
-          "startDateTime": "2013-04-19T16:42:23-04:00",
-          "endDateTime": ""
-        },
-        "partyPrivacyProfileTypeCharValue": [
-          {
-            "valueType": "string",
-            "default": true,
-            "value": "Indefinity",
-            "validityDuration": "Always"
-          }
-        ]
-      },
-      {
-        "id": "48",
-        "name": "eMailAddress",
-        "description": "this is the external retention privacy rule for email address",
-        "privacyType": "External Retention",
-        "criticalityLevel": "low",
-        "validFor": {
-          "startDateTime": "2013-04-19T16:42:23-04:00",
-          "endDateTime": ""
-        },
-        "partyPrivacyProfileTypeCharValue": [
-          {
-            "valueType": "string",
-            "default": true,
-            "value": "No-retention",
-            "validityDuration": "Always"
-          }
-        ]
-      },
-      {
-        "id": "49",
-        "name": "Invoice Amount",
-        "description": "this is the retention privacy rule for invoice amount",
-        "privacyType": "Internal Retention",
-        "criticalityLevel": "low",
-        "validFor": {
-          "startDateTime": "2013-04-19T16:42:23-04:00",
-          "endDateTime": ""
-        },
-        "partyPrivacyProfileTypeCharValue": [
-          {
-            "valueType": "numeric",
-            "default": true,
-            "unitOfMeasure": "Year",
-            "value": "15",
-            "validityDuration": "Always"
+            "id": "doctor#999",
+            "href": "http ://serverLocation:port/partyManagement/individual/doctors/doctor#999",
+            "role": "Doctor"
           },
           {
-            "valueType": "numeric",
-            "default": false,
-            "unitOfMeasure": "Year",
-            "fromValue": "10",
-            "toValue": "20",
-            "rangeInterval": "1",
-            "validityDuration": "Always"
+            "id": "nurse#111",
+            "href": "http ://serverLocation:port/partyManagement/organisation/nurses/nurses_of_texas",
+            "role": "Nurse organization of Texas State"
+          },
+          {
+            "id": "99991111",
+            "href": "http ://serverLocation:port/partyManagement/organization/family/99991111",
+            "name": "familyDoe",
+            "role": "Family"
           }
-        ]
+        ],
+        "privacyUsagePurpose": "READ",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": ""
+        }
+      },
+      {
+        "id": 4,
+        "name": "location",
+        "value": "Authorized",
+        "relatedParty": [
+          {
+            "id": "userid#1234",
+            "href": "http ://serverLocation:port/partyManagement/individual/userid#1234",
+            "role": "Customer"
+          },
+          {
+            "id": "99991111",
+            "href": "http ://serverLocation:port/partyManagement/organization/family/99991111",
+            "name": "familyDoe",
+            "role": "Family"
+          }
+        ],
+        "privacyUsagePurpose": "READ",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": ""
+        }
+      },
+      {
+        "id": 5,
+        "name": "RegistrationData",
+        "value": "Authorized",
+        "relatedParty": [
+          {
+            "id": "10",
+            "href": "http ://ericssonserver:port/partyManagement/individual/10",
+            "role": "Administrator"
+          },
+          {
+            "id": "userid#1234",
+            "href": "http ://serverLocation:port/partyManagement/individual/userid#1234",
+            "role": "Customer"
+          }
+        ],
+        "privacyUsagePurpose": "READ",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": ""
+        }
+      },
+      {
+        "id": 6,
+        "name": "ContactInformation",
+        "value": "Authorized",
+        "relatedParty": [
+          {
+            "id": "userid#1234",
+            "href": "http ://serverLocation:port/partyManagement/individual/userid#1234",
+            "role": "Customer"
+          },
+          {
+            "id": "doctor#999",
+            "href": "http ://serverLocation:port/partyManagement/individual/doctors/doctor#999",
+            "role": "Doctor"
+          },
+          {
+            "id": "nurse#111",
+            "href": "http ://serverLocation:port/partyManagement/organisation/nurses/nurses_of_texas",
+            "role": "Nurse organization of Texas State"
+          },
+          {
+            "id": "9999",
+            "href": "http ://serverLocation:port/partyManagement/organization/family/99991111",
+            "name": "familyDoe",
+            "role": "Family"
+          }
+        ],
+        "privacyUsagePurpose": "READ",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": ""
+        }
+      },
+      {
+        "id": 7,
+        "name": "healthReports",
+        "value": "Authorized",
+        "relatedParty": [
+          {
+            "id": "userid#1234",
+            "href": "http ://serverLocation:port/partyManagement/individual/userid#1234",
+            "role": "Customer"
+          },
+          {
+            "id": "doctor#999",
+            "href": "http ://serverLocation:port/partyManagement/individual/doctors/doctor#999",
+            "role": "Doctor"
+          },
+          {
+            "id": "nurse#111",
+            "href": "http ://serverLocation:port/partyManagement/organisation/nurses/nurses_of_texas",
+            "role": "Nurse organization of Texas State"
+          },
+          {
+            "id": "99991111",
+            "href": "http ://serverLocation:port/partyManagement/organization/family/99991111",
+            "name": "familyDoe",
+            "role": "Family"
+          }
+        ],
+        "privacyUsagePurpose": "READ",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": ""
+        }
+      },
+      {
+        "id": 8,
+        "name": "location",
+        "value": "Authorized",
+        "relatedParty": [
+          {
+            "id": "userid#1234",
+            "href": "http ://serverLocation:port/partyManagement/individual/userid#1234",
+            "role": "Customer"
+          },
+          {
+            "id": "99991111",
+            "href": "http ://serverLocation:port/partyManagement/organization/family/99991111",
+            "name": "familyDoe",
+            "role": "Family"
+          }
+        ],
+        "privacyUsagePurpose": "READ",
+        "validFor": {
+          "startDateTime": "2016-03-16T15:15:51.209Z",
+          "endDateTime": ""
+        }
       }
     ],
+    "pppTypeCharac": [],
     "pppTypeCharVal": [],
     "party": [],
     "ppAgreement": [],
-    "partyprivacyprofile": [],
-    "ppProfType": [
+    "partyprivacyprofile": [
       {
         "id": 1,
-        "name": "Customer Mass Market Privacy",
-        "description": "This is the customer mass market privacy",
-        "lastUpdate": "2013-04-19T20:42:23.000Z",
-        "version": "1.0",
-        "lifecycleStatus": "active",
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/1",
+        "name": "John Doe's Privacy Profile",
+        "description": "This is John Does Privacy profile",
+        "status": "created",
         "validFor": 1,
-        "relatedParty": [
+        "agreedByParty": "userid#1234",
+        "dateCreated": "2016-04-29T11:45:18.528Z",
+        "partyPrivacyProfileType": 103,
+        "agreement": 6810
+      },
+      {
+        "id": 2,
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/2",
+        "name": "John Doe's Privacy Profile",
+        "description": "This is John Does Privacy profile",
+        "status": "created",
+        "validFor": 2,
+        "agreedByParty": "userid#1234",
+        "dateCreated": "2016-04-29T11:45:19.769Z",
+        "partyPrivacyProfileType": 103,
+        "agreement": 6810
+      }
+    ],
+    "ppProfType": [],
+    "productoffering": [],
+    "role": [],
+    "storetoken": [
+      {
+        "id": 1,
+        "privacyProfileId": 1,
+        "accessToken": [
           {
-            "id": "1066",
-            "href": "http://serverlocation:port/partyManagement/individual/1066",
-            "role": "Profile Type Admin",
-            "name": "James Smith"
-          }
-        ],
-        "applicableRole": [
+            "id": "nurse#111",
+            "role": "nurse",
+            "token": "cxy763kjzlajlkeajzelj5645456"
+          },
           {
-            "role": "Customer"
+            "id": "doctor#999",
+            "role": "doctor XYZ",
+            "token": "ABC763kjzlajlkeajzelj5645456"
+          },
+          {
+            "id": "userid#1234",
+            "role": "User",
+            "token": "ZZZ763kjzlajlkeajzelj5645456"
           }
         ]
       },
       {
-        "version": "1.0",
-        "lastUpdate": "2013-04-19T20:42:23.000Z",
-        "name": "Customer Mass Market Privacy",
-        "description": "This is the customer mass market privacy",
-        "lifecycleStatus": "active",
-        "validFor": 2,
-        "relatedParty": [
-          {
-            "id": "1066",
-            "href": "http://serverlocation:port/partyManagement/individual/1066",
-            "role": "Profile Type Admin",
-            "name": "James Smith"
-          }
-        ],
-        "applicableRole": [
-          {
-            "role": "Customer"
-          }
-        ],
         "id": 2,
-        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfileType/2"
+        "privacyProfileId": 1,
+        "accessToken": [
+          {
+            "id": "nurse#111",
+            "role": "nurse",
+            "token": "cxy763kjzlajlkeajzelj5645456"
+          },
+          {
+            "id": "doctor#999",
+            "role": "doctor XYZ",
+            "token": "ABC763kjzlajlkeajzelj5645456"
+          },
+          {
+            "id": "userid#1234",
+            "role": "User",
+            "token": "ZZZ763kjzlajlkeajzelj5645456"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "privacyProfileId": 1,
+        "accessToken": [
+          {
+            "id": "nurse#111",
+            "role": "nurse",
+            "token": "cxy763kjzlajlkeajzelj5645456"
+          },
+          {
+            "id": "doctor#999",
+            "role": "doctor XYZ",
+            "token": "ABC763kjzlajlkeajzelj5645456"
+          },
+          {
+            "id": "userid#1234",
+            "role": "User",
+            "token": "ZZZ763kjzlajlkeajzelj5645456"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "privacyProfileId": 1,
+        "accessToken": [
+          {
+            "id": "nurse#111",
+            "role": "nurse",
+            "token": "cxy763kjzlajlkeajzelj5645456"
+          },
+          {
+            "id": "doctor#999",
+            "role": "doctor XYZ",
+            "token": "ABC763kjzlajlkeajzelj5645456"
+          },
+          {
+            "id": "userid#1234",
+            "role": "User",
+            "token": "ZZZ763kjzlajlkeajzelj5645456"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "privacyProfileId": 1,
+        "accessToken": [
+          {
+            "id": "nurse#111",
+            "role": "nurse",
+            "token": "cxy763kjzlajlkeajzelj5645456"
+          },
+          {
+            "id": "doctor#999",
+            "role": "doctor XYZ",
+            "token": "ABC763kjzlajlkeajzelj5645456"
+          },
+          {
+            "id": "userid#1234",
+            "role": "User",
+            "token": "ZZZ763kjzlajlkeajzelj5645456"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "privacyProfileId": 1,
+        "accessToken": [
+          {
+            "id": "nurse#111",
+            "role": "nurse",
+            "token": "cxy763kjzlajlkeajzelj5645456"
+          },
+          {
+            "id": "doctor#999",
+            "role": "doctor XYZ",
+            "token": "ABC763kjzlajlkeajzelj5645456"
+          },
+          {
+            "id": "userid#1234",
+            "role": "User",
+            "token": "ZZZ763kjzlajlkeajzelj5645456"
+          }
+        ]
+      },
+      {
+        "privacyProfileId": 1,
+        "accessToken": [
+          {
+            "id": "nurse#111",
+            "role": "nurse",
+            "token": "cxy763kjzlajlkeajzelj5645456"
+          },
+          {
+            "id": "doctor#999",
+            "role": "doctor XYZ",
+            "token": "ABC763kjzlajlkeajzelj5645456"
+          },
+          {
+            "id": "userid#1234",
+            "role": "User",
+            "token": "ZZZ763kjzlajlkeajzelj5645456"
+          }
+        ],
+        "id": 7
+      },
+      {
+        "privacyProfileId": 1,
+        "accessToken": [
+          {
+            "id": "nurse#111",
+            "role": "nurse",
+            "token": "cxy763kjzlajlkeajzelj5645456"
+          },
+          {
+            "id": "doctor#999",
+            "role": "doctor XYZ",
+            "token": "ABC763kjzlajlkeajzelj5645456"
+          },
+          {
+            "id": "userid#1234",
+            "role": "User",
+            "token": "ZZZ763kjzlajlkeajzelj5645456"
+          }
+        ],
+        "id": 8
+      },
+      {
+        "privacyProfileId": 1,
+        "accessToken": [
+          {
+            "id": "nurse#111",
+            "role": "nurse",
+            "token": "cxy763kjzlajlkeajzelj5645456"
+          },
+          {
+            "id": "doctor#999",
+            "role": "doctor XYZ",
+            "token": "ABC763kjzlajlkeajzelj5645456"
+          },
+          {
+            "id": "userid#1234",
+            "role": "User",
+            "token": "ZZZ763kjzlajlkeajzelj5645456"
+          }
+        ],
+        "id": 9
       }
     ],
-    "productoffering": [],
-    "role": [],
-    "storetoken": [],
     "termorcondition": [],
     "timeperiod": [
       {
-        "startDateTime": "2013-04-19T16:42:23-04:00",
-        "endDateTime": "2013-06-19T00:00:00-04:00",
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "",
         "id": 1
       },
       {
-        "startDateTime": "2013-04-19T16:42:23-04:00",
-        "endDateTime": "2013-06-19T00:00:00-04:00",
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": "",
         "id": 2
       }
     ],
     "agreementitem_productoffering__productoffering_productoffering_productoffering": [],
     "agreementitem_termorcondition__termorcondition_termorcondition_termorcondition": [],
-    "partyprivacyprofile_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": [],
-    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__ppproftypchar_partyprivacyprofiletypecharacteristic_ppproftypchar": [
+    "partyprivacyprofile_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": [
       {
-        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "42",
-        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval": 1,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 1,
         "id": 1
       },
       {
-        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "43",
-        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval": 2,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 1,
         "id": 2
       },
       {
-        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "44",
-        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval": 3,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 1,
         "id": 3
       },
       {
-        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "45",
-        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval": 4,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 1,
         "id": 4
       },
       {
-        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "46",
-        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval": 5,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 2,
         "id": 5
       },
       {
-        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "47",
-        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval": 6,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 2,
         "id": 6
       },
       {
-        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "48",
-        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval": 7,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 2,
         "id": 7
       },
       {
-        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "49",
-        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 1,
+        "ppprofcharval_partyPrivacyProfileCharValue_ppprofcharval": 8,
+        "partyprivacyprofile_partyPrivacyProfileCharValue": 2,
         "id": 8
-      },
-      {
-        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "42",
-        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
-        "id": 9
-      },
-      {
-        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "43",
-        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
-        "id": 10
-      },
-      {
-        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "44",
-        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
-        "id": 11
-      },
-      {
-        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "45",
-        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
-        "id": 12
-      },
-      {
-        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "46",
-        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
-        "id": 13
-      },
-      {
-        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "47",
-        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
-        "id": 14
-      },
-      {
-        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "48",
-        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
-        "id": 15
-      },
-      {
-        "ppproftypchar_partyPrivacyProfileTypeCharacteristic_ppproftypchar": "49",
-        "partyprivacyprofiletype_partyPrivacyProfileTypeCharacteristic": 2,
-        "id": 16
       }
     ],
-    "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": [],
-    "accesstoken_accesstoken_accesstoken__storetoken_accesstoken": []
+    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__ppproftypchar_partyprivacyprofiletypecharacteristic_ppproftypchar": [],
+    "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": []
   },
   "schema": {
     "accesstoken": {
@@ -909,14 +901,18 @@
       }
     },
     "storetoken": {
+      "id": {
+        "type": "integer",
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "index": true
+      },
       "privacyProfileId": {
         "type": "integer"
       },
-      "id": {
-        "type": "integer",
-        "autoIncrement": true,
-        "primaryKey": true,
-        "unique": true
+      "accessToken": {
+        "type": "json"
       }
     },
     "termorcondition": {
@@ -1058,28 +1054,6 @@
         "on": "id",
         "via": "productoffering_bundledProductOffering"
       }
-    },
-    "accesstoken_accesstoken_accesstoken__storetoken_accesstoken": {
-      "id": {
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "type": "integer"
-      },
-      "storetoken_accessToken": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "storetoken",
-        "on": "id",
-        "via": "accesstoken_accessToken_accesstoken"
-      },
-      "accesstoken_accessToken_accesstoken": {
-        "type": "string",
-        "foreignKey": true,
-        "references": "accesstoken",
-        "on": "id",
-        "via": "storetoken_accessToken"
-      }
     }
   },
   "counters": {
@@ -1090,29 +1064,32 @@
     "BundProdOffer": {},
     "characteristic": {},
     "ppAgreSpec": {},
-    "ppProfCharVal": {},
+    "ppProfCharVal": {
+      "id": 8
+    },
     "pppTypeCharac": {},
     "pppTypeCharVal": {},
     "party": {},
     "ppAgreement": {},
-    "partyprivacyprofile": {},
+    "partyprivacyprofile": {
+      "id": 2
+    },
+    "ppProfType": {},
     "productoffering": {},
     "role": {},
-    "storetoken": {},
+    "storetoken": {
+      "id": 9
+    },
     "termorcondition": {},
     "timeperiod": {
       "id": 2
     },
-    "ppProfType": {
-      "id": 2
-    },
     "agreementitem_productoffering__productoffering_productoffering_productoffering": {},
     "agreementitem_termorcondition__termorcondition_termorcondition_termorcondition": {},
-    "partyprivacyprofile_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": {},
-    "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": {},
-    "accesstoken_accesstoken_accesstoken__storetoken_accesstoken": {},
-    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__ppproftypchar_partyprivacyprofiletypecharacteristic_ppproftypchar": {
-      "id": 16
-    }
+    "partyprivacyprofile_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": {
+      "id": 8
+    },
+    "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__ppproftypchar_partyprivacyprofiletypecharacteristic_ppproftypchar": {},
+    "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": {}
   }
 }

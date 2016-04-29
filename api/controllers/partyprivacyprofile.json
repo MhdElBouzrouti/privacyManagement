@@ -1,0 +1,132 @@
+{
+  "name": "John Doe's Privacy Profile",
+  "description": "This is John Does Privacy profile",
+  "validFor": {
+    "startDateTime": "2016-03-16T15:15:51.209Z",
+    "endDateTime": ""
+  },
+  "agreedByParty": {
+    "id": "userid#1234",
+    "href": "http ://serverLocation:port/partyManagement/individual/userid#1234",
+    "role": "Customer",
+    "name": "John Doe"
+  },
+  "partyPrivacyProfileType": {
+    "id": "103",
+    "href": "http://serverlocation:port/privacyManagement/partyPrivacyProfileType/103"
+  },
+  "partyPrivacyProfileCharValue": [
+    {
+      "privacyUsagePurpose": "READ",
+      "name": "RegistrationData",
+      "value": "Authorized",
+      "validFor": {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": ""
+      },
+      "relatedParty": [
+        {
+          "id": "10",
+          "href": "http ://ericssonserver:port/partyManagement/individual/10",
+          "role": "Administrator"
+        },
+        {
+          "id": "userid#1234",
+          "href": "http ://serverLocation:port/partyManagement/individual/userid#1234",
+          "role": "Customer"
+        }
+      ]
+    },
+    {
+      "privacyUsagePurpose": "READ",
+      "name": "ContactInformation",
+      "value": "Authorized",
+      "validFor": {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": ""
+      },
+      "relatedParty": [
+        {
+          "id": "userid#1234",
+          "href": "http ://serverLocation:port/partyManagement/individual/userid#1234",
+          "role": "Customer"
+        },
+        {
+          "id": "doctor#999",
+          "href": "http ://serverLocation:port/partyManagement/individual/doctors/doctor#999",
+          "role": "Doctor"
+        },
+        {
+          "id": "nurse#111",
+          "href": "http ://serverLocation:port/partyManagement/organisation/nurses/nurses_of_texas",
+          "role": "Nurse organization of Texas State"
+        },
+        {
+          "id": "9999",
+          "href": "http ://serverLocation:port/partyManagement/organization/family/99991111",
+          "name": "familyDoe",
+          "role": "Family"
+        }
+      ]
+    },
+    {
+      "privacyUsagePurpose": "READ",
+      "name": "healthReports",
+      "value": "Authorized",
+      "validFor": {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": ""
+      },
+      "relatedParty": [
+        {
+          "id": "userid#1234",
+          "href": "http ://serverLocation:port/partyManagement/individual/userid#1234",
+          "role": "Customer"
+        },
+        {
+          "id": "doctor#999",
+          "href": "http ://serverLocation:port/partyManagement/individual/doctors/doctor#999",
+          "role": "Doctor"
+        },
+        {
+          "id": "nurse#111",
+          "href": "http ://serverLocation:port/partyManagement/organisation/nurses/nurses_of_texas",
+          "role": "Nurse organization of Texas State"
+        },
+        {
+          "id": "99991111",
+          "href": "http ://serverLocation:port/partyManagement/organization/family/99991111",
+          "name": "familyDoe",
+          "role": "Family"
+        }
+      ]
+    },
+    {
+      "privacyUsagePurpose": "READ",
+      "name": "location",
+      "value": "Authorized",
+      "validFor": {
+        "startDateTime": "2016-03-16T15:15:51.209Z",
+        "endDateTime": ""
+      },
+      "relatedParty": [
+        {
+          "id": "userid#1234",
+          "href": "http ://serverLocation:port/partyManagement/individual/userid#1234",
+          "role": "Customer"
+        },
+        {
+          "id": "99991111",
+          "href": "http ://serverLocation:port/partyManagement/organization/family/99991111",
+          "name": "familyDoe",
+          "role": "Family"
+        }
+      ]
+    }
+  ],
+  "agreement": {
+    "id": "6810",
+    "href": "http://serverlocation:port/privacyManagement/partyPrivacyAgreement/6810",
+    "type": "commercial"
+  }
+}
