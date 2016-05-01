@@ -49,9 +49,10 @@ module.exports.connections = {
   // },
   privacyMysqlServer: {
     adapter: 'sails-mysql',
-    host: 'eu-cdbr-azure-north-e.cloudapp.net',
-    user: 'b370d51984dd8b', //optional
-   password: '3b93cc1f', //optional
+    host: process.env.OPENSHIFT_MYSQL_DB_HOST,
+    port:process.env.OPENSHIFT_MYSQL_DB_PORT,
+    user: 'adminz72GZmJ', //optional
+   password: 'pyYUC8rR4a1Q', //optional
    database: 'privacy' //optional
   },
   privacySQLserver: {
