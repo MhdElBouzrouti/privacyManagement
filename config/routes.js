@@ -43,6 +43,10 @@ module.exports.routes = {
   'get /loaderio-f243d9ecea59641d05a9d040a1943447/':{
     controller:'LoaderController',
     action:'verification'
+  },
+  'get /':{
+    controller:'EnforcePrivacyController',
+    action:'index'
   }
   /***************************************************************************
   *                                                                          *

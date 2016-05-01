@@ -55,6 +55,9 @@ module.exports = {
       }
 
     });
+  },
+  'index':function (req, res) {
+    res.json(200,{api:'Party Management API',version:'1.2'});
   }
 };
 
