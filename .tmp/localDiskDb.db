@@ -1,11 +1,42 @@
 {
   "data": {
+    "contact": [],
+    "group": [],
     "accesstoken": [],
     "AgreeAuthoriz": [],
     "agreementitem": [],
     "AssoAgreem": [],
     "BundProdOffer": [],
     "characteristic": [],
+    "party": [],
+    "ppAgreement": [],
+    "partyprivacyprofile": [
+      {
+        "id": 1,
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/1",
+        "name": "John Doe's Privacy Profile",
+        "description": "This is John Does Privacy profile",
+        "status": "created",
+        "validFor": 1,
+        "agreedByParty": "userid#1234",
+        "dateCreated": "2016-04-29T11:45:18.528Z",
+        "partyPrivacyProfileType": 103,
+        "agreement": 6810
+      },
+      {
+        "id": 2,
+        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/2",
+        "name": "John Doe's Privacy Profile",
+        "description": "This is John Does Privacy profile",
+        "status": "created",
+        "validFor": 2,
+        "agreedByParty": "userid#1234",
+        "dateCreated": "2016-04-29T11:45:19.769Z",
+        "partyPrivacyProfileType": 103,
+        "agreement": 6810
+      }
+    ],
+    "ppProfType": [],
     "ppAgreSpec": [],
     "ppProfCharVal": [
       {
@@ -233,35 +264,6 @@
     ],
     "pppTypeCharac": [],
     "pppTypeCharVal": [],
-    "party": [],
-    "ppAgreement": [],
-    "partyprivacyprofile": [
-      {
-        "id": 1,
-        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/1",
-        "name": "John Doe's Privacy Profile",
-        "description": "This is John Does Privacy profile",
-        "status": "created",
-        "validFor": 1,
-        "agreedByParty": "userid#1234",
-        "dateCreated": "2016-04-29T11:45:18.528Z",
-        "partyPrivacyProfileType": 103,
-        "agreement": 6810
-      },
-      {
-        "id": 2,
-        "href": "http://privacy-orangegroup.rhcloud.com/partyPrivacyProfile/2",
-        "name": "John Doe's Privacy Profile",
-        "description": "This is John Does Privacy profile",
-        "status": "created",
-        "validFor": 2,
-        "agreedByParty": "userid#1234",
-        "dateCreated": "2016-04-29T11:45:19.769Z",
-        "partyPrivacyProfileType": 103,
-        "agreement": 6810
-      }
-    ],
-    "ppProfType": [],
     "productoffering": [],
     "role": [],
     "storetoken": [
@@ -392,6 +394,7 @@
         ]
       },
       {
+        "id": 7,
         "privacyProfileId": 1,
         "accessToken": [
           {
@@ -409,10 +412,10 @@
             "role": "User",
             "token": "ZZZ763kjzlajlkeajzelj5645456"
           }
-        ],
-        "id": 7
+        ]
       },
       {
+        "id": 8,
         "privacyProfileId": 1,
         "accessToken": [
           {
@@ -430,10 +433,10 @@
             "role": "User",
             "token": "ZZZ763kjzlajlkeajzelj5645456"
           }
-        ],
-        "id": 8
+        ]
       },
       {
+        "id": 9,
         "privacyProfileId": 1,
         "accessToken": [
           {
@@ -451,8 +454,7 @@
             "role": "User",
             "token": "ZZZ763kjzlajlkeajzelj5645456"
           }
-        ],
-        "id": 9
+        ]
       }
     ],
     "termorcondition": [],
@@ -468,6 +470,7 @@
         "id": 2
       }
     ],
+    "contact_contacts_contact__group_contacts": [],
     "agreementitem_productoffering__productoffering_productoffering_productoffering": [],
     "agreementitem_termorcondition__termorcondition_termorcondition_termorcondition": [],
     "partyprivacyprofile_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": [
@@ -516,6 +519,28 @@
     "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": []
   },
   "schema": {
+    "contact": {
+      "group": {
+        "type": "integer",
+        "model": "group",
+        "foreignKey": true,
+        "alias": "group"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      }
+    },
+    "group": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      }
+    },
     "accesstoken": {
       "id": {
         "type": "string",
@@ -585,115 +610,6 @@
         "type": "string"
       },
       "value": {
-        "type": "string"
-      },
-      "id": {
-        "type": "integer",
-        "autoIncrement": true,
-        "primaryKey": true,
-        "unique": true
-      }
-    },
-    "ppAgreSpec": {
-      "id": {
-        "type": "string",
-        "primaryKey": true,
-        "unique": true
-      },
-      "name": {
-        "type": "string"
-      },
-      "href": {
-        "type": "string"
-      },
-      "description": {
-        "type": "string"
-      }
-    },
-    "ppProfCharVal": {
-      "id": {
-        "type": "integer",
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true
-      },
-      "name": {
-        "type": "string"
-      },
-      "value": {
-        "type": "string"
-      },
-      "relatedParty": {
-        "type": "json"
-      },
-      "characteristicAgreement": {
-        "type": "json"
-      },
-      "privacyUsagePurpose": {
-        "type": "string"
-      },
-      "validFor": {
-        "type": "json"
-      }
-    },
-    "pppTypeCharac": {
-      "id": {
-        "type": "string",
-        "primaryKey": true,
-        "unique": true
-      },
-      "name": {
-        "type": "string"
-      },
-      "description": {
-        "type": "string"
-      },
-      "criticalityLevel": {
-        "type": "string",
-        "enum": [
-          "low",
-          "high"
-        ]
-      },
-      "privacyType": {
-        "type": "string"
-      },
-      "privacyUsagePurpose": {
-        "type": "string"
-      },
-      "validFor": {
-        "type": "json"
-      },
-      "partyPrivacyProfileTypeCharValue": {
-        "type": "json"
-      },
-      "relatedParty": {
-        "type": "json"
-      }
-    },
-    "pppTypeCharVal": {
-      "value": {
-        "type": "string"
-      },
-      "valueType": {
-        "type": "string"
-      },
-      "default": {
-        "type": "boolean"
-      },
-      "validityDuration": {
-        "type": "string"
-      },
-      "unitOfMeasure": {
-        "type": "string"
-      },
-      "fromValue": {
-        "type": "string"
-      },
-      "toValue": {
-        "type": "string"
-      },
-      "rangeInterval": {
         "type": "string"
       },
       "id": {
@@ -876,6 +792,115 @@
         "type": "json"
       }
     },
+    "ppAgreSpec": {
+      "id": {
+        "type": "string",
+        "primaryKey": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "href": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      }
+    },
+    "ppProfCharVal": {
+      "id": {
+        "type": "integer",
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "value": {
+        "type": "string"
+      },
+      "relatedParty": {
+        "type": "json"
+      },
+      "characteristicAgreement": {
+        "type": "json"
+      },
+      "privacyUsagePurpose": {
+        "type": "string"
+      },
+      "validFor": {
+        "type": "json"
+      }
+    },
+    "pppTypeCharac": {
+      "id": {
+        "type": "string",
+        "primaryKey": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "criticalityLevel": {
+        "type": "string",
+        "enum": [
+          "low",
+          "high"
+        ]
+      },
+      "privacyType": {
+        "type": "string"
+      },
+      "privacyUsagePurpose": {
+        "type": "string"
+      },
+      "validFor": {
+        "type": "json"
+      },
+      "partyPrivacyProfileTypeCharValue": {
+        "type": "json"
+      },
+      "relatedParty": {
+        "type": "json"
+      }
+    },
+    "pppTypeCharVal": {
+      "value": {
+        "type": "string"
+      },
+      "valueType": {
+        "type": "string"
+      },
+      "default": {
+        "type": "boolean"
+      },
+      "validityDuration": {
+        "type": "string"
+      },
+      "unitOfMeasure": {
+        "type": "string"
+      },
+      "fromValue": {
+        "type": "string"
+      },
+      "toValue": {
+        "type": "string"
+      },
+      "rangeInterval": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      }
+    },
     "productoffering": {
       "id": {
         "type": "string",
@@ -943,6 +968,28 @@
         "autoIncrement": true,
         "primaryKey": true,
         "unique": true
+      }
+    },
+    "contact_contacts_contact__group_contacts": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "group_contacts": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "group",
+        "on": "id",
+        "via": "contact_contacts_contact"
+      },
+      "contact_contacts_contact": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "contact",
+        "on": "id",
+        "via": "group_contacts"
       }
     },
     "agreementitem_productoffering__productoffering_productoffering_productoffering": {
@@ -1090,6 +1137,9 @@
       "id": 8
     },
     "partyprivacyprofiletype_partyprivacyprofiletypecharacteristic__ppproftypchar_partyprivacyprofiletypecharacteristic_ppproftypchar": {},
-    "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": {}
+    "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": {},
+    "contact": {},
+    "group": {},
+    "contact_contacts_contact__group_contacts": {}
   }
 }

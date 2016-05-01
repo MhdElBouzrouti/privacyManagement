@@ -61,11 +61,11 @@ module.exports.session = {
     // db: 0,
     // pass: <redis auth password>,
     // prefix: 'sess:',
-    host: 'pub-redis-12764.us-east-1-4.4.ec2.garantiadata.com',
-    port: 12764,
+    host: 'privacy.redis.cache.windows.net',
+    port: 6380,
      //ttl: <redis session TTL in seconds>,
      //db: 0,
-    pass: 'Azlaf@1989',
+    pass: 'btr4sF+eYFS6hhICBmK6fzIHBQ9qVxQylU3NrQpcgXU',
     prefix: 'sess:',
 
 

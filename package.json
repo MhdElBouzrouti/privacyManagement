@@ -27,13 +27,12 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/tmnm1169/privacyManagement.git"
+    "url": "https://github.com/MhdElBouzrouti/privacyManagement.git"
   },
   "author": "Orange Group",
   "license": "",
   "devDependencies": {
     "chai": "^3.5.0",
-    "coveralls": "^2.11.9",
     "mocha": "^2.4.5",
     "supertest": "^1.2.0"
   }

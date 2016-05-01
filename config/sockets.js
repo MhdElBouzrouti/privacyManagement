@@ -51,10 +51,10 @@ module.exports.sockets = {
   // pass: '<redis auth password>',
 
   adapter: 'socket.io-redis',
-   host: 'pub-redis-12764.us-east-1-4.4.ec2.garantiadata.com',
-  port: 12764,
+   host: 'privacy.redis.cache.windows.net',
+  port: 6380,
   // db: 0,
- pass: 'Azlaf@1989',
+ pass: 'btr4sF+eYFS6hhICBmK6fzIHBQ9qVxQylU3NrQpcgXU',
 
  /***************************************************************************
   *                                                                          *
