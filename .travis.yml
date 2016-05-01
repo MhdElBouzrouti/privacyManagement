@@ -15,5 +15,4 @@ deploy:
   domain: "orangegroup"
   app:
     master: privacy
-    develop: privacydev
 
