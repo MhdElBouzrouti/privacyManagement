@@ -52,9 +52,9 @@ module.exports.sockets = {
 
   adapter: 'socket.io-redis',
    host: 'privacy.redis.cache.windows.net',
-  port: 6380,
+  port: 6379,
   // db: 0,
- pass: 'btr4sF+eYFS6hhICBmK6fzIHBQ9qVxQylU3NrQpcgXU',
+ pass: 'btr4sF+eYFS6hhICBmK6fzIHBQ9qVxQylU3NrQpcgXU=',
 
  /***************************************************************************
   *                                                                          *

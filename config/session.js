@@ -62,10 +62,10 @@ module.exports.session = {
     // pass: <redis auth password>,
     // prefix: 'sess:',
     host: 'privacy.redis.cache.windows.net',
-    port: 6380,
+    port: 6379,
      //ttl: <redis session TTL in seconds>,
      //db: 0,
-    pass: 'btr4sF+eYFS6hhICBmK6fzIHBQ9qVxQylU3NrQpcgXU',
+    pass: 'btr4sF+eYFS6hhICBmK6fzIHBQ9qVxQylU3NrQpcgXU=',
     prefix: 'sess:',
 
 

@@ -2,6 +2,7 @@
   "data": {
     "contact": [],
     "group": [],
+    "contact_contacts_contact__group_contacts": [],
     "accesstoken": [],
     "AgreeAuthoriz": [],
     "agreementitem": [],
@@ -470,7 +471,6 @@
         "id": 2
       }
     ],
-    "contact_contacts_contact__group_contacts": [],
     "agreementitem_productoffering__productoffering_productoffering_productoffering": [],
     "agreementitem_termorcondition__termorcondition_termorcondition_termorcondition": [],
     "partyprivacyprofile_partyprivacyprofilecharvalue__ppprofcharval_partyprivacyprofilecharvalue_ppprofcharval": [
@@ -539,6 +539,28 @@
         "autoIncrement": true,
         "primaryKey": true,
         "unique": true
+      }
+    },
+    "contact_contacts_contact__group_contacts": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "group_contacts": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "group",
+        "on": "id",
+        "via": "contact_contacts_contact"
+      },
+      "contact_contacts_contact": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "contact",
+        "on": "id",
+        "via": "group_contacts"
       }
     },
     "accesstoken": {
@@ -968,28 +990,6 @@
         "autoIncrement": true,
         "primaryKey": true,
         "unique": true
-      }
-    },
-    "contact_contacts_contact__group_contacts": {
-      "id": {
-        "primaryKey": true,
-        "unique": true,
-        "autoIncrement": true,
-        "type": "integer"
-      },
-      "group_contacts": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "group",
-        "on": "id",
-        "via": "contact_contacts_contact"
-      },
-      "contact_contacts_contact": {
-        "type": "integer",
-        "foreignKey": true,
-        "references": "contact",
-        "on": "id",
-        "via": "group_contacts"
       }
     },
     "agreementitem_productoffering__productoffering_productoffering_productoffering": {
