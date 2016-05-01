@@ -45,7 +45,7 @@ module.exports.routes = {
     action:'verification'
   },
   'get /':{
-    controller:'EnforcePrivacyController',
+    controller:'StoreTokenController',
     action:'index'
   }
   /***************************************************************************
