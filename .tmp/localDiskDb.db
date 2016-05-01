@@ -3,11 +3,15 @@
     "contact": [],
     "group": [],
     "contact_contacts_contact__group_contacts": [],
-    "accesstoken": [],
     "AgreeAuthoriz": [],
     "agreementitem": [],
-    "AssoAgreem": [],
     "BundProdOffer": [],
+    "productoffering": [],
+    "accesstoken": [],
+    "agreeAuthoriz": [],
+    "agreeItem": [],
+    "AssoAgreem": [],
+    "bundProdOffer": [],
     "characteristic": [],
     "party": [],
     "ppAgreement": [],
@@ -265,7 +269,7 @@
     ],
     "pppTypeCharac": [],
     "pppTypeCharVal": [],
-    "productoffering": [],
+    "prodOffer": [],
     "role": [],
     "storetoken": [
       {
@@ -563,19 +567,6 @@
         "via": "group_contacts"
       }
     },
-    "accesstoken": {
-      "id": {
-        "type": "string",
-        "primaryKey": true,
-        "unique": true
-      },
-      "role": {
-        "type": "string"
-      },
-      "token": {
-        "type": "string"
-      }
-    },
     "AgreeAuthoriz": {
       "state": {
         "type": "string"
@@ -601,6 +592,70 @@
         "unique": true
       }
     },
+    "BundProdOffer": {
+      "id": {
+        "type": "string",
+        "primaryKey": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "href": {
+        "type": "string"
+      }
+    },
+    "productoffering": {
+      "id": {
+        "type": "string",
+        "primaryKey": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "href": {
+        "type": "string"
+      }
+    },
+    "accesstoken": {
+      "id": {
+        "type": "string",
+        "primaryKey": true,
+        "unique": true
+      },
+      "role": {
+        "type": "string"
+      },
+      "token": {
+        "type": "string"
+      }
+    },
+    "agreeAuthoriz": {
+      "state": {
+        "type": "string"
+      },
+      "signatureRepresentation": {
+        "type": "string"
+      },
+      "date": {
+        "type": "datetime"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      }
+    },
+    "agreeItem": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      }
+    },
     "AssoAgreem": {
       "id": {
         "type": "string",
@@ -614,7 +669,7 @@
         "type": "string"
       }
     },
-    "BundProdOffer": {
+    "bundProdOffer": {
       "id": {
         "type": "string",
         "primaryKey": true,
@@ -700,10 +755,7 @@
         "type": "datetime"
       },
       "agreementSpecification": {
-        "type": "string",
-        "model": "ppagreespec",
-        "foreignKey": true,
-        "alias": "agreementSpecification"
+        "type": "json"
       },
       "agreementItem": {
         "type": "json"
@@ -923,7 +975,7 @@
         "unique": true
       }
     },
-    "productoffering": {
+    "prodOffer": {
       "id": {
         "type": "string",
         "primaryKey": true,
@@ -1140,6 +1192,10 @@
     "bundledproductoffering_bundledproductoffering_bundledproductoffering__productoffering_bundledproductoffering": {},
     "contact": {},
     "group": {},
-    "contact_contacts_contact__group_contacts": {}
+    "contact_contacts_contact__group_contacts": {},
+    "agreeAuthoriz": {},
+    "agreeItem": {},
+    "bundProdOffer": {},
+    "prodOffer": {}
   }
 }

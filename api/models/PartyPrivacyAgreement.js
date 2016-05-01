@@ -35,7 +35,7 @@ module.exports = {
       type:'string'
     },
     agreementPeriod:{
-      model:'timePeriod'
+      type:'json'
     },
     description:{
       type:'string'
@@ -47,7 +47,7 @@ module.exports = {
       type:'datetime'
     },
     agreementSpecification:{
-      model:'pPAgreeSpec'
+      type:'json'
     },
     agreementItem:{
       type:'json'
@@ -74,9 +74,9 @@ module.exports = {
   }
   ,
   afterCreate:function (agreement,cb) {
-    
+
     agreement.href='http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/'+agreement.id;
-    
+
     PartyPrivacyAgreement.update({id: agreement.id}, {href: agreement.href}).exec(function (err, agr) {
       if (err)
         cb(err);

@@ -33,7 +33,7 @@ module.exports = {
       type: 'string'
     },
     validFor: {
-      model: 'timePeriod'
+      type: 'json'
     },
     relatedParty: {
       type: 'json'
@@ -42,7 +42,7 @@ module.exports = {
       type: 'json'
     },
     partyPrivacyProfileTypeCharacteristic: {
-      collection: 'pPProfTypChar'
+      type: 'json'
     }
   },
   afterCreate: function (privacyProfileType, cb) {

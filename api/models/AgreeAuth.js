@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-  tableName:'AgreeAuthoriz',
+  tableName:'agreeAuthoriz',
   attributes: {
     state:{
       type:'string'

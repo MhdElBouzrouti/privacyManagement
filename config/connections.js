@@ -47,6 +47,20 @@ module.exports.connections = {
   //   password: 'YOUR_MYSQL_PASSWORD', //optional
   //   database: 'YOUR_MYSQL_DB' //optional
   // },
+  privacyMysqlServer: {
+    adapter: 'sails-mysql',
+    host: 'eu-cdbr-azure-north-e.cloudapp.net',
+    user: 'b370d51984dd8b', //optional
+   password: '3b93cc1f', //optional
+   database: 'privacy' //optional
+  },
+  privacySQLserver: {
+    adapter: 'sails-sqlserver',
+    user: 'orange',
+    password: 'Azlaf0000',
+    host: 'privacy.database.windows.net',
+    database: 'privacy'
+    }
 
   /***************************************************************************
   *                                                                          *
@@ -81,14 +95,14 @@ module.exports.connections = {
   //   password: 'YOUR_POSTGRES_PASSWORD', // optional
   //   database: 'YOUR_POSTGRES_DB' //optional
   // }
-    privacyMongodb: {
-    adapter: 'sails-mongo',
-    host:  'ds013221.mlab.com',
-    port:  13221,
-    user: 'orange',
-    password: 'Azlaf0000',
-    database: 'privacy'
-  }
+   // privacyMongodb: {
+    //adapter: 'sails-mongo',
+    //host:  'ds013221.mlab.com',
+    //port:  13221,
+    //user: 'orange',
+    //password: 'Azlaf0000',
+   // database: 'privacy'
+  //}
 
 
   /***************************************************************************

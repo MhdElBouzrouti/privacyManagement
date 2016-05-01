@@ -6,13 +6,13 @@
  */
 
 module.exports = {
-
+  tableName:'agreeItem',
   attributes: {
     productOffering:{
-      collection:'productOffering'
+      type:'json'
     },
     termOrCondition:{
-      collection:'termOrCondition'
+      type:'json'
     }
 
   }

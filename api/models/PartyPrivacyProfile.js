@@ -27,26 +27,26 @@ module.exports = {
       type: 'string'
     },
     validFor: {
-      model: 'timePeriod',
+      type: 'json',
       required: true
     },
     agreedByParty: {
-      model: 'Party',
+      type: 'json',
       required: true
     },
     dateCreated: {
       type: 'datetime'
     },
     partyPrivacyProfileType: {
-      model: 'partyPrivacyProfileType',
+      type: 'json',
       required: true
     },
     partyPrivacyProfileCharValue: {
-      collection: 'pPProfCharVal',
+      type: 'json',
       required: true
     },
     agreement: {
-      model: 'partyPrivacyAgreement',
+      type: 'json',
       required: true,
     }
   },

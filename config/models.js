@@ -18,7 +18,9 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
   //connection: 'privacyMongodb',
-  connection:'localDiskDb',
+  //connection:'sqlserver',
+  //connection:'sqlserver',
+  connection:'privacyMysqlServer',
   autoCreatedAt:false,
   autoUpdatedAt:false,
   schema:true,
