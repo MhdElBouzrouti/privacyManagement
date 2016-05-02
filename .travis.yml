@@ -11,7 +11,7 @@ script:
 deploy:
   provider: openshift
   user: "mohammed.elbouzrouti@orange.com"
-  password: "Azlaf@1989"
+  password: "Azlaf0000"
   domain: "orangegroup"
   app:
     master: privacy
