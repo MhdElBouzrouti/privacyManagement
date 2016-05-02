@@ -10,7 +10,7 @@ script:
  - "npm test"
 deploy:
   provider: openshift
-  user: "mohammed.elbouzrouti@orange.com"
+  user: "mohammed.elbouzrouti@gmail.com"
   password: "Azlaf0000"
   domain: "orangegroup"
   app:
