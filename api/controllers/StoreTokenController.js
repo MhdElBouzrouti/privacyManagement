@@ -9,7 +9,7 @@ module.exports = {
   'store': function (req, res) {
 
     var jsonBody = req.body;
-    sails.log.debug(jsonBody.privacyProfileId);
+    sails.log.info(jsonBody.privacyProfileId);
 
     PartyPrivacyProfile.findOne({id: jsonBody.privacyProfileId}).populateAll().exec(function (err, partyPrivacy) {
       if (err) {

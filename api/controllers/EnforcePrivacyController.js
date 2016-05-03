@@ -8,7 +8,7 @@
 module.exports = {
   'find': function (req, res) {
     // Debug information
-    
+
     // get all variables from url
 
     var privacyProfileId = req.allParams().privacyProfileId;
@@ -61,20 +61,34 @@ module.exports = {
 
       if (!party)
         return res.json(400, {message: 'Related Party does not march'});
-
+      var token=[];
       // find the token
-      StoreToken.findOne({privacyProfileId: privacyProfileId}).populateAll().exec(function (err, token) {
-        sails.log.debug(token);
+      StoreToken.find({privacyProfileId: privacyProfileId}).populateAll().exec(function (err, storetoken) {
+        if(err)
+          return res.json(400,{message:err});
+        if(!storetoken)
+          return res.json(400,{message:''});
+        _.forEach(storetoken,function (atk) {
+          _.forEach(atk.accessToken,function (tk) {
+            if(tk.id===requestingPartyId)
+            token.push({token:tk.token,id:tk.id});
+          });
+        });
+        sails.log.info(storetoken);
+        if(_.isEmpty(token))
+        return res.json(400,{message:'not found'});
+        return res.json(token);
+        /*var result = _.find(token.accessToken, {id: requestingPartyId});
+         sails.log.debug(result);
+         if (!result)
+         return res.json(403, {message: ''});
 
-        var result = _.find(token.accessToken, {id: requestingPartyId});
-
-        if (result.length)
-          return res.json(403, {message: ''});
-
-        sails.log.debug(result);
-        return res.json(200, {token: result.token});
+         sails.log.debug(result);
+         return res.json(200, {token: result.token});
+         }*/
       });
 
     });
   }
+
 };

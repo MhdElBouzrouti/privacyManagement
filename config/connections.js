@@ -50,7 +50,7 @@ module.exports.connections = {
   privacyMysqlServer: {
     adapter: 'sails-mysql',
     host: process.env.OPENSHIFT_MYSQL_DB_HOST,
-    port:process.env.OPENSHIFT_MYSQL_DB_PORT,
+    port:process.env.OPENSHIFT_MYSQL_DB_PORT||56441,
     user: 'adminN4nijvg', //optional
    password: 'NLS2PRmgx9cQ', //optional
    database: 'privacy' //optional
