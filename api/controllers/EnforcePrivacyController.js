@@ -51,7 +51,7 @@ module.exports = {
 
       // verification of result od search
       if (!filter)
-        return res.json(403, {message: 'Party Privacy Characteristic (Name or Usage Purpose) does not march'});
+        return res.json(403, {message: 'Party Privacy Characteristic (Name or Usage Purpose) does not match'});
 
       // find related party
 
@@ -60,7 +60,7 @@ module.exports = {
       // verification of result Party
 
       if (!party)
-        return res.json(400, {message: 'Related Party does not march'});
+        return res.json(400, {message: 'Related Party does not match'});
       var token=[];
       // find the token
       StoreToken.find({privacyProfileId: privacyProfileId}).populateAll().exec(function (err, storetoken) {
