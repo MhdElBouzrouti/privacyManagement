@@ -64,9 +64,9 @@ module.exports = {
     PartyPrivacyProfile.update({id: privacyProfile.id}, {href: privacyProfile.href}).exec(function (err, profile) {
       if (err)
         cb(err);
-      if(!profile)
+      if (!profile)
         cb('ERROR')
-      sails.log.info('[PartPrivacyProfile] :New Privacy Profile Created - ID: ' + profile.id );
+      sails.log.info('[PartPrivacyProfile] :New Privacy Profile Created - ID: ' + profile.id);
       cb();
     });
   }

@@ -61,22 +61,22 @@ module.exports = {
 
       if (!party)
         return res.json(400, {message: 'Related Party does not match'});
-      var token=[];
+      var token = [];
       // find the token
       StoreToken.find({privacyProfileId: privacyProfileId}).populateAll().exec(function (err, storetoken) {
-        if(err)
-          return res.json(400,{message:err});
-        if(!storetoken)
-          return res.json(400,{message:''});
-        _.forEach(storetoken,function (atk) {
-          _.forEach(atk.accessToken,function (tk) {
-            if(tk.id===requestingPartyId)
-            token.push({token:tk.token,id:tk.id});
+        if (err)
+          return res.json(400, {message: err});
+        if (!storetoken)
+          return res.json(400, {message: ''});
+        _.forEach(storetoken, function (atk) {
+          _.forEach(atk.accessToken, function (tk) {
+            if (tk.id === requestingPartyId)
+              token.push({token: tk.token, id: tk.id});
           });
         });
         sails.log.info(storetoken);
-        if(_.isEmpty(token))
-        return res.json(400,{message:'not found'});
+        if (_.isEmpty(token))
+          return res.json(400, {message: 'not found'});
         return res.json(token);
         /*var result = _.find(token.accessToken, {id: requestingPartyId});
          sails.log.debug(result);

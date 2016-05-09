@@ -1,13 +1,14 @@
 language: node_js
 
 node_js:
-  - '5'
-  - '0.10'
+  - "5"
+  - "0.10"
 
 sudo: false
 
 script:
  - "npm test"
+
 deploy:
   provider: openshift
   user: "mohammed.elbouzrouti@gmail.com"
@@ -15,4 +16,10 @@ deploy:
   domain: "orangegroup"
   app:
     master: privacy
+after_success:
+ - bash <(curl -s https://codecov.io/bash) -t 2a694eb7-4ede-4e47-80e3-624d9443a073
+notifications:
+ email:
+  - mohammed.elbouzrouti@gmail.com
+
 

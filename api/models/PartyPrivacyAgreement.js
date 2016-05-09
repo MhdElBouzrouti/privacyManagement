@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-  tableName:'ppAgreement',
+  tableName: 'ppAgreement',
   attributes: {
     id: {
       type: 'integer',
@@ -15,74 +15,74 @@ module.exports = {
       autoIncrement: true,
       index: true
     },
-    name:{
-      type:'string'
+    name: {
+      type: 'string'
     },
-    version:{
-      type:'string'
+    version: {
+      type: 'string'
     },
-    documentNumber:{
-      type:'integer'
+    documentNumber: {
+      type: 'integer'
     },
-    status:{
-      type:'string'
+    status: {
+      type: 'string'
     },
-    type:{
-      type:'string'
+    type: {
+      type: 'string'
     }
     ,
-    statementOfIntent:{
-      type:'string'
+    statementOfIntent: {
+      type: 'string'
     },
-    agreementPeriod:{
-      type:'json'
+    agreementPeriod: {
+      type: 'json'
     },
-    description:{
-      type:'string'
+    description: {
+      type: 'string'
     },
-    href:{
-      type:'string'
+    href: {
+      type: 'string'
     },
-    initialDate:{
-      type:'datetime'
+    initialDate: {
+      type: 'datetime'
     },
-    agreementSpecification:{
-      type:'json'
+    agreementSpecification: {
+      type: 'json'
     },
-    agreementItem:{
-      type:'json'
+    agreementItem: {
+      type: 'json'
     },
-    engagedPartyRole:{
-      type:'json'
+    engagedPartyRole: {
+      type: 'json'
     },
-    agreementAuthorization:{
-      type:'json'
+    agreementAuthorization: {
+      type: 'json'
     },
-    characteristic:{
-      type:'json'
+    characteristic: {
+      type: 'json'
     },
-    associatedAgreement:{
-      type:'json'
+    associatedAgreement: {
+      type: 'json'
     },
-    partyPrivacyProfile:{
-      type:'json'
+    partyPrivacyProfile: {
+      type: 'json'
     },
-    partyPrivacyProfileCharValue:{
-      type:'json'
+    partyPrivacyProfileCharValue: {
+      type: 'json'
     }
 
   }
   ,
-  afterCreate:function (agreement,cb) {
+  afterCreate: function (agreement, cb) {
 
-    agreement.href='http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/'+agreement.id;
+    agreement.href = 'http://privacy-orangegroup.rhcloud.com/partyPrivacyAgreement/' + agreement.id;
 
     PartyPrivacyAgreement.update({id: agreement.id}, {href: agreement.href}).exec(function (err, agr) {
       if (err)
         cb(err);
-      if(!agr)
+      if (!agr)
         return cb('Err')
-      sails.log.info('[PartPrivacyProfileType] :New Privacy Profile Created - ID: ' + agr.id );
+      sails.log.info('[PartPrivacyProfileType] :New Privacy Profile Created - ID: ' + agr.id);
       cb();
     });
   }
